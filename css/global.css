@@ -4,8 +4,13 @@
     padding: 0;
     margin: 0;
     font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    width: 100%;
+}
 
 a:hover {
     text-decoration: none;
