@@ -90,10 +90,9 @@ a:hover {
 
 #plano1 {
     height: 850px;
-    width: 250px;
+    width: 200px;
     background: #7B00FF;
     border-radius: 10px;
-    border: 1px solid red;
 }
 
 .topo_plano {
@@ -123,6 +122,10 @@ a:hover {
     border: 1px solid red;
     text-transform: uppercase;
     padding: 10px;
+}
+
+.valor_plano h2 {
+    font-weight: bold;
 }
 
 .botao_plano {
