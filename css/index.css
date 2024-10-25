@@ -102,22 +102,39 @@ section .cards .card {
     border-radius: 10px;
     max-height: 900px;
     margin-left: 30px;
+    box-shadow: 10px 10px 80px -30px #1e1e1e;
 }
 
 section .cards .card:first-child {
     margin-left: 0;
 }
 
-section .cards .card  .icon {
-    width: 150px;
-    height: 200px;
-
+section .cards .card .icon {
+    width: 350px;
+    height: 230px;
 }
 
-.cards.card img {
-    width: 100%;
+
+section .cards .card h2 {
+    margin: 10px 0px;
+    background: #470094;
 }
 
+.valor {
+    display: flex;
+    align-items: center;
+}
+
+.cards .card .valor h3 {
+    font-weight: bold;
+    font-size: 900%;
+    margin: 0px 10px;
+}
+
+.cards .card .valor h4 {
+    max-width: 240px;
+    margin-bottom: 20px;
+}
 
 #basic {
     background: #7B00FF;
@@ -131,99 +148,18 @@ section .cards .card  .icon {
     background: #00335C;
 }
 
-/*
-#planos {
-    background: url(../img/bg_padrao.png) no-repeat fixed;
-    background-size: cover;
-    background-color: #FEF9FF;
+@media (max-width: 720px) { 
+    .cards {
+        flex-direction: column;
+    }
+    .cards .card {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .cards .card:last-child {
+        margin-bottom: 0;
+    }
 }
-
-#planos h1 {
-    font-family: 'gotham black';
-    color: #470094;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-#plano1 {
-    height: 850px;
-    width: 200px;
-    background: #7B00FF;
-    border-radius: 10px;
-}
-
-.topo_plano {
-    height: 100px;
-    background: #470094;
-    border-radius: 10px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'gotham black';
-    color: #FEF9FF;
-    border: 1px solid red;
-}
-
-.telas_plano {
-    height: 420px;
-    color: #FEF9FF;
-    text-align: center;
-    border: 1px solid red;
-}
-
-.valor_plano {
-    background: #470094;
-    color: #FEF9FF;
-    height: 180px;
-    text-align: center;
-    border: 1px solid red;
-    text-transform: uppercase;
-    padding: 10px;
-}
-
-.valor_plano h2 {
-    font-weight: bold;
-}
-
-.botao_plano {
-    height: 150px;
-    text-align: center;
-    border: 1px solid red;
-    padding-top: 30px;
-}
-
-
-
-
-#plano2{
-    height: 850px;
-    width: 350px;
-    background: url(../img/bg_plano2.png);
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#plano2 button {
-    width: 280px;
-    height: 80px;
-}
-
-#plano3{
-    height: 850px;
-    width: 350px;
-    background: url(../img/bg_plano3.png);
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#plano3 button {
-    width: 280px;
-    height: 80px;
-}
-
-*/
-
 
 
 
@@ -335,13 +271,14 @@ section .cards .card  .icon {
 
 
 .btn-azul2 {
-    background: #008CFF;
+    background: linear-gradient(to right, #0060AF, #006692);
     border: 2px solid #006692;
     border-radius: 5px;
     padding: 8px 25px;
     color: #FEF9FF;
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 25px;
 }
 
 .btn-azul2:hover {
@@ -353,6 +290,100 @@ section .cards .card  .icon {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+
+/*
+#planos {
+    background: url(../img/bg_padrao.png) no-repeat fixed;
+    background-size: cover;
+    background-color: #FEF9FF;
+}
+
+#planos h1 {
+    font-family: 'gotham black';
+    color: #470094;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#plano1 {
+    height: 850px;
+    width: 200px;
+    background: #7B00FF;
+    border-radius: 10px;
+}
+
+.topo_plano {
+    height: 100px;
+    background: #470094;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'gotham black';
+    color: #FEF9FF;
+    border: 1px solid red;
+}
+
+.telas_plano {
+    height: 420px;
+    color: #FEF9FF;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.valor_plano {
+    background: #470094;
+    color: #FEF9FF;
+    height: 180px;
+    text-align: center;
+    border: 1px solid red;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.valor_plano h2 {
+    font-weight: bold;
+}
+
+.botao_plano {
+    height: 150px;
+    text-align: center;
+    border: 1px solid red;
+    padding-top: 30px;
+}
+
+
+
+
+#plano2{
+    height: 850px;
+    width: 350px;
+    background: url(../img/bg_plano2.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#plano2 button {
+    width: 280px;
+    height: 80px;
+}
+
+#plano3{
+    height: 850px;
+    width: 350px;
+    background: url(../img/bg_plano3.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#plano3 button {
+    width: 280px;
+    height: 80px;
+}
+
+*/
 
 
 
