@@ -148,7 +148,7 @@ section .cards .card h2 {
     background: #00335C;
 }
 
-@media (max-width: 720px) { 
+@media (max-width: 900px) { 
     .cards {
         flex-direction: column;
     }
@@ -160,6 +160,8 @@ section .cards .card h2 {
         margin-bottom: 0;
     }
 }
+
+
 
 
 
