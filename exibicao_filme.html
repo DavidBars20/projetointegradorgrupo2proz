@@ -40,46 +40,138 @@
   </head>
 
   <body>
-    <header>
-      <h5>Nome do filme</h5><br>
-      <nav>
-        <ul>
-          <li>
-            <a href="Layouts/Pág 04 - Apresentação Filme.png"> <img src="img/sair.svg" alt="sair" title="sair"></a><p>sair</p>
-          </li>
-          <li>
-           <br> <a href="#" onclick="compartilhar()"> <img src="img/Compartilhar.svg" alt="Compartilhar" title="compartilhar"></a><p>compartilhar</p>
-          </li>
-        </ul>
-      </nav>
-    </header>
- 
-    <main>
-      <nav>
-        <ul>
-         <br><a href="#" onclick="voltar()"> <img src="img/para trás.svg" alt="voltar" title="voltar">
-        </a><br><p>voltar</p>
-         <br><a href="#" onclick="pausar()"> <img src="img/pause.svg" alt= "pausar" title="pausar"> </a><br><p>pausar</p>
-         <br><a href="#" onclick="play()"> <img src="img/play.svg" alt="play" title="play"> </a><br><p>play</p>
-         <br><a href="#" onclick="avançar()"><img src="img/avançar.svg" alt="avançar o filme" title="avançar o filme"></a><br><p>avançar</p>
-         <br><a href="#" onclick="brilho()"><img src="img/briho.svg" alt="brilho" title="brilho"></a><br><p>brilho</p>
-        </ul>
-      </nav>
-    </main>
-    
-    <footer>
-        <nav>
-          <ul>
-          <br><a href="#" onclick="nãocurtir()"><img src="img/não curtir.svg" alt="não curtir" title="não curtir"></a><p>não curtiu</p>
-          <a href="#" onclick="curtir()"><img src="img/curtir.svg" alt="curtir" title="curtir"></a><br><p>curtiu</p>
-          <br><a href="#" onclick="velocidade()"><img src="img/velocidade.svg" alt="velocidade" title="velocidade"></a><br><p>velocidade</p>
-          <br><a href="#" onclick="volume()"><img src="img/volume.svg" alt="volume"></a><br><p>volume</p>
-          <br><a href="#" onclick="legenda_Idioma()"><img src="img/legenda e idioma.svg" alt="legenda e Idioma" title="legenda e Idioma"></a><br><p>idioma e legenda</p>
-          </ul>
-        </nav>
-    </footer>
+  <header id="cabecalho" class="d-flex align-items-center">
+    <div class="container-fluid">
+      <div class="row justify-content-between">
 
-  </body>
+        <!-- Botão "Sair" -->
+        <div class="col-lg-2 mb-3">
+          <a href="sinopse.html">
+            <button class="navbar navbar-light bg-light"> 
+              <img src="./img/sair.svg" width="50" alt="Sair">                    
+            </button>
+            <p>sair</p>
+          </a>            
+        </div>
+
+        <div class="col-lg-8 text-center">
+          <h5>Nome do filme</h5>
+        </div>
+
+        <!-- Botão "Compartilhar" -->
+        <div class="col-lg-0 mb-3 ml-auto text-center">
+          <a href="exibicao_filme.html" class="d-block">
+            <img class="img-fluid mb-1" src="./img/Compartilhar.svg" alt="Compartilhar">
+            <p>Compartilhar</p>
+          </a>
+        </div>
+      </div>
+    </div>  
+  </header>
+
+  <main class="d-flex align-items-center">
+    <div class="container-fluid">
+      <div class="row" style="height: 100px;"></div>
+      <div class="row justify-content-between">
+
+        <!-- Botão "Para Trás" -->
+        <div class="col-lg-2 mb-3">
+          <button class="navbar navbar-light bg-light">
+            <img src="./img/para trás.svg" width="50" alt="Para Trás">              
+          </button>   
+          <p>para trás</p>        
+        </div>
+
+        <!-- Botão "Pause" -->
+        <div class="col-lg-2 mb-3">
+          <button class="navbar navbar-light bg-light">
+            <img src="./img/pause.svg" width="50" alt="Pause">              
+          </button>   
+          <p>pause</p>         
+        </div>
+
+        <!-- Botão "Play" -->
+        <div class="col-lg-2 mb-3">
+          <button class="navbar navbar-light bg-light">
+            <img src="./img/play.svg" width="50" alt="Play">              
+          </button> 
+          <p>play</p>           
+        </div>
+
+        <!-- Botão "Avançar" -->
+        <div class="col-lg-2 mb-3">
+          <button class="navbar navbar-light bg-light">
+            <img src="./img/avançar.svg" width="50" alt="Avançar">              
+          </button>            
+          <p>avançar</p>
+        </div>
+
+        <!-- Ícone e barra de "Brilho" -->
+        <div class="col-lg-0 mb-3">
+          <button class="navbar navbar-light bg-light brightness-icon">
+            <img src="./img/briho.svg" width="50" alt="Brilho">
+          </button>
+          <input type="range" min="0" max="100" value="50" class="brightness-control">
+        </div>
+
+      </div>
+    </div>  
+  </main>
+  
+  <footer id="controles-footer" class="d-flex align-items-center">
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+
+        <!-- Barra de Progresso -->
+        <div class="col-12 mt-3">
+          <input type="range" min="0" max="100" value="0" class="w-100">
+        </div>
+
+        <div class="row" style="height: 100px;"></div>
+
+        <!-- Botão "não curtir" -->
+        <div class="col-lg-2 mb-3">
+          <button class="navbar navbar-light bg-light">
+            <img src="./img/não curtir.svg" width="50" alt="Não Curtir">              
+          </button> 
+          <p>não curtir</p>           
+        </div>
+        
+        <!-- Botão "Curtir" -->
+        <div class="col-lg-2 mb-3">
+          <button class="navbar navbar-light bg-light">
+            <img src="./img/Curtir.svg" width="50" alt="Curtir">              
+          </button>       
+          <p>Curtir</p>     
+        </div>
+
+        <!-- Botão "velocidade" -->
+        <div class="col-lg-2 mb-3">
+          <button class="navbar navbar-light bg-light">
+            <img src="./img/velocidade.svg" width="50" alt="Velocidade">              
+          </button>     
+          <p>velocidade</p>       
+        </div>
+
+        <!-- Botão "volume" -->
+        <div class="col-lg-2 mb-3">
+          <button class="navbar navbar-light bg-light">
+            <img src="./img/volume.svg" width="50" alt="Volume">              
+          </button> 
+          <p>volume</p>           
+        </div>
+
+        <!-- Botão "legenda e idioma" -->
+        <div class="col-lg-0 mb-3">
+          <button class="navbar navbar-light bg-light">
+            <img src="./img/legenda e idioma.svg" width="50" alt="Legenda e Idioma">                           
+          </button>     
+          <p>legenda e idioma</p>       
+        </div>
+
+      </div>
+    </div>  
+  </footer>
+
+</body>
 </html>
-
-
