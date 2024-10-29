@@ -37,7 +37,7 @@ a:hover {
 
 }
 
-/*////////   SEÇÃO HOME - INDEX*/
+/*////////   SEÇÃO HOME*/
 
 
 #home {
@@ -292,104 +292,6 @@ section .cards .card h2 {
     text-transform: uppercase;
     font-weight: bold;
 }
-
-
-/*
-#planos {
-    background: url(../img/bg_padrao.png) no-repeat fixed;
-    background-size: cover;
-    background-color: #FEF9FF;
-}
-
-#planos h1 {
-    font-family: 'gotham black';
-    color: #470094;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-#plano1 {
-    height: 850px;
-    width: 200px;
-    background: #7B00FF;
-    border-radius: 10px;
-}
-
-.topo_plano {
-    height: 100px;
-    background: #470094;
-    border-radius: 10px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'gotham black';
-    color: #FEF9FF;
-    border: 1px solid red;
-}
-
-.telas_plano {
-    height: 420px;
-    color: #FEF9FF;
-    text-align: center;
-    border: 1px solid red;
-}
-
-.valor_plano {
-    background: #470094;
-    color: #FEF9FF;
-    height: 180px;
-    text-align: center;
-    border: 1px solid red;
-    text-transform: uppercase;
-    padding: 10px;
-}
-
-.valor_plano h2 {
-    font-weight: bold;
-}
-
-.botao_plano {
-    height: 150px;
-    text-align: center;
-    border: 1px solid red;
-    padding-top: 30px;
-}
-
-
-
-
-#plano2{
-    height: 850px;
-    width: 350px;
-    background: url(../img/bg_plano2.png);
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#plano2 button {
-    width: 280px;
-    height: 80px;
-}
-
-#plano3{
-    height: 850px;
-    width: 350px;
-    background: url(../img/bg_plano3.png);
-    background-size: cover;
-    border-radius: 10px;
-}
-
-#plano3 button {
-    width: 280px;
-    height: 80px;
-}
-
-*/
-
-
-
-
 
 /*////////   MEDIA QUERIES P/ COPIAR */
 
