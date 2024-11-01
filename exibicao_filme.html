@@ -57,7 +57,7 @@
             </div>          
           </div>
 
-          <div  class="col-lg-0 mb-3 ml-auto text-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
             <div class="nome">
                <h5>Nome do filme</h5>
              </div>
@@ -91,23 +91,22 @@
             </div>       
           </div>
 
-          <!-- Botão "pause" -->
+          <!-- Contêiner dos botões -->
           <div class="col-lg-2 mt-5 mb-3">
-            <div class="pause">
-              <button class="btn btn-light mt-auto mb-3 mx-auto btn-light">
-                <img src="./img/pause.svg" width="50" alt="Pause" title="pause">              
-              </button>                
-            </div>       
-          </div>
+            <div class="controles d-flex justify-content-center align-items-center">
 
-          <!-- Botão "play" -->
-          <div class="col-lg-2 mt-5 mb-3">
-            <div class="play">
-              <button class="btn btn-light mt-auto mb-3 mx-auto btn-light">
-                <img src="./img/play.svg" width="50" alt="Play" title="play">              
-              </button>                   
-            </div>     
-          </div>
+              <!-- Botão "pause" -->
+              <button class="btn btn-light mx-2">
+                <img src="./img/pause.svg" width="50" alt="Pause" title="pause">
+              </button>
+    
+              <!-- Botão "play" -->
+              <button class="btn btn-light mx-2">
+                <img src="./img/play.svg" width="50" alt="Play" title="play">
+              </button> 
+
+            </div>
+          </div>     
 
           <!-- Botão "avançar" -->
           <div class="col-lg-2 mt-5 mb-3">
@@ -119,9 +118,9 @@
           </div>
 
           <!-- Ícone e barra de "brilho" -->
-          <div class="col-lg-0 mt-5 mb-3">
+          <div class="col-lg-0 mt-5 mb-3 brilho-container">
             <div class="brilho">
-              <button class="btn btn-light mt-auto mb-5 mx-auto btn-light">
+              <button class="btn btn-light mt-auto mb-2 mx-auto btn-light">
                 <img src="./img/briho.svg" width="50" alt="Brilho" title="brilho">
               </button>
               <input type="range" min="0" max="100" value="50" class="brightness-control">
@@ -146,22 +145,21 @@
           <div class="row" style="height: 100px;"></div>
 
           <!-- Botão "não curtir" -->
-          <div class="col-lg-2 mt-5 mb-3">
+          <div class="col-lg-1 mt-5 mb-3">
             <div class="não curtir">
               <button class="btn btn-light mb-5 mx-auto btn-light">
-                <img src="./img/não curtir.svg" width="50" alt="Não Curtir" title="Não Curtir">              
-              </button>                   
+                <img src="./img/nao_curtir.svg" width="50" alt="Não Curtir" title="Não Curtir">              
+              </button>  
+
+              <!-- Botão "curtir" -->
+              <div class="curtir">
+                <button class="btn btn-light mb-5">
+                  <img src="./img/Curtir.svg" width="50" alt="Curtir" title="Curtir">              
+                </button>               
+              </div>   
             </div>       
           </div>
           
-          <!-- Botão "curtir" -->
-          <div class="col-lg-2 mt-5 mb-3">
-            <div class="curtir">
-              <button class="btn btn-light mb-5 mx-auto btn-light">
-                <img src="./img/Curtir.svg" width="50" alt="Curtir" title="Curtir">              
-              </button>               
-            </div>   
-          </div>
 
           <!-- Botão "velocidade" -->
           <div class="col-lg-2 mt-5 mb-3">

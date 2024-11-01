@@ -6,26 +6,73 @@
     padding: 0;    
 }
 
+/* header */
 .sair div a{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start; 
-   
+    justify-content: flex-start;   
 }
 
-.nome{
+.nome {
     text-align: center;
+    display: flex;
+    justify-content: center;
     font-weight: 500;
-    padding: 10px;    
+    padding: 8px;    
+    
 }
 
-.compartilhar div a p{
-    padding: 10px;
-    margin: 0px 10px 0px 10px;
+.compartilhar a p{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start; 
 }
+
+/* main */
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.brilho-container {
+    position: fixed;
+    top: 200px; 
+    right: 10px; 
+  }
+  
+  .brilho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .brightness-control {
+    writing-mode: vertical-lr; 
+    transform: rotate(180deg);
+    height: 300px; 
+    outline: none;
+  }
+
+  /* footer */
+#controles-footer{
+    padding-top: 250px;
+}
+
+.curtir{
+    display: flex;
+    justify-content:flex-end;
+}
+
+
+  
+
+
+
+
+
+
+
 
 
 
