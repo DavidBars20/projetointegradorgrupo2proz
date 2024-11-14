@@ -1,6 +1,6 @@
 *{
     font-family: "Roboto", sans-serif;    
-    font-weight: 1000;
+    font-weight: 400;
     font-style: normal;      
     margin: 0;
     padding: 0;    
@@ -27,6 +27,7 @@
     align-items: flex-start; 
 }
 
+
 /* main */
 .principal{
     display: flex;
@@ -41,17 +42,23 @@
     right: 10px; 
   }
   
-  .brilho {
+.brilho {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .brightness-control {
+.brightness-control {
     writing-mode: vertical-lr; 
     transform: rotate(180deg);
-    height: 300px; 
+    height: 150px; 
     outline: none;
+  }
+
+@media (max-width: 992px) {
+    .brilho-container {
+      display: none;
+    }
   }
 
   /* footer */
