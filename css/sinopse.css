@@ -1,3 +1,138 @@
+main {
+    margin-top: 70px;
+}
+
+/* TRAILER   ///////*/
+
+#trailer {
+    background-image: url(/img/banner-entrada.jpg) no-repeat fixed;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#trailer img {
+    width: 100%;
+}
+
+
+
+/* SINOPSE   ///////*/
+
+#sinopse {
+    background: #0E0E0E;
+    color: #FEF9FF;
+    padding: 3em 4em;
+    box-shadow: 10px 10px 80px -20px #0e0e0e;
+}
+
+.movie-title {
+    font-family: gotham black;
+    text-transform: uppercase;
+}
+
+.movie-genre {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.movie-description {
+    font-family: roboto light;
+    margin-bottom: 2em;
+}
+
+.movie-details {
+    display: grid;
+    grid-template-areas: 
+    "diracao ano duracao idade selo";
+    grid-gap: 1em;
+    margin-bottom: 1em;
+}
+
+.movie-details h5 {
+    text-transform: uppercase;
+    font-family: gotham semibold;
+}
+
+.movie-details h6 {
+    font-family: roboto light;
+    letter-spacing: 0.05em;
+}
+
+.selo img {
+    width: 35%;
+}
+
+
+
+/* AVALIACAO   ///////*/
+
+#avaliacoes {
+    background: #7B00FF;
+    color: #FEF9FF;
+    padding: 3em 4em;
+}
+
+#avaliacoes h3 {
+    font-family: gotham black;
+    text-transform: uppercase;
+}
+
+.review {
+    display: grid;
+    grid-template-areas: 
+    "reviewer-icon review-text";
+    margin: 2em 3em 2em 0;
+}
+
+.reviewer-icon {
+    background: #008CFF;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin-right: 1.5em;
+    box-shadow: 10px 10px 80px -5px #00335C;
+}
+
+.reviewer-icon h1 {
+    margin-top: 0.6em;
+    font-family: gotham black;
+    text-transform: uppercase;
+}
+
+.user-stars {
+    text-transform: uppercase;
+}
+
+.user-stars span{
+    font-size: large;
+}
+
+
+.review-invitation {
+    font-family: gotham black;
+    display: grid;
+    grid-template-areas: 
+    "text review-stars";
+}
+
+
+.review-invitation .text2{
+    color: #0E0E0E;
+}
+
+.review-stars {
+    font-size: 320%;
+}
+
+
+
+
+
+
+
+/* ANTIGO //////////
 * {
     margin: 0;
     padding: 0;

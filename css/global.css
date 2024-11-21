@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'roboto', sans-serif;
+    font-family: 'roboto', 'gotham black', sans-serif;
     box-sizing: border-box;
 }
 
@@ -22,6 +22,7 @@ a:hover {
 
 .navbar {
     background: #7B00FF;
+    box-shadow: 10px 10px 80px -20px #0e0e0e;
 }
 
 .navbar-brand {
