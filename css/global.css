@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -24,23 +24,13 @@ a:hover {
     background: #7B00FF;
 }
 
-.navbar-collapse {
-    background: #0060AF;
-    height: 130px;
-    text-transform: uppercase;
+.navbar-brand {
+    margin-left: 2em;
 }
 
-
-.navbar-collapse li a {
-    color: #FEF9FF;
-    margin-top: 80px;
-}
-
-.navbar-collapse li a:hover {
-    color: #00335C;
-    font-weight: bold;
-    margin-top: 80px;
-
+#nav_topo button {
+    margin-left: auto;
+    margin-right: 2em;
 }
 
 
@@ -154,22 +144,61 @@ a:hover {
 
 #rodape {
     background: #0E0E0E;
-    margin-top: 20px;
-}
-
-#rodape li a {
+    padding: 2em;
+    display: grid;
+    grid-template-areas: "logo links contato";
+    grid-gap: 1em;
     color: #FEF9FF;
 }
 
-#rodape li a:hover {
+#rodape .logo {
+    grid-area: "logo";
+}
+
+#rodape .links {
+    grid-area: "links";
+}
+
+#rodape .links:hover {
     color: #7B00FF;
 }
 
-#rodape h5 {
-    color: #FEF9FF;
-    font-size: 1em;
+#rodape .contato {
+    grid-area: "contato";
+    display: grid;
+    grid-template-areas: 
+    "icones"
+    "sac";
 }
 
+#rodape .contato .icones{
+    grid-area: "icones";
+}
+
+#rodape .contato .sac{
+    grid-area: "sac";
+    margin-left: 1.5em;
+}
+
+@media (max-width: 740px) { 
+    #rodape {
+        display: grid;
+        grid-template-areas:
+        "logo"
+        "links"
+        "contato";
+        padding-left: 5em;
+    }   
+
+    #rodape .links {
+        margin-left: 2.5em;
+    }
+    
+    
+    #rodape .contato {
+        margin-left: 1.5em;
+    }
+}
 
 
 

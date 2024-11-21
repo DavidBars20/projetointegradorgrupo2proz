@@ -11,28 +11,7 @@ a:hover {
     text-decoration: none;
 }
 
-/*////////   BARRA DE NAVEGAÇÃO*/
 
-
-.navbar {
-    background: #7B00FF;
-}
-
-.navbar-collapse {
-    background: #0060AF;
-    height: 130px;
-    text-transform: uppercase;
-}
-
-
-.navbar-collapse li a {
-    color: #FEF9FF;
-}
-
-.navbar-collapse li a:hover {
-    color: #00335C;
-    font-weight: bold;
-}
 
 /*////////   SEÇÃO HOME*/
 
@@ -40,13 +19,14 @@ a:hover {
 #home {
     background: url(../img/bg\ home.png) no-repeat fixed;
     background-size: cover;
+    margin: 0 auto;
     height: 600px;
 }
 
 #home h2 {
     font-family: 'gotham black', sans-serif;
     font-size: 1.9em;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 .card.card_home {
@@ -55,9 +35,10 @@ a:hover {
     width: 300px;
     height: 300px;
     text-transform: uppercase;
-    padding: 20px 20px;
+    padding: 1em;
     font-style: italic;
     font-weight: bold;
+    margin-left: auto;
 }
 
 @media (min-width: 500px) and (max-width: 991.98px) { 
@@ -73,14 +54,12 @@ a:hover {
 #planos {
     display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
 #planos h1 {
     font-weight: bold;
-    margin: 30px;
+    margin: 1em;
 }
 
 section .cards {
