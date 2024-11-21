@@ -2,16 +2,46 @@
     background-color: #1e1e1e;
     height: 400px;
     width: 400px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 80px auto;
     color: #fef9ff;
+    box-sizing: border-box;
 }
 .butao_entrar{
     background-color: #7b00ff;
 }
 #fundo{
-    background: url(/img/bg\ home.png) no-repeat fixed;
+    background: url(/img/bg\ home.png) no-repeat center center fixed;
     background-size: cover;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
    
+}
+
+/*////////   RODAPÉ */
+
+#rodape {
+    background: #0E0E0E;
+    padding: 50px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#rodape li a {
+    color: #FEF9FF;
+}
+
+#rodape li a:hover {
+    color: #7B00FF;
+}
+
+#rodape h5 {
+    color: #FEF9FF;
+    font-size: 1em;
 }
