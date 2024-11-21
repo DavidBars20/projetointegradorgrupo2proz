@@ -40,21 +40,24 @@
 
   </head>
 
-  <body class="d-flex flex-column vh-100">
+  <!-- body -->
 
+  <body class="d-flex flex-column vh-100">  
+
+    <!-- Header -->
     <header id="cabecalho" class="d-flex align-items-center">
       <div class="container-fluid">
         <div class="row justify-content-between">
 
           <!-- Botão "Sair" -->
           <div class="col-lg-2 mb-3">
-            <div class="sair">
+            
               <a href="sinopse.html">
                 <button class="btn btn-light mt-auto mb-5 mx-auto btn-light"> 
                   <img src="./img/sair.svg" width="50" alt="Sair" title="sair">                    
                 </button>                
               </a>  
-            </div>          
+                      
           </div>
 
           <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -72,10 +75,15 @@
                 </button>                           
               </a>
             </div>
+            
           </div>
         </div>
       </div>  
     </header>
+
+    <!-- Main -->
+    <div class="row" style="height: 100px;"></div>
+    <div class="row" style="height: 100px;"></div>
 
     <main id="principal" class="flex-grow-1">
       <div class="container">
@@ -118,6 +126,7 @@
           </div>
 
           <!-- Ícone e barra de "brilho" -->
+           
           <div class="col-lg-0 mt-5 mb-3 brilho-container">
             <div class="brilho">
               <button class="btn btn-light mt-auto mb-2 mx-auto btn-light">
@@ -131,43 +140,42 @@
       </div>  
     </main>
     
-    <footer id="controles-footer" class="d-flex align-items-start">
+    <!-- Footer -->
+
+
+    <footer id="controles-footer" class="d-flex align-items-center">
       <div class="container-fluid">
         <div class="row justify-content-between">
 
           <!-- Barra de progresso -->
-          <div class="col-12 mt-5">
+          <div class="col-12">
             <div class="progresso">
               <input type="range" min="0" max="100" value="0" class="w-100">
             </div>
           </div>
 
-          <div class="row" style="height: 100px;"></div>
+           <div class="row" style="height: 100px;"></div>
+            
+            <div class="col-lg-2 mt-5 mb-3"> 
 
-          <!-- Botão "não curtir" -->
-          <div class="col-lg-1 mt-5 mb-3">
-            <div class="não curtir">
-              <button class="btn btn-light mb-5 mx-auto btn-light">
+              <!-- Botão "não curtir" -->           
+              <button class="btn btn-light">
                 <img src="./img/nao_curtir.svg" width="50" alt="Não Curtir" title="Não Curtir">              
               </button>  
 
-              <!-- Botão "curtir" -->
-              <div class="curtir">
-                <button class="btn btn-light mb-5">
+              <!-- Botão "curtir" -->              
+              <button class="btn btn-light mb-5">
                   <img src="./img/Curtir.svg" width="50" alt="Curtir" title="Curtir">              
-                </button>               
-              </div>   
-            </div>       
-          </div>
+              </button>                                
+            </div>
           
 
           <!-- Botão "velocidade" -->
           <div class="col-lg-2 mt-5 mb-3">
             <div class="velocidade">
-              <button class="btn btn-light mb-5 mx-auto btn-light">
+              <button class="btn btn mb-5 mx-auto btn">
                 <img src="./img/velocidade_filme.svg" width="50" alt="Velocidade" title="Velocidade">              
-              </button>     
-              <p>velocidade</p> 
+              </button>              
             </div>      
           </div>
 
@@ -175,19 +183,17 @@
           <div class="col-lg-2 mt-5 mb-3">
             <div class="volume">
               <button class="btn btn-light mb-5 mx-auto btn-light">
-                <img src="./img/volume.svg" width="50" alt="Volume" title="Volume">              
-              </button> 
-              <p>volume</p>  
+                <img src="./img/volume.svg" width="70" alt="Volume" title="Volume">              
+              </button>                
             </div>         
           </div>
 
           <!-- Botão "legenda e idioma" -->
           <div class="col-lg-2 mt-5 mb-3">
-            <div class="volume">
+            <div class="legenda_e_idioma">
               <button class="btn btn-light mb-5 mx-auto btn-light">
                 <img src="./img/legenda_e_idioma.svg" width="50" alt="Legenda e Idioma" title="Legenda e Idiomas">                           
-              </button>     
-              <p>legenda e idioma</p>   
+              </button>                 
             </div>    
           </div>
 

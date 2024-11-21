@@ -11,28 +11,7 @@ a:hover {
     text-decoration: none;
 }
 
-/*////////   BARRA DE NAVEGAÇÃO*/
 
-
-.navbar {
-    background: #7B00FF;
-}
-
-.navbar-collapse {
-    background: #0060AF;
-    height: 130px;
-    text-transform: uppercase;
-}
-
-
-.navbar-collapse li a {
-    color: #FEF9FF;
-}
-
-.navbar-collapse li a:hover {
-    color: #00335C;
-    font-weight: bold;
-}
 
 /*////////   SEÇÃO HOME*/
 
@@ -40,13 +19,14 @@ a:hover {
 #home {
     background: url(../img/bg\ home.png) no-repeat fixed;
     background-size: cover;
+    margin: 0 auto;
     height: 600px;
 }
 
 #home h2 {
     font-family: 'gotham black', sans-serif;
     font-size: 1.9em;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 .card.card_home {
@@ -55,9 +35,10 @@ a:hover {
     width: 300px;
     height: 300px;
     text-transform: uppercase;
-    padding: 20px 20px;
+    padding: 1em;
     font-style: italic;
     font-weight: bold;
+    margin-left: auto;
 }
 
 @media (min-width: 500px) and (max-width: 991.98px) { 
@@ -73,96 +54,142 @@ a:hover {
 #planos {
     display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
-#planos h1 {
+#planos .display-4 {
+    color: #470094;
+}
+
+#planos h2 {
     font-weight: bold;
-    margin: 30px;
+    margin: 1em;
+    text-transform: uppercase;
 }
 
 section .cards {
-    display: flex;
-    padding: 32px;
+    display: grid;
+    grid-template-areas: 
+    "basic plus premium";
+    width: 100%;
+    justify-content: space-around;
+    padding: 1em;
 }
+
+#basic {
+    background: #008CFF;
+    grid-area: "basic";
+}
+
+#plus {
+    background: #006692;
+    grid-area: "plus";
+}
+
+#premium {
+    background: #7B00FF;
+    grid-area: "premium";
+}
+
 
 section .cards .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1rem 1.5rem;
     color: #FEF9FF;
     border-radius: 10px;
-    max-height: 900px;
+    max-width: 400px;
+    max-height: 800px;
+    margin: 1em;
     box-shadow: 10px 10px 80px -30px #1e1e1e;
 }
 
-section .cards .card:first-child {
-    margin-left: 0;
+section .cards #basic .titulo {
+    width: 100%;
+    height: 15%;
+    background: #006692;
+    border-radius: 10px 10px 0 0;
+}
+
+
+section .cards #plus .titulo {
+    width: 100%;
+    height: 15%;
+    background: #00335C;
+    border-radius: 10px 10px 0 0;
+}
+
+section .cards #premium .titulo {
+    width: 100%;
+    height: 15%;
+    background: #470094;
+    border-radius: 10px 10px 0 0;
 }
 
 section .cards .card .icon {
-    width: 350px;
-    height: 230px;
+    height: 400px;
+    padding: 2em;
 }
 
-
-section .cards .card h2 {
-    margin: 10px 0px;
+section .cards .card .icon h4 {
+    margin: 1.5em;
 }
 
-.valor {
+#basic .valor {
+    background: #006692;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#plus .valor {
+    background: #00335C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#premium .valor {
+    background: #470094;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .cards .card .valor h3 {
     font-weight: bold;
     font-size: 900%;
-    margin: 0px 10px;
 }
 
-.cards .card .valor h4 {
-    max-width: 240px;
-    margin-bottom: 20px;
+section .cards .card .botao {
+    padding: 2em;
+    width: 100%;
 }
 
-#basic {
-    background: #7B00FF;
-}
 
-#plus {
-    background: #006692;
-}
-
-#premium {
-    background: #00335C;
-}
-
-@media (max-width: 900px) { 
-    .cards {
-        flex-direction: column;
-    }
-    .cards .card {
-        margin-left: 0;
-        margin-bottom: 30px;
-    }
-    .cards .card:last-child {
-        margin-bottom: 0;
+@media (min-width: 700px) and (max-width: 899.98px) { 
+    section .cards {
+        display: grid;
+        grid-template-areas: 
+        "basic plus"
+        "premium premium";
     }
 }
 
-@media (min-width: 900px) { 
-    .cards .card {
-        margin-left: 30px;
-       }
-    
+
+@media (max-width: 699.99px) { 
+    section .cards {
+        display: grid;
+        grid-template-areas: 
+        "basic"
+        "plus"
+        "premium";
+    }
 }
-
-
 
 
 /*////////   RODAPÉ */
@@ -188,110 +215,7 @@ section .cards .card h2 {
 
 
 
-/*////////   BOTÕES */
 
-.btn-preto {
-    background: #1e1e1e;
-    border: 2px solid #1e1e1e;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
-
-}
-
-.btn-preto:hover {
-    background: #0E0E0E;
-    border: 2px solid #0E0E0E;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.btn-preto:active {
-    background: #008CFF;
-    border: 2px solid #006692;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #470094;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-
-.btn-roxo {
-    background: #7B00FF;
-    border: 2px solid #7B00FF;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
-    font-weight: bold;    
-}
-
-.btn-roxo:hover {
-    background: #470094;
-    border: 2px solid #470094;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
-    font-weight: bold;    
-}
-
-.btn-roxo:active {
-    background: #008CFF;
-    border: 2px solid #008CFF;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #00335C;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.btn-azul1 {
-    background: #0060AF;
-    border: 2px solid #006692;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.btn-azul1:hover {
-    background: #00335C;
-    border: 2px solid #006692;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-
-.btn-azul2 {
-    background: linear-gradient(to right, #0060AF, #006692);
-    border: 2px solid #006692;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 25px;
-}
-
-.btn-azul2:hover {
-    background: #006692;
-    border: 2px solid #008CFF;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
-    font-weight: bold;
-}
 
 /*////////   MEDIA QUERIES P/ COPIAR */
 

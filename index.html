@@ -14,7 +14,7 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -50,11 +50,11 @@
         <nav id="nav_topo" class="navbar navbar-expand-md fixed-top">
 
           <!--LOGO-->
-           <a class="navbar-brand mr-auto pl-5" href="index.html"> <img src="img/logo.svg" width="100"></a>
+          <a class="navbar-brand" href="index.html"> <img src="img/logo.svg" width="100"></a>
          
                
           <!--BOTÃO-->
-          <button class="bnt btn-preto ml-auto mr-3" type="button">
+          <button class="btn-preto" type="button">
             Entrar
           </button>
         
@@ -66,200 +66,160 @@
     <!--MAIN-->
     <main>
 
-        <!--SEÇÃO HOME-->
+      <!--SEÇÃO HOME-->
 
-        <section id="home" class="d-flex">
+      <section id="home" class="d-flex">
 
-          <div class="container align-self-center">
-    
-            <div class="row">
-    
-                <!--CARTÃO-->
-                <div class="card card_home ml-auto">
-                    
-                  <div class="card-body">
-                   
-                    <h2>Tudo o que você quer ver em um único lugar</h2>
-                           
-                    <button class="btn btn-roxo mt-2" type="button">Obter Plano Agora</button>
-                   
-                  </div>
+        <div class="container align-self-center">
 
-                </div>
+          <!--CARTÃO-->
+          <div class="card card_home">
+                  
+            <div class="card-body">
+              
+              <h2>Tudo o que você quer ver em um único lugar</h2>
+                      
+              <button class="btn-roxo" type="button">Obter Plano Agora</button>
+              
             </div>
 
-        </section>
+          </div>
+
+      </section>
 
 
-        <!--SEÇÃO PLANOS-->
-        <section id="planos">
+      <!--SEÇÃO PLANOS-->
+      <section id="planos">
 
-          <h1 class="titulo display-4 my-5">Escolha um plano que combina melhor com você!</h1>
+        <h2 class="display-4">Escolha um plano que melhor combina com você!</h2>
 
 
-          <section class="cards">
+        <section class="cards">
 
-            <section id="basic" class="card ">
+          <section id="basic" class="card">
 
+            <div class="titulo">
               <h2>Plano Basic</h2>
+            </div>
 
-              <div class="icon">
-                <img src="img/2telas.png" alt="Ícone de 2 telas">
-              </div>
+            <div class="icon">
+              <img src="img/2telas.png" alt="Ícone de 2 telas">
 
               <h4>Até 2 telas ao mesmo tempo</h4>
+            </div>
 
-              <div class="valor">
-                <h5>R$</h5>
-                <h3>20</h3>
-                <h5>,90</h5>
-              </div>
+            <div class="valor">
+              <h5>R$</h5>
+              <h3>20</h3>
+              <h5>,90</h5>
+            </div>
 
-              <button class="btn btn-azul2 btn-lg">Aderir plano</button>
-
-            </section>
-
-            <section id="plus" class="card">
-
-              <h2>Plano Plus</h2>
-
-              <div class="icon">
-                <img src="img/3telas.png" alt="Ícone de 3 telas">
-              </div>
-
-              <h4>Até 3 telas ao mesmo tempo</h4>
-
-              <div class="valor">
-                <h5>R$</h5>
-                <h3>30</h3>
-                <h5>,90</h5>
-              </div>
-
-              <button class="btn btn-azul2 btn-lg">Aderir plano</button>
-
-            </section>
-
-            <section id="premium" class="card">
-
-              <h2>Plano Premium</h2>
-
-              <div class="icon">
-                <img src="img/4telas.png" alt="Ícone de 4 telas">
-              </div>
-
-              <h4>Até 4 telas ao mesmo tempo</h4>
-
-              <div class="valor">
-                <h5>R$</h5>
-                <h3>40</h3>
-                <h5>,90</h5>
-              </div>
-
-              <button class="btn btn-azul2 btn-lg">Aderir plano</button>
-
-            </section>
+            <div class="botao">
+              <button class="btn btn-roxo btn-lg">Aderir plano</button>
+            </div>
 
           </section>
 
-          <!--
-          <div class="row">
-              
-            <div id="plano1" class="col-lg-4 d-flex flex-column">
+          <section id="plus" class="card">
 
-              <div class="topo_plano">
-                <h2 class="mt-4">Plano Basic</h2>
-              </div>
-
-              <div class="telas_plano">
-                <img src="/img/2telas.png">
-
-                <h2 class="lead">
-                  Até 2 telas ao mesmo tempo
-                </h2>
-              </div>
-              
-              <div class="valor_plano">
-                
-                <h5>A partir de</h5>
-                <div class="d-flex align-items-center justify-content-center">
-                  <h4>R$</h4>
-                  <h2 class="display-1">20</h2>
-                  <h4>,90</h4>
-                </div>
-
-              </div>
-              
-              <div class="botao_plano">
-                <button class="btn btn-azul2 btn-lg" type="button">Aderir plano</button>
-              </div>
-
+            <div class="titulo">
+              <h2>Plano Plus</h2>
             </div>
 
-            <div id="plano2" class="col-lg-4 d-flex">
-              <button class="btn btn-azul2 mt-auto mb-5 mx-auto btn-lg" type="button">Aderir plano</button>
+            <div class="icon">
+              <img src="img/3telas.png" alt="Ícone de 3 telas">
+
+              <h4>Até 3 telas ao mesmo tempo</h4>
             </div>
 
-              
-            <div id="plano3" class="col-lg-4 d-flex">
-              <button class="btn btn-roxo mt-auto mb-5 mx-auto btn-lg" type="button">Aderir plano</button>
+            <div class="valor">
+              <h5>R$</h5>
+              <h3>30</h3>
+              <h5>,90</h5>
             </div>
 
-            <span class="both"></span>
+            <div class="botao">
+              <button class="btn btn-azul2 btn-lg">Aderir plano</button>
+            </div>
 
-          </div>
-          -->
-          
+          </section>
+
+          <section id="premium" class="card">
+
+            <div class="titulo">
+              <h2>Plano Premium</h2>
+            </div>
+
+            <div class="icon">
+              <img src="img/4telas.png" alt="Ícone de 4 telas">
+
+              <h4>Até 4 telas ao mesmo tempo</h4>
+            </div>
+
+            <div class="valor">
+              <h5>R$</h5>
+              <h3>40</h3>
+              <h5>,90</h5>
+            </div>
+
+            <div class="botao">
+              <button class="btn btn-roxo2 btn-lg">Aderir plano</button>
+            </div>
+
+          </section>
+
         </section>
+
+        
+      </section>
 
     </main>
 
 
     <!--INÍCIO DO RODAPÉ-->
 
-    <footer id="rodape" class="d-flex align-items-center">
+    <footer id="rodape">
 
-      <div class="container">
+      <!--LOGO-->
+      <div class="logo">
+        <a class="navbar-brand" href="index.html"> <img class="img-" src="img/logo.svg" width="200"></a>
+      </div>
+      
+      <div class="links">
+        
+        <ul class="navbar-nav">
+            <li>
+              <a href="" type="text">Perguntas Frequêntes</a>
+            </li>
+            <li>
+              <a href="">Privacidade</a>
+            </li>
+            <li>
+              <a href="">Termos de Uso</a>
+            </li>
+            <li>
+              <a href="">Central de Ajuda</a>
+            </li>
+        </ul>
 
-        <div class="row justify-content-between">
+      </div>
 
-          <!--LOGO-->
-          <div class="col-lg-4 mb-3">
-            <a class="navbar-brand mx-auto" href="index.html"> <img class="img-" src="img/logo.svg" width="200"></a>
-          </div>
-          
-          <div class="col-lg-4">
-            
-            <ul class="navbar-nav">
-                <li><a href="">Perguntas Frequêntes</a></li>
-                <li><a href="">Privacidade</a></li>
-                <li><a href="">Termos de Uso</a></li>
-                <li><a href="">Central de Ajuda</a></li>
-            </ul>
-
-          </div>
-
-          <div class="col-lg-4">
-            
-            <div>
-              <a class="btn btn-lg" href="">
-                <i class="fab fa-solid fa-instagram fa-inverse fa-2x"></i>
-              </a>
-              <a class="btn btn-lg" href="">
-                <i class="fab fa-solid fa-facebook fa-inverse fa-2x"></i>
-              </a>
-              <a class="btn btn-lg" href="">
-                <i class="fa-regular fa-envelope fa-inverse fa-2x"></i>
-              </a>  
-            </div>
-
-            <div>
-              <h5 class="lead">SAC 00 000 000 000</h5>
-            </div>
-
-          </div>
-
+      <div class="contato">
+        
+        <div class="icones">
+          <a href="">
+            <img src="img/insta.svg">
+          </a>
+          <a href="">
+            <img src="img/face.svg">
+          </a>
+          <a href="">
+            <img src="img/email.svg">
+          </a>  
         </div>
 
+        <div class="sac">
+          <h5 class="lead">SAC 00 000 000 000</h5>
         </div>
 
       </div>
@@ -275,9 +235,7 @@
 
 
     <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
