@@ -1,15 +1,51 @@
 *{
     font-family: "Roboto", sans-serif;    
-    font-weight: 1000;
-    font-style: normal;      
+    font-weight: 400;
+    font-style: normal;         
     margin: 0;
     padding: 0;    
 }
 
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.img{
+  color: black;
+  width: 100px;
+  height: 100px;
+}
+
+/* Body */
+
+#cabecalho{
+  margin: 20px 20px 10px 10px;
+  max-width: 1200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/fundo_da_tela.svg);
+  background-size: cover; 
+  background-position: center; 
+  opacity: 0.6; 
+  z-index: -1; 
+}
+
+
 /* header */
-.sair div a{
+.sair {
     display: flex;
-    justify-content: flex-start;   
+    justify-content: flex-start; 
 }
 
 .nome {
@@ -17,22 +53,23 @@
     display: flex;
     justify-content: center;
     font-weight: 500;
-    padding: 8px;    
-    
+    padding: 8px;       
 }
 
-.compartilhar a p{
+.compartilhar{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: flex-start; 
-}
+}S
 
 /* main */
-.principal{
+#principal{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    text-align: center;
+    margin: 200px 0px 20px 0px;
+    padding: 10px 10px 10px 10px;
 }
 
 .brilho-container {
@@ -41,28 +78,50 @@
     right: 10px; 
   }
   
-  .brilho {
+.brilho {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .brightness-control {
+.brightness-control {
     writing-mode: vertical-lr; 
     transform: rotate(180deg);
-    height: 300px; 
+    height: 500px; 
     outline: none;
+  }
+
+@media (max-width: 992px) {
+    .brilho-container {
+      display: none;
+    }
   }
 
   /* footer */
 #controles-footer{
-    padding-top: 250px;
+    padding-top: auto;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .curtir{
     display: flex;
     justify-content:flex-end;
+    align-items: last baseline;
 }
+
+.velocidade{
+  width: 200%;
+  justify-content:center;
+  align-items: center;
+  margin: 0px 0px 100px 0px;
+}
+
 
 
   
