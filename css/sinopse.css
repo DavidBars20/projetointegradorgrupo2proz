@@ -44,7 +44,7 @@ main {
 .movie-details {
     display: grid;
     grid-template-areas: 
-    "diracao ano duracao idade selo";
+    "diracao duracao ano idade selo";
     grid-gap: 1em;
     margin-bottom: 1em;
 }
@@ -60,7 +60,26 @@ main {
 }
 
 .selo img {
-    width: 35%;
+    width: 60px;
+}
+
+@media (max-width: 930px) { 
+    .movie-details {
+        display: grid;
+        grid-template-areas: 
+        "diracao duracao ano"
+        "selo idade idade";
+    }
+
+    .movie-details .idade {
+        grid-area: "idade";
+        grid-column: "idade";
+    }
+
+    .movie-details .selo {
+        grid-area: "selo";
+        grid-column: "selo";
+    }
 }
 
 
@@ -124,6 +143,16 @@ main {
 
 .review-stars {
     font-size: 320%;
+}
+
+@media (max-width: 999px) { 
+    .review-invitation {
+        font-family: gotham black;
+        display: grid;
+        grid-template-areas: 
+        "text"
+        "review-stars";
+    }
 }
 
 
