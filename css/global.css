@@ -79,13 +79,35 @@ a:hover {
 
 .btn-roxo:hover {
     background: #470094;
-    border: 2px solid #470094;
+    border: 2px solid #7B00FF;
     border-radius: 5px;
     padding: 8px 25px;
     color: #FEF9FF;
     text-transform: uppercase;
     font-weight: bold;    
 }
+
+.btn-roxo2 {
+    background: #470094;
+    border: 2px solid #7B00FF;
+    border-radius: 5px;
+    padding: 8px 25px;
+    color: #FEF9FF;
+    text-transform: uppercase;
+    font-weight: bold;    
+}
+
+.btn-roxo2:hover {
+    background: #008CFF;
+    border: 2px solid #470094;
+    border-radius: 5px;
+    padding: 8px 25px;
+    color: #470094;
+    text-transform: uppercase;
+    font-weight: bold;    
+}
+
+
 
 .btn-roxo:active {
     background: #008CFF;
