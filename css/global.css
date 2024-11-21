@@ -155,11 +155,13 @@ a:hover {
     grid-area: "logo";
 }
 
-#rodape .links {
+
+#rodape .links ul .navbar-nav {
     grid-area: "links";
+    color: #FEF9FF;
 }
 
-#rodape .links:hover {
+#rodape .links ul .navbar-nav:hover {
     color: #7B00FF;
 }
 
@@ -177,7 +179,7 @@ a:hover {
 
 #rodape .contato .sac{
     grid-area: "sac";
-    margin-left: 1.5em;
+    margin-left: 1em;
 }
 
 @media (max-width: 740px) { 

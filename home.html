@@ -4,7 +4,7 @@
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+
    <!-- Tipografia -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -25,7 +25,9 @@
     <![endif]-->
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+
 
     <!--Favicon-->
     <link rel="icon" href="img/favicon.ico">
@@ -40,77 +42,94 @@
 
   <body>
 
+    <!--INÍCIO DO HEADER-->
+
     <header>
 
-        <!--NAVEGAÇÃO TOPO-->
-        <nav id="nav_topo" class="navbar navbar-expand-md fixed-top">
+      <!--NAVEGAÇÃO TOPO-->
+      <nav id="nav_topo" class="navbar navbar-expand-md fixed-top">
 
-          <!--LOGO-->
-           <a class="navbar-brand mr-auto pl-5" href="index.html"> <img src="img/logo.svg" width="100"></a>
-         
-               
-          <!--BOTÃO-->
-          <button class="bnt btn-preto ml-auto mr-3" type="button">
-            Entrar
-          </button>
+        <!--LOGO-->
+        <a class="navbar-brand" href="index.html"> <img src="img/logo.svg" width="100"></a>
         
-        </nav> 
+              
+        <!--BOTÃO-->
+        <button class="btn-preto" type="button">
+          Entrar
+        </button>
+      
+      </nav> 
+        
+    </header>
 
-        
-      <!--CATEGORIAS--> 
-      <div id="categorias" class="collapse navbar-collapse">
 
-        <ul class="navbar-nav justify-content-around">
+    <!--MAIN-->
+    <main>
+
+      <!--SEÇÃO HOME-->
+
+      <section id="home" class="d-flex">
+
+      </section>
+
+
+    </main>
+
+
+    <!--INÍCIO DO RODAPÉ-->
+
+    <footer id="rodape">
+
+      
+      <div class="logo">
+        <a class="navbar-brand" href="index.html"> <img class="img-" src="img/logo.svg" width="200"></a>
+      </div>
+      
+      <div class="links">
         
-          <li class="nav-item">
-            <a class="nav-link" href="">Ação</a>
-          </li>
-        
-          <li class="nav-item">
-            <a class="nav-link" href="">Aventura</a>
-          </li>
-        
-          <li class="nav-item">
-            <a class="nav-link" href="">Comédia</a>
-          </li>
-        
-          <li class="nav-item">
-            <a class="nav-link" href="">Documentário</a>
-          </li>
-        
-          <li class="nav-item">
-            <a class="nav-link" href="">Drama</a>
-          </li>
-        
-          <li class="nav-item">
-            <a class="nav-link" href="">Família</a>
-          </li>
-        
-          <li class="nav-item">
-            <a class="nav-link" href="">Fantasia</a>
-          </li>
-        
-          <li class="nav-item">
-            <a class="nav-link" href="">Romance</a>
-          </li>
-        
-          <li class="nav-item">
-            <a class="nav-link" href="">Mais</a>
-          </li>
-        
+        <ul class="navbar-nav">
+            <li><a href="">Perguntas Frequêntes</a></li>
+            <li><a href="">Privacidade</a></li>
+            <li><a href="">Termos de Uso</a></li>
+            <li><a href="">Central de Ajuda</a></li>
         </ul>
 
       </div>
 
-      <!--BOTÃO COLLAPSE-->
-      <button class="mr-2 navbar-toggler" data-toggle="collapse" data-target="#categorias">
-        <i class="fas fa-bars fa-inverse"></i>
-      </button>   
+      <div class="contato">
+        
+        <div class="icones">
+          <a class="btn btn-lg" href="">
+            <i class="fab fa-solid fa-instagram fa-inverse fa-2x"></i>
+          </a>
+          <a class="btn btn-lg" href="">
+            <i class="fab fa-solid fa-facebook fa-inverse fa-2x"></i>
+          </a>
+          <a class="btn btn-lg" href="">
+            <i class="fa-regular fa-envelope fa-inverse fa-2x"></i>
+          </a>  
+        </div>
+
+        <div class="sac">
+          <h5 class="lead">SAC 00 000 000 000</h5>
+        </div>
+
+      </div>
 
 
-        
-        
-    </header>
-      
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
