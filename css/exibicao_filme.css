@@ -114,13 +114,7 @@ body::before {
   flex-wrap: wrap;
 }
 
-.nao-curtir{
-  display: flex;
-  justify-content: flex-end;
-  align-items: last baseline;
-}
-
-.curtir {
+.curtirOuNao{
   display: flex;
   justify-content: flex-end;
   align-items: last baseline;
