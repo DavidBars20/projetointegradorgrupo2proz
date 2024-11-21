@@ -198,6 +198,7 @@ a:hover {
     grid-template-areas: 
     "icones"
     "sac";
+    justify-content: center;
 }
 
 #rodape .contato .icones{
