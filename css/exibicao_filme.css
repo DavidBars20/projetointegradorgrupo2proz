@@ -13,6 +13,7 @@
   height: 50px;
   width: 100px;
   padding: 0px;
+  margin: 0 15px;
 }
 
 .img {
@@ -21,29 +22,16 @@
   width: 200px;
 }
 
-/* Body */
+/* header */
 #cabecalho {
   margin: 20px 20px 10px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 10px0;
+  color: black;
 }
 
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/fundo_da_tela.svg);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
-  z-index: -1;
-}
-
-/* header */
 .sair {
   display: flex;
   justify-content: flex-start;
@@ -52,8 +40,7 @@ body::before {
 .nome {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: 60px;
-  border: 10px;
+  font-size: 100px;
   display: flex;
   justify-content: center;
   font-weight: 500;
@@ -67,26 +54,46 @@ body::before {
 }
 
 /* main */
-.principal {
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/fundo_da_tela.svg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+#principal {
+  margin: 400px 10px 10px 10px;
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
-.para-tras {
-  height: 100px;
-  width: 100px;
+.controles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.brilho-container {
+
+.brilho {
   position: fixed;
   top: 350px;
   bottom: 500px;
   right: 20px;
-  height: 100px;
-}
-
-.brilho {
+  height: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -96,9 +103,8 @@ body::before {
   transform: rotate(180deg);
   height: 300px;
   outline: none;
-}
-
-.brightness-control {
+  display: flex;
+  flex-direction: column;
   margin: 50px 30px;
 }
 
@@ -114,11 +120,12 @@ body::before {
   flex-wrap: wrap;
 }
 
-.curtirOuNao{
+.curtirOuNao {
   display: flex;
   justify-content: flex-end;
   align-items: last baseline;
 }
+
 
 .velocidade {
   width: 200%;
@@ -127,3 +134,8 @@ body::before {
   margin: 0px 0px 100px 0px;
 }
 
+@media(max-width: 1240px) {
+  .container {
+    padding-left: 200px;
+  }
+}

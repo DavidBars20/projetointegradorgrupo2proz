@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,13 +38,9 @@
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="estilo.css" />
     <link rel="stylesheet" type="text/css" href="./css/exibicao_filme.css" />
-    <meta name="=viewport" content="=width-device-width, initial-scale=1" />
 
     <!--Favicon-->
     <link rel="icon" href="img/favicon.ico" />
-
-    <!--Normilize-->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 
     <title>Streamflix</title>
   </head>
@@ -56,7 +48,6 @@
   <!-- body -->
 
   <body class="d-flex flex-column vh-100">
-
     <!-- Header -->
     <header id="cabecalho" class="d-flex align-items-center">
       <div class="container-fluid">
@@ -81,7 +72,7 @@
           <div class="col-lg-0 mb-3 ml-auto text-center">
             <div class="Compartilhar">
               <a href="exibicao_filme.html" class="d-block">
-                <button class="btn btn-light ml-auto mb-5 mx-auto btn-light">
+                <button class="btn btn-light mt-auto mb-5 mx-auto btn-light">
                   <img
                     src="./img/Compartilhar.svg"
                     alt="Compartilhar"
@@ -96,82 +87,60 @@
     </header>
 
     <!-- Main -->
-    <div class="row" style="height: 100px"></div>
-    <div class="row" style="height: 100px"></div>
-    <div class="row" style="height: 100px"></div>
+    <main id="principal" class="flex-grow-1 container my-5">
+      
+      <!-- Contêiner dos botões -->
+      <div class="controles">
+        <div class="col-lg-6 mt-5 mb-3">
+          <div
+            class="controles d-flex justify-content-between align-items-center">
 
-    <main id="principal" class="flex-grow-1">
-      <div class="container-fluid">
-        <div class="row" style="height: 100px"></div>
-        <div class="row justify-content-center">
-
-          <!-- Contêiner dos botões -->
-          <div class="col-lg-2 mt-5 mb-3">
-            <div class="controles">
-              <div class="controles d-flex justify-content-center align-items-center">
-
-                <!-- Botão "Para trás" -->
-                <div class="col-lg-2 mt-5 mb-3">                
-                  <button class="btn btn-light mt-auto mb-3 mx-auto btn-light">
-                    <img
-                    src="./img/para_tras.svg"
-                    width="50"
-                    alt="Para Trás"
-                    title="para trás"
-                    />
-                  </button>                
-                </div>
-
-                <!-- Botão "pause" -->
-                <button class="btn btn-light mx-2">
-                  <img
-                    src="./img/pause.svg"
-                    width="50"
-                    alt="Pause"
-                    title="pause"
-                  />
-                </button>
-
-               <!-- Botão "play" -->
-                <button class="btn btn-light mx-2">
-                  <img src="./img/play.svg" width="50" alt="Play" title="play" />
-                </button>                    
-
-                <!-- Botão "avançar" -->
-                <div class="col-lg-2 mt-5 mb-3">
-               
-                  <button class="btn btn-light mt-auto mb-3 mx-auto btn-light">
-                   <img
-                    src="./img/avancar.svg"
-                    width="50"
-                    alt="Avançar"
-                    title="avançar"
-                    />
-                  </button>
-              </div>
-            </div>            
-          </div>
-
-          <!-- Ícone e barra de "brilho" -->
-          <div class="col-lg-0 mt-5 mb-3 brilho-container">
-            <div class="brilho">
-              <button class="btn btn-light mt-auto mb-2 mx-auto btn-light">
-                <img
-                  src="./img/briho.svg"
-                  width="50"
-                  alt="Brilho"
-                  title="brilho"
-                />
-              </button>
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                class="brightness-control"
+            <!-- Botão "Para trás" -->
+            <button class="btn btn-light">
+              <img
+                src="./img/para_tras.svg"
+                width="50"
+                alt="Para Trás"
+                title="para trás"
               />
-            </div>
+            </button>
+
+            <!-- Botão "Pause" -->
+            <button class="btn btn-light">
+              <img src="./img/pause.svg" width="50" alt="Pause" title="pause" />
+            </button>
+
+            <!-- Botão "Play" -->
+            <button class="btn btn-light">
+              <img src="./img/play.svg" width="50" alt="Play" title="play" />
+            </button>
+
+            <!-- Botão "Avançar" -->
+            <button class="btn btn-light">
+              <img
+                src="./img/avancar.svg"
+                width="50"
+                alt="Avançar"
+                title="avançar"
+              />
+            </button>
           </div>
+        </div>
+      </div>
+
+      <!-- Ícone e barra de "brilho" -->
+      <div class="col-lg-0 mt-5 mb-3 brilho-container">
+        <div class="brilho">
+          <button class="btn btn-light mt-auto mb-2 mx-auto btn-light">
+            <img src="./img/briho.svg" width="50" alt="Brilho" title="brilho" />
+          </button>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="brightness-control"
+          />
         </div>
       </div>
     </main>
@@ -183,7 +152,7 @@
         <div class="row justify-content-between">
 
           <!-- Barra de progresso -->
-          <div class="col-12">
+          <div class="col-12 mt-5">
             <div class="progresso">
               <input type="range" min="0" max="100" value="0" class="w-100" />
             </div>
@@ -191,7 +160,6 @@
 
           <div class="col-lg-2 mt-5 mb-3">
             <div class="curtirOuNao">
-              
               <!-- Botão "não curtir" -->
               <button class="btn btn-light">
                 <img
@@ -214,45 +182,45 @@
             </div>
           </div>
 
-          <!-- Botão "velocidade" -->
-          <div class="col-lg-2 mt-5 mb-3">
-            <div class="velocidade">
-              <button class="btn btn mb-5 mx-auto btn">
-                <img
-                  src="./img/velocidade_filme.svg"
-                  width="50"
-                  alt="Velocidade"
-                  title="Velocidade"
-                />
-              </button>
-            </div>
-          </div>
+          <!-- Botões footer -->
+          <div class="col-lg-10 mt-5 mb-3">
 
-          <!-- Botão "volume" -->
-          <div class="col-lg-2 mt-5 mb-3">
-            <div class="volume">
-              <button class="btn btn-light mb-5 mx-auto btn-light">
-                <img
-                  src="./img/volume.svg"
-                  width="70"
-                  alt="Volume"
-                  title="Volume"
-                />
-              </button>
-            </div>
-          </div>
+            <!-- Botão "velocidade" -->
+            <div class="botoesFooter">
+              <div class="col-lg-12 mt-5 mb-3">
+                <div class="controles d-flex justify-center align-items-center">
 
-          <!-- Botão "legenda e idioma" -->
-          <div class="col-lg-2 mt-5 mb-3">
-            <div class="legenda_e_idioma">
-              <button class="btn btn-light mb-5 mx-auto btn-light">
-                <img
-                  src="./img/legenda_e_idioma.svg"
-                  width="50"
-                  alt="Legenda e Idioma"
-                  title="Legenda e Idiomas"
-                />
-              </button>
+                  <button class="btn btn mb-5 mx-auto btn">
+                    <img
+                      src="./img/velocidade_filme.svg"
+                      width="50"
+                      alt="Velocidade"
+                      title="Velocidade"
+                    />
+                  </button>
+
+                  <!-- Botão "volume" -->
+                  <button class="btn btn-light mb-5 mx-auto btn">
+                    <img
+                      src="./img/volume.svg"
+                      width="70"
+                      alt="Volume"
+                      title="Volume"
+                    />
+                  </button>
+
+                  <!-- Botão "legenda e idioma" -->
+                  <button class="btn btn-light mb-5 mx-auto btn">
+                    <img
+                      src="./img/legenda_e_idioma.svg"
+                      width="50"
+                      alt="Legenda e Idioma"
+                      title="Legenda e Idiomas"
+                    />
+                  </button>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
