@@ -22,6 +22,14 @@
   width: 200px;
 }
 
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;   
+  margin-right: 15px; 
+  margin-left: 15px;
+  position: 15px;
+}
+
 /* header */
 .topo {
   width: 100%;
@@ -68,10 +76,10 @@ main::before {
 
 .brilho {
   position: fixed;
-  top: 350px;
+  top: 200px;
   bottom: 500px;
-  right: 20px;
-  height: 500px;
+  right: 10px;
+  height: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -82,14 +90,12 @@ main::before {
   height: 500px;
   outline: none;
   display: flex;
-  flex-direction: column;
-  margin: 50px 30px;
+  flex-direction: column;  
 }
 
 /* footer */
 #config {
-  padding-top: auto;
-  padding-bottom: 150px;
+  padding-top: auto;  
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -100,24 +106,17 @@ main::before {
 }
 
 .progresso{
-  height: 80px;
-  margin: 0px 20px 0px 50px;
+  height: 80px;  
   padding-right: 0px 20px 20px 20px;
   position: fixed;
   width: 92.5%;
 }
 
-.curtirOuNao {
-  margin-left: 20px;
-  position: fixed;
-}
+.footer {
+ width: 100%;
+ 
 
-.config {
-  margin: 0px;
-  padding: 0px;
-  
 }
-
 
 /* ---->>>>> RESPONSIVIDADE <--------- */
 
@@ -131,7 +130,7 @@ main::before {
     justify-items: end;
   }
 
-  #controles-footer{
+  #config{
     justify-items: right;
     
   }

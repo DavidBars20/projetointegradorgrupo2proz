@@ -78,6 +78,7 @@
                 <button class="btn btn-light mt-auto mb-5 mx-auto btn-light">
                   <img
                     src="./img/Compartilhar.svg"
+                    width="50"
                     alt="Compartilhar"
                     title="Compartilhar"
                   />
@@ -109,12 +110,12 @@
 
             <!-- Botão "Pause" -->
             <button class="btn btn-light">
-              <img src="./img/pause.svg" width="50" alt="Pause" title="pause" />
+              <img src="./img/pause.svg" width="35" alt="Pause" title="pause" />
             </button>
 
             <!-- Botão "Play" -->
             <button class="btn btn-light">
-              <img src="./img/play.svg" width="50" alt="Play" title="play" />
+              <img src="./img/play.svg" width="35" alt="Play" title="play" />
             </button>
 
             <!-- Botão "Avançar" -->
@@ -149,19 +150,23 @@
 
     <!-- Footer -->
 
-    <footer id="config" class="d-flex align-items-center">
+    <footer id="config" class="d-flex align-items-between">
       <div class="container-fluid">
-        <div class="row justify-content-between">
+        <div class="row justify-content-center">
+
           <!-- Barra de progresso -->
-          <div class="col-12 mt-5">
+          <div class="col-12 mt-5 mb-3">
             <div class="progresso">
               <input type="range" min="0" max="100" value="0" class="w-100" />
             </div>
           </div>
-          <div class="col-lg-2 mt-5 mb-3">
-            <div class="curtirOuNao">
+
+          <div class="col-lg-6 mt-5 mb-3">
+            <div class="footer">
+              
+
               <!-- Botão "não curtir" -->
-              <button class="btn btn-light">
+              <button class="btn btn-light mb-5">
                 <img
                   src="./img/nao_curtir.svg"
                   width="50"
@@ -169,6 +174,7 @@
                   title="Não Curtir"
                 />
               </button>
+
               <!-- Botão "curtir" -->
               <button class="btn btn-light mb-5">
                 <img
@@ -178,42 +184,37 @@
                   title="Curtir"
                 />
               </button>
-            </div>
-          </div>
-          <div class="col-lg-10 mt-5 mb-3">
-            <!-- Botão "velocidade" -->
-            <div class="col-lg-12 mt-3 mb-3">
-              <div class="botoesFooter">
-                <div class="config d-flex justify-center align-items-center">
-                  <button class="btn btn mb-5 mx-auto btn">
-                    <img
-                      src="./img/velocidade_filme.svg"
-                      width="50"
-                      alt="Velocidade"
-                      title="Velocidade"
-                    />
-                  </button>
-                  <!-- Botão "volume" -->
-                  <button class="btn btn-light mb-5 mx-auto btn">
-                    <img
-                      src="./img/volume.svg"
-                      width="70"
-                      alt="Volume"
-                      title="Volume"
-                    />
-                  </button>
-                  <!-- Botão "legenda e idioma" -->
-                  <button class="btn btn-light mb-5 mx-auto btn">
-                    <img
-                      src="./img/legenda_e_idioma.svg"
-                      width="50"
-                      alt="Legenda e Idioma"
-                      title="Legenda e Idiomas"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
+
+              <!-- Botão "velocidade" -->            
+              <button class="btn btn mb-5 mx-auto btn">
+                <img
+                  src="./img/velocidade_filme.svg"
+                  width="60"
+                  alt="Velocidade"
+                  title="Velocidade"
+                />
+              </button>
+
+              <!-- Botão "volume" -->
+              <button class="btn btn-light mb-5 mx-auto btn">
+                <img
+                  src="./img/volume.svg"
+                  width="60"
+                  alt="Volume"
+                  title="Volume"
+                />
+              </button>
+
+              <!-- Botão "legenda e idioma" -->
+              <button class="btn btn-light mb-5 mx-auto btn">
+                <img
+                  src="./img/legenda_e_idioma.svg"
+                  width="50"
+                  alt="Legenda e Idioma"
+                  title="Legenda e Idiomas"
+                />
+              </button>   
+            </div>         
           </div>
         </div>
       </div>
