@@ -49,28 +49,31 @@
 
   <body class="d-flex flex-column vh-100">
     <!-- Header -->
+
     <header id="cabecalho" class="d-flex align-items-center">
       <div class="container-fluid">
-        <div class="row justify-content-between">
+        <div class="row justify-content-center">
+          <div class="topo">
+            <!-- Botão "Sair" -->
+            <div class="col-lg-2 mb-3">
+              <a href="sinopse.html">
+                <button class="btn btn-light mt-auto mb-5 mx-auto btn-light">
+                  <img
+                    src="./img/sair.svg"
+                    width="50"
+                    alt="Sair"
+                    title="sair"
+                  />
+                </button>
+              </a>
+            </div>
 
-          <!-- Botão "Sair" -->
-          <div class="col-lg-2 mb-3">
-            <a href="sinopse.html">
-              <button class="btn btn-light mt-auto mb-5 mx-auto btn-light">
-                <img src="./img/sair.svg" width="50" alt="Sair" title="sair" />
-              </button>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            <div class="nome">
+            <div class="col-12 col-md-10 col-lg-8 text-center">
               <h5>Nome do filme</h5>
             </div>
-          </div>
 
-          <!-- Botão "Compartilhar" -->
-          <div class="col-lg-0 mb-3 ml-auto text-center">
-            <div class="Compartilhar">
+            <!-- Botão "Compartilhar" -->
+            <div class="col-lg-0 mb-3 ml-auto text-center">
               <a href="exibicao_filme.html" class="d-block">
                 <button class="btn btn-light mt-auto mb-5 mx-auto btn-light">
                   <img
@@ -88,13 +91,12 @@
 
     <!-- Main -->
     <main id="principal" class="flex-grow-1 container my-5">
-      
       <!-- Contêiner dos botões -->
       <div class="controles">
         <div class="col-lg-6 mt-5 mb-3">
           <div
-            class="controles d-flex justify-content-between align-items-center">
-
+            class="controles d-flex justify-content-between align-items-center"
+          >
             <!-- Botão "Para trás" -->
             <button class="btn btn-light">
               <img
@@ -147,17 +149,15 @@
 
     <!-- Footer -->
 
-    <footer id="controles-footer" class="d-flex align-items-center">
+    <footer id="config" class="d-flex align-items-center">
       <div class="container-fluid">
         <div class="row justify-content-between">
-
           <!-- Barra de progresso -->
           <div class="col-12 mt-5">
             <div class="progresso">
               <input type="range" min="0" max="100" value="0" class="w-100" />
             </div>
           </div>
-
           <div class="col-lg-2 mt-5 mb-3">
             <div class="curtirOuNao">
               <!-- Botão "não curtir" -->
@@ -169,7 +169,6 @@
                   title="Não Curtir"
                 />
               </button>
-
               <!-- Botão "curtir" -->
               <button class="btn btn-light mb-5">
                 <img
@@ -181,15 +180,11 @@
               </button>
             </div>
           </div>
-
-          <!-- Botões footer -->
           <div class="col-lg-10 mt-5 mb-3">
-
             <!-- Botão "velocidade" -->
-            <div class="botoesFooter">
-              <div class="col-lg-12 mt-5 mb-3">
-                <div class="controles d-flex justify-center align-items-center">
-
+            <div class="col-lg-12 mt-3 mb-3">
+              <div class="botoesFooter">
+                <div class="config d-flex justify-center align-items-center">
                   <button class="btn btn mb-5 mx-auto btn">
                     <img
                       src="./img/velocidade_filme.svg"
@@ -198,7 +193,6 @@
                       title="Velocidade"
                     />
                   </button>
-
                   <!-- Botão "volume" -->
                   <button class="btn btn-light mb-5 mx-auto btn">
                     <img
@@ -208,7 +202,6 @@
                       title="Volume"
                     />
                   </button>
-
                   <!-- Botão "legenda e idioma" -->
                   <button class="btn btn-light mb-5 mx-auto btn">
                     <img
@@ -218,7 +211,6 @@
                       title="Legenda e Idiomas"
                     />
                   </button>
-
                 </div>
               </div>
             </div>

@@ -23,40 +23,19 @@
 }
 
 /* header */
-#cabecalho {
-  margin: 20px 20px 10px 10px;
+.topo {
+  width: 100%;
+  margin: 20px 20px 10px 20px;
+  position: fixed;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 10px0;
-  color: black;
+  justify-content: center;  
 }
 
-.sair {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.nome {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  font-size: 100px;
-  display: flex;
-  justify-content: center;
-  font-weight: 500;
-  padding: 8px;
-}
-
-.compartilhar {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
 
 /* main */
 main::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -87,7 +66,6 @@ main::before {
   transform: translate(-50%, -50%);
 }
 
-
 .brilho {
   position: fixed;
   top: 350px;
@@ -101,7 +79,7 @@ main::before {
 .brightness-control {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  height: 300px;
+  height: 500px;
   outline: none;
   display: flex;
   flex-direction: column;
@@ -109,33 +87,52 @@ main::before {
 }
 
 /* footer */
-#controles-footer {
+#config {
   padding-top: auto;
-  padding-bottom: 20px;
-  position: fixed;
+  padding-bottom: 150px;
+  position: absolute;
   bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-right: 100px;
+}
+
+.progresso{
+  height: 80px;
+  margin: 0px 20px 0px 50px;
+  padding-right: 0px 20px 20px 20px;
+  position: fixed;
+  width: 92.5%;
 }
 
 .curtirOuNao {
-  display: flex;
-  justify-content: flex-end;
-  align-items: last baseline;
+  margin-left: 20px;
+  position: fixed;
+}
+
+.config {
+  margin: 0px;
+  padding: 0px;
+  
 }
 
 
-.velocidade {
-  width: 200%;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 0px 100px 0px;
-}
+/* ---->>>>> RESPONSIVIDADE <--------- */
 
-@media(max-width: 1240px) {
+@media(max-width: 994px) {
   .container {
     padding-left: 200px;
+  }
+
+  .curtirOuNao {
+    padding-left: 100px; 
+    justify-items: end;
+  }
+
+  #controles-footer{
+    justify-items: right;
+    
   }
 }
