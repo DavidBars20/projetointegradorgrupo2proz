@@ -57,8 +57,7 @@ main::before {
   transform: translate(-50%, -50%);
 }
 
-
-.brightness-control {
+.input-brilho {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   height: 100%;
@@ -90,7 +89,7 @@ main::before {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5px 0px 5px 20px;
+  margin: 50px 30px;
 }
 
 .progresso {
@@ -104,5 +103,6 @@ main::before {
     padding: 0%;
   }
 }
+
 
 
