@@ -35,8 +35,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <![endif]-->
 
-    <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <!-- Estilo customizado -->    
     <link rel="stylesheet" type="text/css" href="./css/exibicao_filme.css" />
 
     <!--Favicon-->
@@ -45,179 +44,129 @@
     <title>Streamflix</title>
   </head>
 
-  <!-- body -->
-
   <body class="d-flex flex-column vh-100">
     <!-- Header -->
 
     <header id="cabecalho">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="topo">
-            <!-- Botão "Sair" -->
-            <div class="col-lg-2 mb-3">
-              <a href="sinopse.html">
-                <button class="btn btn-light mt-auto mb-5 mx-auto btn-light">
-                  <img
-                    src="./img/sair.svg"
-                    width="50rem"
-                    alt="Sair"
-                    title="sair"
-                  />
-                </button>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-10 col-lg-8 text-center">
-              <h5>Nome do filme</h5>
-            </div>
-
-            <!-- Botão "Compartilhar" -->
-            <div class="col-lg-0 mb-3 ml-auto text-center">
-              <a href="exibicao_filme.html" class="d-block">
-                <button class="btn btn-light mt-auto mb-5 mx-auto btn-light">
-                  <img
-                    src="./img/Compartilhar.svg"
-                    width="50rem"
-                    alt="Compartilhar"
-                    title="Compartilhar"
-                  />
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <button class="btn-voltar">
+        <a href="sinopse.html">
+          <img src="./img/sair.svg" alt="Sair" title="sair" />
+        </a>
+      </button>
+      <h5>Nome do filme</h5>
+      <button class="btn-compartilhar">
+        <a href="">
+          <img
+            src="./img/Compartilhar.svg"
+            alt="Compartilhar"
+            title="Compartilhar"/>
+        </a>
+      </button>
     </header>
 
     <!-- Main -->
-    <main id="principal" class="flex-grow-1 container my-5">
-      <!-- Contêiner dos botões -->
-      <div class="controles">
-        <div class="col-lg-6 mt-5 mb-3">
-          <div
-            class="controles d-flex justify-content-between align-items-center"
-          >
-            <!-- Botão "Para trás" -->
-            <button class="btn btn-light">
-              <img
-                src="./img/para_tras.svg"
-                width="50rem"
-                alt="Para Trás"
-                title="para trás"
-              />
-            </button>
+    <main id="principal">
 
-            <!-- Botão "Pause" -->
-            <button class="btn btn-light">
-              <img src="./img/pause.svg" width="35" alt="Pause" title="pause" />
-            </button>
-
-            <!-- Botão "Play" -->
-            <button class="btn btn-light">
-              <img src="./img/play.svg" width="35" alt="Play" title="play" />
-            </button>
-
-            <!-- Botão "Avançar" -->
-            <button class="btn btn-light">
-              <img
-                src="./img/avancar.svg"
-                width="50rem"
-                alt="Avançar"
-                title="avançar"
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Ícone e barra de "brilho" -->
-      <div class="col-lg-0 mt-5 mb-3 brilho-container">
-        <div class="brilho">
-          <button class="btn btn-light mt-auto mb-2 mx-auto btn-light">
-            <img src="./img/briho.svg" width="50rem" alt="Brilho" title="brilho" />
-          </button>
+      <div class="centro">
+        <!-- Ícone e barra de "brilho" -->   
+        <div class="brilho">                  
+          <img
+            src="./img/briho.svg"            
+            alt="Brilho"
+            title="brilho"
+          />        
           <input
             type="range"
             min="0"
             max="100"
             value="50"
-            class="brightness-control"
-          />
+            class="input-brilho"
+          />          
         </div>
-      </div>
+
+        <div class="contoles">
+
+          <!-- Botão "Para trás" -->
+          <button class="btn-para-tras">
+            <img src="./img/para_tras.svg" width="50" alt="Para Trás" title="para trás" />
+          </button>
+
+          <!-- Botão "Pause" -->
+          <button class="btn-pause">
+            <img src="./img/pause.svg" width="40" alt="Pause" title="pause" />
+          </button>
+
+          <!-- Botão "Play" -->
+          <button class="btn-play">
+            <img src="./img/play.svg" width="40" alt="Play" title="play" />
+          </button>
+
+          <!-- Botão "Avançar" -->
+          <button class="btn-avancar">
+            <img src="./img/avancar.svg" width="50" alt="Avançar" title="avançar" />
+          </button> 
+        </div>
+      </div>       
     </main>
 
     <!-- Footer -->
 
-    <footer id="config" class="d-flex align-items-center">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
+    <footer id="rodape">      
+        
+      <!-- Barra de progresso -->
+    
+      <div class="progresso">
+        <input type="range" min="0" max="100" value="0" class="w-100" />
+      </div>   
+    
+      <div class="footer">
+        <!-- Botão "não curtir" -->
+        <button class="btn-nao-curtir">
+          <img
+            src="./img/nao_curtir.svg"                  
+            alt="Não Curtir"
+            title="Não Curtir"
+          />
+        </button>
 
-          <!-- Barra de progresso -->
-          <div class="col-12 mt-5 mb-3">
-            <div class="progresso">
-              <input type="range" min="0" max="100" value="0" class="w-100" />
-            </div>
-          </div>
+        <!-- Botão "curtir" -->
+        <button class="btn-curtir">
+          <img
+            src="./img/Curtir.svg"                  
+            alt="Curtir"
+            title="Curtir"
+          />
+        </button>
 
-          <div class="col-lg-12 mt-5 mb-3">
-            <div class="footer">
-              
+        <!-- Botão "velocidade" -->
+        <button class="btn-velocidade">
+          <img
+            src="./img/velocidade_filme.svg"   
+            width="60"               
+            alt="Velocidade"
+            title="Velocidade"
+          />
+        </button>
 
-              <!-- Botão "não curtir" -->
-              <button class="btn btn-light mb-5">
-                <img
-                  src="./img/nao_curtir.svg"
-                  width="50rem"
-                  alt="Não Curtir"
-                  title="Não Curtir"
-                />
-              </button>
+        <!-- Botão "volume" -->
+        <button class="btn-volume">
+          <img
+            src="./img/volume.svg"            
+            alt="Volume"
+            title="Volume"
+          />
+        </button>
 
-              <!-- Botão "curtir" -->
-              <button class="btn btn-light mb-5">
-                <img
-                  src="./img/Curtir.svg"
-                  width="50rem"
-                  alt="Curtir"
-                  title="Curtir"
-                />
-              </button>
-
-              <!-- Botão "velocidade" -->            
-              <button class="btn btn mb-5 mx-auto btn">
-                <img
-                  src="./img/velocidade_filme.svg"
-                  width="60rem"
-                  alt="Velocidade"
-                  title="Velocidade"
-                />
-              </button>
-
-              <!-- Botão "volume" -->
-              <button class="btn btn-light mb-5 mx-auto btn">
-                <img
-                  src="./img/volume.svg"
-                  width="60rem"
-                  alt="Volume"
-                  title="Volume"
-                />
-              </button>
-
-              <!-- Botão "legenda e idioma" -->
-              <button class="btn btn-light mb-5 mx-auto btn">
-                <img
-                  src="./img/legenda_e_idioma.svg"
-                  width="50rem"
-                  alt="Legenda e Idioma"
-                  title="Legenda e Idiomas"
-                />
-              </button>   
-            </div>         
-          </div>
-        </div>
+        <!-- Botão "legenda e idioma" -->
+        <button class="btn-legenda-idioma">
+          <img
+            src="./img/legenda_e_idioma.svg"                 
+            alt="Legenda e Idioma"
+            title="Legenda e Idiomas"
+          />
+        </button>
       </div>
+       
     </footer>
   </body>
 </html>
