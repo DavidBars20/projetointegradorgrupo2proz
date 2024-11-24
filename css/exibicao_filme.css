@@ -1,140 +1,108 @@
-*{
-    font-family: "Roboto", sans-serif;    
-    font-weight: 400;
-    font-style: normal;         
-    margin: 0;
-    padding: 0;    
-}
-
-.btn {
-  background-color: transparent;
+* {
+  background: transparent;
   border: none;
 }
 
-.img{
-  color: black;
-  width: 100px;
-  height: 100px;
-}
-
-/* Body */
-
-#cabecalho{
-  margin: 20px 20px 10px 10px;
-  max-width: 1200;
+#cabecalho {
+  width: 100%;
   display: flex;
+  height: 70px;
   justify-content: center;
   align-items: center;
+  
 }
 
-body::before {
+h5 {
+  margin: 0 auto;
+}
+
+main::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/img/fundo_da_tela.svg);
-  background-size: cover; 
-  background-position: center; 
-  opacity: 0.6; 
-  z-index: -1; 
+  background-image: url(/img/planoTela.webp);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
 }
 
-
-/* header */
-.sair {
-    display: flex;
-    justify-content: flex-start; 
-}
-
-.nome {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    font-weight: 500;
-    padding: 8px;       
-}
-
-.compartilhar{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start; 
-}S
-
-/* main */
-#principal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 200px 0px 20px 0px;
-    padding: 10px 10px 10px 10px;
-}
-
-.brilho-container {
-    position: fixed;
-    top: 200px; 
-    right: 10px; 
-  }
-  
 .brilho {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-.brightness-control {
-    writing-mode: vertical-lr; 
-    transform: rotate(180deg);
-    height: 500px; 
-    outline: none;
-  }
-
-@media (max-width: 992px) {
-    .brilho-container {
-      display: none;
-    }
-  }
-
-  /* footer */
-#controles-footer{
-    padding-top: auto;
-    padding-bottom: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.curtir{
-    display: flex;
-    justify-content:flex-end;
-    align-items: last baseline;
-}
-
-.velocidade{
-  width: 200%;
-  justify-content:center;
+  display: flex;
   align-items: center;
-  margin: 0px 0px 100px 0px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+  flex-direction: column;
+  margin: 0px;
+  top: 80px;  
+  right: 20px;  
+  height: 600px;
+  
+  
+}
+
+.brilho img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  flex-direction: column;
+  margin: 10px -20px;  
+  right: 0px;
+  transform: translate(-50%, -50%);
+}
+
+.input-brilho {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  height: 100%;
+  width: 100px;
+  margin: 0px -20px; 
+}
+
+.contoles {
+  display: flex;
+  justify-content: space-around;
+  
+  align-items: flex-start;  
+  margin: 0px 50px 200px 10px;
+  padding: auto;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  height: 150%;
+}
+
+.progresso {
+  width: 100%;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 30px;
+}
+
+.progresso {
+  width: 98%;
+}
+
+/* RESPONSIVIDADE */ 
+
+@media (max-width:800px) and (max-height: 1150px) {
+  .brilho {
+    padding: 0%;
+  }
 }
 
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  

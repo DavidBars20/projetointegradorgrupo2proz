@@ -1,9 +1,10 @@
 /*////////   GERAL */
-
 * {
     padding: 0;
     margin: 0;
-    font-family: 'roboto', 'gotham black', sans-serif;
+    font-family: 'Roboto', 'Gotham Black', sans-serif;
+    font-weight: 400;
+    font-style: normal;
     box-sizing: border-box;
 }
 
@@ -20,57 +21,41 @@ a:hover {
     text-decoration: none;
 }
 
-
-/*////////   BARRA DE NAVEGAÇÃO*/
-
-
+/*BARRA DE NAVEGAÇÃO*/
 .navbar {
     background: linear-gradient(360deg, #7B00FF, #470094);
     box-shadow: 10px 10px 80px -20px #0e0e0e;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
 }
 
-.navbar-brand {
-    margin-left: 2em;
-}
-
-#nav_topo button {
-    margin-left: auto;
-    margin-right: 2em;
-}
-
-
-/*////////   BOTÕES */
-
+/*BOTÕES*/
 .btn-preto {
     background: #1e1e1e;
     border: 2px solid #1e1e1e;
     border-radius: 5px;
-    padding: 8px 25px;
+    width: 100%;
+    max-width: 112px;
+    padding: 8px 0;
     color: #FEF9FF;
     text-transform: uppercase;
-
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn-preto:hover {
     background: #0E0E0E;
     border: 2px solid #0E0E0E;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
 .btn-preto:active {
     background: #008CFF;
     border: 2px solid #006692;
-    border-radius: 5px;
-    padding: 8px 25px;
     color: #470094;
-    text-transform: uppercase;
     font-weight: bold;
 }
-
 
 .btn-roxo {
     background: #7B00FF;
@@ -79,17 +64,13 @@ a:hover {
     padding: 8px 25px;
     color: #FEF9FF;
     text-transform: uppercase;
-    font-weight: bold;    
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn-roxo:hover {
     background: #470094;
-    border: 2px solid #7B00FF;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
-    font-weight: bold;    
 }
 
 .btn-roxo2 {
@@ -99,29 +80,21 @@ a:hover {
     padding: 8px 25px;
     color: #FEF9FF;
     text-transform: uppercase;
-    font-weight: bold;    
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn-roxo2:hover {
     background: #008CFF;
     border: 2px solid #470094;
-    border-radius: 5px;
-    padding: 8px 25px;
     color: #470094;
-    text-transform: uppercase;
-    font-weight: bold;    
 }
-
-
 
 .btn-roxo:active {
     background: #008CFF;
     border: 2px solid #008CFF;
-    border-radius: 5px;
-    padding: 8px 25px;
     color: #00335C;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
 .btn-azul1 {
@@ -132,18 +105,13 @@ a:hover {
     color: #FEF9FF;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn-azul1:hover {
     background: #00335C;
-    border: 2px solid #006692;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
-    font-weight: bold;
 }
-
 
 .btn-azul2 {
     background: #008CFF;
@@ -153,22 +121,16 @@ a:hover {
     color: #FEF9FF;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn-azul2:hover {
     background: #006692;
     border: 2px solid #008CFF;
-    border-radius: 5px;
-    padding: 8px 25px;
-    color: #FEF9FF;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
-
-
-/*////////   RODAPÉ */
-
+/*RODAPÉ*/
 #rodape {
     background: #0E0E0E;
     padding: 2em;
@@ -182,8 +144,7 @@ a:hover {
     grid-area: "logo";
 }
 
-
-#rodape .links {
+#rodape .links ul .navbar-nav {
     grid-area: "links";
     color: #FEF9FF;
 }
@@ -201,7 +162,7 @@ a:hover {
     justify-content: center;
 }
 
-#rodape .contato .icones{
+#rodape .contato .icones {
     grid-area: "icones";
 }
 
@@ -212,64 +173,45 @@ a:hover {
     margin-bottom: 1em;
 }
 
-
-#rodape .contato .sac{
+#rodape .contato .sac {
     grid-area: "sac";
 }
 
-
-@media (max-width: 799px) { 
+@media (max-width: 799px) {
     #rodape {
         display: grid;
         grid-template-areas:
-        "logo"
-        "links"
-        "contato";
+            "logo"
+            "links"
+            "contato";
         padding-left: 5em;
-    }   
+    }
 
     #rodape .links {
         margin-left: 2.5em;
         margin-top: 1em;
     }
-    
-    
+
+
     #rodape .contato {
         margin-left: 2.5em;
         margin-top: 1em;
     }
 }
 
-
-
-
-
-/*////////   MEDIA QUERIES P/ COPIAR */
+/*MEDIA QUERIES P/ COPIAR*/
 
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
-
-}
+@media (max-width: 575.98px) {}
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { 
-
-}
-
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) { 
-
-}
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    
-}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-    
-}
-
- 
+@media (min-width: 1200px) {}
