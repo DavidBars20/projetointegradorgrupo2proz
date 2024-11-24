@@ -2,6 +2,7 @@
 * {
   background: transparent;
   border: none;
+  color: black;
 }
 
 /* Estiliza o cabeçalho da página */
@@ -52,19 +53,25 @@ main::before {
   }
 }
 
-
 /* Ajuste específico para telas entre 1150px e 1399px */
-@media (max-width: 1399px) and (min-width: 1202px) {
+@media (max-width: 1399px) and (min-width: 1150px) {
   main::before {
-    background-size: contain; /* Mantém a imagem cobrindo toda a área */
-    background-size: contain; /* Mantém a imagem visível inteira */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-position: top center; /* Centraliza e alinha ao topo */
-    height: 120%; /* Aumenta a altura para evitar cortes */
+    background-size: cover; /* Mantém a imagem cobrindo toda a área */
+    background-position: center top; /* Centraliza e alinha ao topo */
+    height: 200%; /* Aumenta a altura para corrigir cortes */
+    display: flex; /* Usa flexbox */
+    align-items: end; /* Alinha itens ao final */
   }
 }
 
-
+/* Ajuste específico para telas menores que 1150px */
+@media (max-width: 1149px) {
+  main::before {
+    background-size: cover; /* Mantém a imagem cobrindo toda a área */
+    background-position: center top; /* Centraliza e alinha ao topo */
+    height: 120%; /* Expande a altura para evitar cortes */
+  }
+}
 
 /* Estiliza o contêiner com classe "brilho" */
 .brilho {
