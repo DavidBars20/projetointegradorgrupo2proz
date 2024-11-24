@@ -2,144 +2,228 @@
 * {
   background: transparent;
   border: none;
-  color: black;
 }
 
 /* Estiliza o cabeçalho da página */
 #cabecalho {
-  width: 100%; /* Ocupa 100% da largura */
-  display: flex; /* Usa flexbox para alinhamento */
-  height: 70px; /* Define a altura do cabeçalho */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  width: 100%;
+  /* Ocupa 100% da largura */
+  display: flex;
+  /* Usa flexbox para alinhamento */
+  height: 70px;
+  /* Define a altura do cabeçalho */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
 }
 
 /* Estiliza o elemento <h5> */
 h5 {
-  margin: 0 auto; /* Remove margens e centraliza horizontalmente */
+  margin: 0 auto;
+  /* Remove margens e centraliza horizontalmente */
 }
 
 /* Adiciona uma imagem de fundo ao elemento <main> usando ::before */
 main::before {
-  content: ''; /* Necessário para criar o pseudo-elemento */
-  position: fixed; /* Fixa a posição na tela */
-  top: 0; /* Inicia no topo */
-  left: 0; /* Inicia na borda esquerda */
-  width: 100%; /* Ocupa toda a largura */
-  height: 100%; /* Ocupa toda a altura */
-  background-image: url(/img/planoTela.webp); /* Define a imagem de fundo */
-  background-size: cover; /* Ajusta para cobrir toda a área */
-  background-position: center; /* Centraliza a imagem */
-  opacity: 0.6; /* Define a transparência */
-  z-index: -1; /* Fica atrás de outros elementos */
+  content: '';
+  /* Necessário para criar o pseudo-elemento */
+  position: fixed;
+  /* Fixa a posição na tela */
+  top: 0;
+  /* Inicia no topo */
+  left: 0;
+  /* Inicia na borda esquerda */
+  width: 100%;
+  /* Ocupa toda a largura */
+  height: 100%;
+  /* Ocupa toda a altura */
+  background-image: url(/img/planoTela.webp);
+  /* Define a imagem de fundo */
+  background-size: cover;
+  /* Ajusta para cobrir toda a área */
+  background-position: center;
+  /* Centraliza a imagem */
+  opacity: 0.6;
+  /* Define a transparência */
+  z-index: -1;
+  /* Fica atrás de outros elementos */
 }
+
+
+/* Estiliza o contêiner com classe "brilho" */
+.brilho {
+  display: flex;
+  /* Usa flexbox para posicionamento */
+  align-items: center;
+  /* Centraliza verticalmente */
+  justify-content: flex-start;
+  /* Alinha ao início horizontalmente */
+  align-items: flex-end;
+  /* Alinha ao final verticalmente */
+  position: relative;
+  /* Posiciona relativo ao contêiner pai */
+  flex-direction: column;
+  /* Alinha itens na vertical */
+  margin: 0px;
+  /* Remove margens */
+  top: 80px;
+  /* Move o elemento 80px para baixo */
+  right: 20px;
+  /* Move o elemento 20px para a esquerda */
+  height: 600px;
+  /* Define a altura */
+}
+
+/* Estiliza imagens dentro do contêiner "brilho" */
+.brilho img {
+  display: flex;
+  /* Usa flexbox */
+  align-items: center;
+  /* Centraliza verticalmente */
+  justify-content: flex-end;
+  /* Alinha ao final horizontalmente */
+  align-items: flex-end;
+  /* Alinha ao final verticalmente */
+  position: relative;
+  /* Posiciona relativo ao contêiner pai */
+  flex-direction: column;
+  /* Alinha itens na vertical */
+  margin: 10px -20px;
+  /* Define margens específicas */
+  right: 0px;
+  /* Não move horizontalmente */
+  transform: translate(-50%, -50%);
+  /* Move a imagem para o centro */
+}
+
+/* Estiliza inputs com a classe "input-brilho" */
+.input-brilho {
+  writing-mode: vertical-lr;
+  /* Rotaciona a direção da escrita */
+  transform: rotate(180deg);
+  /* Gira o elemento de cabeça para baixo */
+  height: 100%;
+  /* Ocupa toda a altura */
+  width: 100px;
+  /* Define largura fixa */
+  margin: 0px -20px;
+  /* Define margens específicas */
+}
+
+/* Estiliza o contêiner com classe "contoles" */
+.contoles {
+  display: flex;
+  /* Usa flexbox */
+  justify-content: space-around;
+  /* Espaça os itens uniformemente */
+  align-items: flex-start;
+  /* Alinha itens no início verticalmente */
+  margin: 0px 50px 200px 10px;
+  /* Define margens personalizadas */
+  padding: auto;
+  /* Não tem efeito, pois "auto" não é válido aqui */
+}
+
+/* Estiliza o rodapé com classe "footer" */
+.footer {
+  display: flex;
+  /* Usa flexbox */
+  align-items: flex-end;
+  /* Alinha itens ao final verticalmente */
+  height: 150%;
+  /* Define altura maior que o normal */
+}
+
+/* Estiliza o progresso */
+.progresso {
+  width: 100%;
+  /* Ocupa toda a largura */
+  padding: 20px;
+  /* Define espaço interno */
+}
+
+/* Rodapé com ajuste para alinhamento */
+.footer {
+  display: flex;
+  /* Usa flexbox */
+  justify-content: space-around;
+  /* Espaça itens uniformemente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  margin: 50px 30px;
+  /* Define margens superiores e laterais */
+}
+
+
+
+/* Ajuste de largura para o progresso */
+.progresso {
+  width: 98%;
+  /* Ocupa quase toda a largura */
+}
+
+
+/* ------------ RESPONSIVIDADE ------------- */
 
 /* Ajusta a imagem de fundo para telas menores que 2560px */
 @media (max-width: 2560px) {
   main::before {
-    background-size: contain; /* Adapta a imagem ao contêiner */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    background-position: top center; /* Centraliza no topo */
-    background-size: 100%; /* Ajuste manual do tamanho */
+    background-size: contain;
+    /* Adapta a imagem ao contêiner */
+    background-repeat: no-repeat;
+    /* Evita que a imagem se repita */
+    background-position: top center;
+    /* Centraliza no topo */
+    background-size: 100%;
+    /* Ajuste manual do tamanho */
   }
 }
 
 /* Ajuste específico para telas entre 1400px e 1720px */
 @media (max-width: 1720px) and (min-width: 1400px) {
   main::before {
-    background-size: cover; /* Mantém a imagem cobrindo toda a área */
-    background-position: center top; /* Centraliza e alinha ao topo */
-    height: 110%; /* Expande ligeiramente a altura */
+    background-size: cover;
+    /* Mantém a imagem cobrindo toda a área */
+    background-position: center top;
+    /* Centraliza e alinha ao topo */
+    height: 110%;
+    /* Expande ligeiramente a altura */
   }
 }
 
 /* Ajuste específico para telas entre 1150px e 1399px */
-@media (max-width: 1399px) and (min-width: 1150px) {
+@media (max-width: 1399px) {
   main::before {
-    background-size: cover; /* Mantém a imagem cobrindo toda a área */
-    background-position: center top; /* Centraliza e alinha ao topo */
-    height: 200%; /* Aumenta a altura para corrigir cortes */
-    display: flex; /* Usa flexbox */
-    align-items: end; /* Alinha itens ao final */
+    background-size: cover;
+    /* Mantém a imagem cobrindo toda a área */
+    background-position: center top;
+    /* Centraliza e alinha ao topo */
+    height: 200%;
+    /* Aumenta a altura para corrigir cortes */
+    display: flex;
+    /* Usa flexbox */
+    align-items: end;
+    /* Alinha itens ao final */
+    margin-bottom: -500%;
   }
 }
 
 /* Ajuste específico para telas menores que 1150px */
 @media (max-width: 1149px) {
   main::before {
-    background-size: cover; /* Mantém a imagem cobrindo toda a área */
-    background-position: center top; /* Centraliza e alinha ao topo */
-    height: 120%; /* Expande a altura para evitar cortes */
+    background-size: cover;
+    /* Mantém a imagem cobrindo toda a área */
+    background-position: center top;
+    /* Centraliza e alinha ao topo */
+    height: 120%;
+    /* Expande a altura para evitar cortes */
   }
 }
 
-/* Estiliza o contêiner com classe "brilho" */
-.brilho {
-  display: flex; /* Usa flexbox para posicionamento */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: flex-start; /* Alinha ao início horizontalmente */
-  align-items: flex-end; /* Alinha ao final verticalmente */
-  position: relative; /* Posiciona relativo ao contêiner pai */
-  flex-direction: column; /* Alinha itens na vertical */
-  margin: 0px; /* Remove margens */
-  top: 80px; /* Move o elemento 80px para baixo */
-  right: 20px; /* Move o elemento 20px para a esquerda */
-  height: 600px; /* Define a altura */
-}
-
-/* Estiliza imagens dentro do contêiner "brilho" */
-.brilho img {
-  display: flex; /* Usa flexbox */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: flex-end; /* Alinha ao final horizontalmente */
-  align-items: flex-end; /* Alinha ao final verticalmente */
-  position: relative; /* Posiciona relativo ao contêiner pai */
-  flex-direction: column; /* Alinha itens na vertical */
-  margin: 10px -20px; /* Define margens específicas */
-  right: 0px; /* Não move horizontalmente */
-  transform: translate(-50%, -50%); /* Move a imagem para o centro */
-}
-
-/* Estiliza inputs com a classe "input-brilho" */
-.input-brilho {
-  writing-mode: vertical-lr; /* Rotaciona a direção da escrita */
-  transform: rotate(180deg); /* Gira o elemento de cabeça para baixo */
-  height: 100%; /* Ocupa toda a altura */
-  width: 100px; /* Define largura fixa */
-  margin: 0px -20px; /* Define margens específicas */
-}
-
-/* Estiliza o contêiner com classe "contoles" */
-.contoles {
-  display: flex; /* Usa flexbox */
-  justify-content: space-around; /* Espaça os itens uniformemente */
-  align-items: flex-start; /* Alinha itens no início verticalmente */
-  margin: 0px 50px 200px 10px; /* Define margens personalizadas */
-  padding: auto; /* Não tem efeito, pois "auto" não é válido aqui */
-}
-
-/* Estiliza o rodapé com classe "footer" */
-.footer {
-  display: flex; /* Usa flexbox */
-  align-items: flex-end; /* Alinha itens ao final verticalmente */
-  height: 150%; /* Define altura maior que o normal */
-}
-
-/* Estiliza o progresso */
-.progresso {
-  width: 100%; /* Ocupa toda a largura */
-  padding: 20px; /* Define espaço interno */
-}
-
-/* Rodapé com ajuste para alinhamento */
-.footer {
-  display: flex; /* Usa flexbox */
-  justify-content: space-around; /* Espaça itens uniformemente */
-  align-items: center; /* Centraliza verticalmente */
-  margin: 50px 30px; /* Define margens superiores e laterais */
-}
-
-/* Ajuste de largura para o progresso */
-.progresso {
-  width: 98%; /* Ocupa quase toda a largura */
+@media (max-width: 320px) {
+  img {
+    width: 20px;
+    height: 20PX;
+  }
 }
