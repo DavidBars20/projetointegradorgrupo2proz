@@ -7,7 +7,7 @@
 
 /* Estilo geral */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
@@ -71,7 +71,7 @@ header {
 }
 
 /* Seções de filmes */
-section {
+main div {
     margin: 30px 0;
 }
 
@@ -92,7 +92,7 @@ h2 {
     width: 150px;
     height: auto;
     border-radius: 8px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .filmes-slider img:hover {
