@@ -23,7 +23,7 @@ a:hover {
 
 /*BARRA DE NAVEGAÇÃO*/
 .navbar {
-    background: #7B00FF;
+    background: linear-gradient(360deg, #7B00FF, #470094);
     box-shadow: 10px 10px 80px -20px #0e0e0e;
     display: flex;
     justify-content: space-between;
@@ -129,6 +129,7 @@ a:hover {
     background: #006692;
     border: 2px solid #008CFF;
 }
+
 
 /*RODAPÉ*/
 #rodape {
