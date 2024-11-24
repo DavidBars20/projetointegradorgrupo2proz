@@ -2,8 +2,7 @@ main {
     margin-top: 70px;
 }
 
-/* TRAILER   ///////*/
-
+/*TRAILER*/
 #trailer {
     max-width: 100%;
     height: 450px;
@@ -21,10 +20,7 @@ main {
     max-height: 100%;
 }
 
-
-
-/* SINOPSE   ///////*/
-
+/*SINOPSE*/
 #sinopse {
     background: #0E0E0E;
     color: #FEF9FF;
@@ -33,7 +29,7 @@ main {
 }
 
 .movie-title {
-    font-family: gotham black;
+    font-family: "Gotham Black", sans-serif;
     text-transform: uppercase;
 }
 
@@ -43,7 +39,7 @@ main {
 }
 
 .movie-description {
-    font-family: roboto light;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 2em;
 }
 
@@ -57,11 +53,11 @@ main {
 
 .movie-details h5 {
     text-transform: uppercase;
-    font-family: gotham semibold;
+    font-family: "Gotham Black", sans-serif;
 }
 
 .movie-details h6 {
-    font-family: roboto light;
+    font-family: "Roboto", sans-serif;
     letter-spacing: 0.05em;
 }
 
@@ -88,10 +84,7 @@ main {
     }
 }
 
-
-
-/* AVALIACAO   ///////*/
-
+/*AVALIACAO*/
 #avaliacoes {
     background: #7B00FF;
     color: #FEF9FF;
@@ -99,14 +92,14 @@ main {
 }
 
 #avaliacoes h3 {
-    font-family: gotham black;
+    font-family: "Gotham Black", sans-serif;
     text-transform: uppercase;
 }
 
 .review {
     display: grid;
-    grid-template-areas: 
-    "reviewer-icon review-text";
+    grid-template-areas:
+        "reviewer-icon review-text";
     margin: 2em 3em 2em 0;
 }
 
@@ -122,7 +115,7 @@ main {
 
 .reviewer-icon h1 {
     margin-top: 0.6em;
-    font-family: gotham black;
+    font-family: "Gotham Black", sans-serif;
     text-transform: uppercase;
 }
 
@@ -130,20 +123,18 @@ main {
     text-transform: uppercase;
 }
 
-.user-stars span{
+.user-stars span {
     font-size: large;
 }
 
-
 .review-invitation {
-    font-family: gotham black;
+    font-family: "Gotham Black", sans-serif;
     display: grid;
-    grid-template-areas: 
-    "text review-stars";
+    grid-template-areas:
+        "text review-stars";
 }
 
-
-.review-invitation .text2{
+.review-invitation .text2 {
     color: #0E0E0E;
 }
 
@@ -160,142 +151,3 @@ main {
         "review-stars";
     }
 }
-
-
-
-
-
-
-
-/* ANTIGO //////////
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    background-color: #222;
-    color: #fff;
-}
-
-.header {
-    background-color: #6a0dad;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.profile-icon {
-    width: 30px;
-    height: 30px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.movie-section {
-    display: flex;
-    padding: 20px;
-    gap: 20px;
-    background-color: #111;
-}
-
-.movie-image {
-    width: 300px;
-    border-radius: 8px;
-}
-
-.movie-info {
-    max-width: 600px;
-}
-
-.movie-title {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.movie-genre {
-    font-size: 18px;
-    color: #ccc;
-    margin-bottom: 10px;
-}
-
-.movie-description {
-    margin-bottom: 20px;
-    font-size: 16px;
-}
-
-.movie-details p {
-    margin-bottom: 5px;
-}
-
-.reviews-section {
-    background-color: #6a0dad;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.reviews-section h3 {
-    margin-bottom: 15px;
-}
-
-.review {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.reviewer-icon {
-    width: 40px;
-    height: 40px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.review-text h4 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.review-text p {
-    font-size: 14px;
-    color: #ccc;
-}
-
-.review-invitation {
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.review-stars {
-    font-size: 24px;
-    color: #ffd700;
-    margin-top: 10px;
-}
-

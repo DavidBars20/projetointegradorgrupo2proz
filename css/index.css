@@ -1,21 +1,4 @@
-/*////////   GERAL */
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'roboto', sans-serif;
-}
-
-
-a:hover {
-    text-decoration: none;
-}
-
-
-
-/*////////   SEÇÃO HOME*/
-
-
+/*SEÇÃO HOME*/
 #home {
     background: url(../img/bg\ home.png) no-repeat fixed;
     background-size: cover;
@@ -24,7 +7,7 @@ a:hover {
 }
 
 #home h2 {
-    font-family: 'gotham black', sans-serif;
+    font-family: "Gotham Black", sans-serif;
     font-size: 1.9em;
     margin-bottom: 1em;
 }
@@ -41,16 +24,13 @@ a:hover {
     margin-left: auto;
 }
 
-@media (min-width: 500px) and (max-width: 991.98px) { 
+@media (min-width: 500px) and (max-width: 991.98px) {
     .card.card_home {
         margin: auto;
     }
 }
 
-
-
-/*////////   SEÇAO PLANOS*/
-
+/*SEÇAO PLANOS*/
 #planos {
     display: flex;
     text-align: center;
@@ -69,8 +49,8 @@ a:hover {
 
 section .cards {
     display: grid;
-    grid-template-areas: 
-    "basic plus premium";
+    grid-template-areas:
+        "basic plus premium";
     width: 100%;
     justify-content: space-around;
     padding: 1em;
@@ -91,7 +71,6 @@ section .cards {
     grid-area: "premium";
 }
 
-
 section .cards .card {
     display: flex;
     flex-direction: column;
@@ -111,7 +90,6 @@ section .cards #basic .titulo {
     background: #006692;
     border-radius: 10px 10px 0 0;
 }
-
 
 section .cards #plus .titulo {
     width: 100%;
@@ -171,29 +149,26 @@ section .cards .card .botao {
 }
 
 
-@media (min-width: 700px) and (max-width: 899.98px) { 
+@media (min-width: 700px) and (max-width: 899.98px) {
     section .cards {
         display: grid;
-        grid-template-areas: 
-        "basic plus"
-        "premium premium";
+        grid-template-areas:
+            "basic plus"
+            "premium premium";
     }
 }
 
-
-@media (max-width: 699.99px) { 
+@media (max-width: 699.99px) {
     section .cards {
         display: grid;
-        grid-template-areas: 
-        "basic"
-        "plus"
-        "premium";
+        grid-template-areas:
+            "basic"
+            "plus"
+            "premium";
     }
 }
 
-
-/*////////   RODAPÉ */
-
+/*RODAPÉ*/
 #rodape {
     background: #0E0E0E;
     margin-top: 30px;
@@ -202,6 +177,7 @@ section .cards .card .botao {
 
 #rodape li a {
     color: #FEF9FF;
+    transition: all 0.3s ease;
 }
 
 #rodape li a:hover {
@@ -213,36 +189,19 @@ section .cards .card .botao {
     font-size: 1em;
 }
 
-
-
-
-
-/*////////   MEDIA QUERIES P/ COPIAR */
+/*MEDIA QUERIES P/ COPIAR*/
 
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
-
-}
+@media (max-width: 575.98px) {}
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { 
-
-}
-
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) { 
-
-}
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    
-}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-    
-}
-
- 
+@media (min-width: 1200px) {}
