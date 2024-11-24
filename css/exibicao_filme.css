@@ -5,18 +5,33 @@
   display: flex;
   height: 70px;
   justify-content: center;
+}
+
+.topo img {
+  height: 40px;
+  width: 40px;
+}
+
+
+/* main */
+/*main::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/fundo_da_tela.svg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+} */
+
+#principal { 
+  display: flex;
+  justify-content: center;
   align-items: center;
-  
-}
-
-.btn-voltar {
-  margin: 0px auto 0px 20px;
-  background: transparent;
-  border: none;
-}
-
-h5 {
-  margin: 0 auto;
 }
 
 .btn-compartilhar {
@@ -27,7 +42,6 @@ h5 {
 .btn-compartilhar {
   margin: 0px 20px 0px auto;
 }
-
 
 
 .brilho {
@@ -56,7 +70,8 @@ h5 {
   transform: translate(-50%, -50%);
 }
 
-.input-brilho {
+
+.brightness-control {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   height: 50%;
@@ -101,32 +116,245 @@ h5 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 50px 30px;
+  padding: 5px 0px 5px 20px;
 }
 
-.btn-nao-curtir {
-  background: transparent;
-  border: none;
-}
-
-.btn-curtir {
-  background: transparent;
-  border: none;
-}
-
-.btn-velocidade {
-  background: transparent;
-  border: none;
-}
-
-.btn-volume {
-  background: transparent;
-  border: none;
-}
-
-.btn-legenda-idioma {
-  background: transparent;
-  border: none;
+.footer img {
+  height: 40px;
+  width: 40px;
 }
 
 
+/* ---->>>>> RESPONSIVIDADE <--------- */
+
+/* Para telas grandes (monitores ou acima de 901px) */
+@media (min-width: 901px) {
+  .btn {
+    width: 100px;
+    height: 100px;
+  }
+  .img {
+    width: 200px;
+    height: 200px;
+  }
+  .topo {
+    padding: 20px 20px;
+    margin: 0px;
+  }
+
+  .topo img {
+    margin-bottom:1500px;
+    justify-content: space-between;
+    align-items: start;
+  } 
+ 
+  #principal {
+    margin: 100px 10px 10px 10px;
+  }
+  .brilho {
+    top: 200px;    
+  }
+  .brightness-control {
+    height: 400px;
+    margin: 10px 20px;
+  }
+  #config {
+    justify-content: space-evenly;
+  }
+  .footer {
+    padding: 5px 20px;
+  }
+}
+
+/* TABLET 768 X 883 */
+@media (max-width: 768) and (max-height: 883px) {
+  * {
+    font-size: 20px;   
+  }
+
+  .img {
+    width: 100px;
+    height: 100px;   
+  }
+  .topo {
+    width: 100%;
+    margin: 20px 10px 10px 20px;
+    padding: 0px 20px 0px 0px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;      
+  }  
+  .topo img {
+    position: relative;
+    width: 20px;
+    height: 10px;
+    padding: 0px 30px 0px 0px;      
+  }
+ 
+  #principal {
+    margin: 0px;
+  }
+
+  .controles {
+    width: 50%;
+    margin: 50px 20px 100px 10px;
+  }
+
+  .controles img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .brilho {
+    padding: 20px 10px 20px 20px;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+  }
+
+  .brilho img {
+    width: 20px;
+    height: 10px;
+  }
+
+  .brightness-control {
+    margin: 10px 0px 20px 20px;  
+    padding: 0px; 
+
+  }
+
+  #config {
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 10px 0;
+    margin: 0px 0px 30px 0px;
+    width: 100%;
+  }
+
+  .footer img {
+    width: 20px;
+    height: 10px;
+  }
+
+  .progresso {
+    width: 93%;
+  }
+}
+
+/* MIBILE L 425 x 883 px */
+@media (max-width: 425px) and (max-height: 883px) {
+
+  .topo {
+    width: 40%;
+  }
+
+  .brilho {
+    
+  }
+
+  .brilho img {
+
+  }
+
+  .footer {
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+
+}
+
+/* MOBILE M 375 X 883 PX */
+@media (max-width: 375px) and (max-height: 883px) {
+  .topo {
+    width: 80%;
+
+  }
+
+  .brilho {
+    padding: 20px;
+  }
+
+  .progresso {
+    width: 92%;
+  }
+} 
+
+/* MOBILE S 320 X 883 PX */
+@media (max-width: 320px) and (max-height: 883) {
+  .h5 {
+    font-size: 1px;
+  }
+
+  .btn {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+  }
+
+  .topo {
+    flex-direction: row;
+    padding: 0px;
+    position: relative;
+  }
+
+  .topo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #principal {
+    flex-direction: column-reverse;
+    margin: 0px 50px;
+  }
+
+  .brilho {
+    margin: 30px;
+    width: 12%;
+    padding: 0px;
+  }
+
+  .brilho img {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+  }
+
+  .brightness-control {
+    height: 300px;
+    margin: 20px 25px 50px 20px;
+  }
+
+  #config {
+    flex-wrap: wrap;
+    margin-right: 0;
+  }
+
+  .controles {
+    width: 80%;
+    position: fixed;
+  }
+
+  .controles img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer {
+    padding: 10px;
+    margin: auto;
+    align-items: flex-end;
+  }
+
+  .footer img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .progresso {
+    width: 75%;
+    align-items: flex-end;
+  }
+}
