@@ -1,0 +1,126 @@
+/*////////   BARRA DE NAVEGAÇÃO*/
+.nav-logo-form {
+    margin: 0.5em auto;
+}
+
+
+/*////////   FORMULARIO*/
+
+#formulario {
+    margin-top: 75px;
+    padding: 3em 2em;
+}
+
+.container #progress-bar {
+    display: flex;
+    margin: 1em 0 4em 0;
+    justify-content: space-around;
+}
+
+.step {
+    text-align: center;
+    width: 100%;
+}
+
+.step p {
+    font-family: "gotham black";
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: x-large;
+    color: #470094;
+}
+
+
+.step .bullet {
+    background: linear-gradient(180deg, #7B00FF, #470094);
+    color: #FEF9FF;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.step span {
+    font-family: "gotham black";
+    text-transform: uppercase;
+    font-size: 200%;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+}
+
+.step .bullet::after, .step .bullet::before {
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 310px;
+    background: #470094;
+    bottom: 20px;
+    right: -310px;
+}
+
+.step:last-child .bullet::after, 
+.step:last-child .bullet::before {
+    display: none;
+}
+
+.step .bullet::after {
+    background: #70A3CC;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+.titulo {
+    color: #470094;
+    font-family: "gotham black";
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.botao-planos {
+    background: #C1C1C1;
+    border: 1px solid #868686;
+    color: #0060AF;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    margin: 2em auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px -20px #1e1e1e;
+}
+
+.botao-planos:hover{
+    background: linear-gradient(170deg, #7B00FF, #00335C);
+    border: 1px solid #470094;
+    color: #FEF9FF;
+    box-shadow: 1px 1px 30px 1px #7B00FF;
+}
+
+.radio {
+    margin-right: 0.5em;
+    width: 30px;
+    height: 33px;
+}
+
+.bold {
+    font-family: "gotham black";
+    margin: auto 0.4em;
+    text-transform: uppercase;
+}
+
+.text {
+    margin: auto 0;
+}

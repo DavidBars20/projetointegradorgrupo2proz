@@ -25,7 +25,7 @@ a:hover {
 
 
 .navbar {
-    background: #7B00FF;
+    background: linear-gradient(360deg, #7B00FF, #470094);
     box-shadow: 10px 10px 80px -20px #0e0e0e;
 }
 
