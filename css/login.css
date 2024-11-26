@@ -1,38 +1,30 @@
 #fundo {
-    /* aqui no bg era necessário usar o "../" antes da pasta img e da imgem em si, por isso nao estava aparecendo na tela */
     background: url(../img/bg\ home.png) no-repeat center fixed;
     background-size: cover;
     min-height: 90vh;
-    /*Alterei de 100vh para 90vh*/
     padding: 0;
     margin-top: 81px;
-    display: flex;
-    /*Adicionei o display: flex; para que o elemento filho dele, a .caixa, funcione como um flexbox*/
+    display: flex; 
 }
-
-
 .caixa {
     background-color: #1e1e1e;
     height: 450px;
     width: 500px;
     margin: auto;
-    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
     color: #fef9ff;
     border-radius: 10px;
     padding: 20px;
-    
-    /*
-    .Apaguei o "display: flex;" e o "flex-direction: column; pois já dá para alinhar as informações no centro só com o "text-align: center;"
-    
-    .Apaguei o "justify-content: center;" o "    align-items: center;"
-
-    .Adicionei um "border-radius: 10px; para a borda ficar arendondada
-    "
-    
-    .Corrigi o "margin: 80px auto 0;" pois estava errado. Para padding e margin, são passados 1 valor (q vale pra tds os lados) ou 2 valores (q o 1° vale pro top e pro bottom e o 2° vale pro left e pro right) ou 4 valores (q o 1° vale pro top, o 2° pro right, o 3° pro bottom e o 4° pro left)*/
 }
-
-
-/* Apaguei a classe "botao-enviar" pq tem todos aqueles botoes que estão na Identidade Visual, lá no global.css. Agr no HTML, o botão está com a classe "btn-roxo"*/
-
-/*Apaguei o rodapé pq ele tb já está no global.css*/
+form a{
+    margin-left: 30px;
+}
+form button{
+    display: flex;
+    margin: 0 auto;
+}
+.caixaDigitar{
+   width: 100%;
+}
