@@ -1,48 +1,30 @@
+#fundo {
+    background: url(../img/bg\ home.png) no-repeat center fixed;
+    background-size: cover;
+    min-height: 90vh;
+    padding: 0;
+    margin-top: 81px;
+    display: flex; 
+}
 .caixa {
     background-color: #1e1e1e;
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 500px;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction:column;
     align-items: center;
-    text-align: center;
-    margin: 80px auto 0;
     color: #fef9ff;
-    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px;
 }
-
-.butao_entrar {
-    background-color: #7b00ff;
+form a{
+    margin-left: 30px;
 }
-
-#fundo {
-    background: url(/img/bg\ home.png) no-repeat center center fixed;
-    background-size: cover;
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
+form button{
+    display: flex;
+    margin: 0 auto;
 }
-
-/*RODAPÉ*/
-
-#rodape {
-    background: #0E0E0E;
-    padding: 50px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-#rodape li a {
-    color: #FEF9FF;
-}
-
-#rodape li a:hover {
-    color: #7B00FF;
-}
-
-#rodape h5 {
-    color: #FEF9FF;
-    font-size: 1em;
+.caixaDigitar{
+   width: 100%;
 }

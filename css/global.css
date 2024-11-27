@@ -15,6 +15,7 @@ body {
 
 a {
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 a:hover {
@@ -145,12 +146,16 @@ a:hover {
     grid-area: "logo";
 }
 
-#rodape .links ul .navbar-nav {
+#rodape .links ul {
     grid-area: "links";
-    color: #FEF9FF;
 }
 
-#rodape .links:hover {
+#rodape .links ul a {
+ color: #FEF9FF;
+ transition: all 0.3s ease;
+}
+
+#rodape .links ul a:hover {
     color: #7B00FF;
 }
 
