@@ -1,19 +1,13 @@
-body {
-    background: linear-gradient(180deg, #008CFF, #00335C);
+/*////////   BARRA DE NAVEGAÇÃO*/
+.nav-logo-form {
+    margin: 0.5em auto;
 }
 
-.navbar {
-    background: linear-gradient(360deg, #7B00FF, #470094);
-    box-shadow: 10px 10px 80px -20px #FEF9FF;
-    padding: 0.5rem 0;
-    display: flex;
-    justify-content: center;
-}
 
 #formulario {
     width: 100%;
     height: 400px;
-    margin-top: 90px;
+    margin-top: 110px;
     text-align: center;
 }
 
@@ -23,7 +17,7 @@ header {
 
 h2 {
     font-size: 250%;
-    color: #FEF9FF;
+    color: #470094;
     font-family: "gotham black";
     text-transform: uppercase;
 }
@@ -31,77 +25,4 @@ h2 {
 #formulario img {
     border-radius: 10px;
     margin-top: 1em;
-}
-
-
-
-
-/*RODAPÉ*/
-#rodape {
-    background: #0E0E0E;
-    padding: 2em;
-    display: grid;
-    grid-template-areas: "logo links contato";
-    grid-gap: 1em;
-    color: #FEF9FF;
-    text-decoration: none;
-}
-
-#rodape .logo {
-    grid-area: "logo";
-}
-
-#rodape .links ul .navbar-nav {
-    grid-area: "links";
-    color: #FEF9FF;
-}
-
-#rodape .links:hover {
-    color: #7B00FF;
-}
-
-#rodape .contato {
-    grid-area: "contato";
-    display: grid;
-    grid-template-areas: 
-    "icones"
-    "sac";
-    justify-content: center;
-}
-
-#rodape .contato .icones {
-    grid-area: "icones";
-}
-
-#rodape .contato .icones a img{
-    width: 40px;
-    height: 40px;
-    margin-right: 1.5em;
-    margin-bottom: 1em;
-}
-
-#rodape .contato .sac {
-    grid-area: "sac";
-}
-
-@media (max-width: 799px) {
-    #rodape {
-        display: grid;
-        grid-template-areas:
-            "logo"
-            "links"
-            "contato";
-        padding-left: 5em;
-    }
-
-    #rodape .links {
-        margin-left: 2.5em;
-        margin-top: 1em;
-    }
-
-
-    #rodape .contato {
-        margin-left: 2.5em;
-        margin-top: 1em;
-    }
 }
