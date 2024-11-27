@@ -1,3 +1,4 @@
+
 main {
     margin-top: 70px;
 }
@@ -5,8 +6,8 @@ main {
 /*TRAILER*/
 #trailer {
     max-width: 100%;
-    height: 450px;
-    background: url(../img/banner-entrada.png) no-repeat center;
+    height: 40%;
+    background: url(../img/banner-entrada.png) no-repeat top;
     background-size: cover;
 }
 

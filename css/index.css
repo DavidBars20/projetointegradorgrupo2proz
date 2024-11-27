@@ -4,6 +4,7 @@
     background-size: cover;
     margin: 0 auto;
     height: 600px;
+    border: 1px solid red;
 }
 
 #home h2 {

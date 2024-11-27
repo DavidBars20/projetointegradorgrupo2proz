@@ -100,6 +100,7 @@
     margin: 2em auto;
     border-radius: 5px;
     box-shadow: 5px 5px 30px -20px #1e1e1e;
+    transition: all 0.3s ease;
 }
 
 .botao-planos:hover{
@@ -107,6 +108,7 @@
     border: 1px solid #470094;
     color: #FEF9FF;
     box-shadow: 1px 1px 30px 1px #7B00FF;
+    transition: all 0.3s ease;
 }
 
 .radio {
