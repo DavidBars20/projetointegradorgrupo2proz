@@ -4,15 +4,17 @@
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   margin: 0%;
-  padding: 0%; 
+  padding: 0%;
 }
 
 body {
   width: 100%;
   height: 100%;
   background-color: rgb(55, 44, 44);
-  background: rgba(0, 0, 0, 0.8); /* Fundo preto translúcido */
-  z-index: 1000; /* Prioridade alta no empilhamento */
+  background: rgba(0, 0, 0, 0.8);
+  /* Fundo preto translúcido */
+  z-index: 1000;
+  /* Prioridade alta no empilhamento */
 }
 
 #cabecalho {
@@ -20,16 +22,18 @@ body {
   display: flex;
   height: 70px;
   justify-content: center;
-  align-items: center; 
-  padding: 2%; 
+  align-items: center;
+  padding: 2%;
 }
+
 #cabecalho img {
   opacity: 0.5;
   width: 100%;
   height: auto;
   height: 3rem;
-  cursor: pointer; /* Mostra o ponteiro de mão */
-} 
+  cursor: pointer;
+  /* Mostra o ponteiro de mão */
+}
 
 h5 {
   margin: 0 auto;
@@ -39,92 +43,211 @@ h5 {
   color: #fff;
 }
 
-/* MAIN */ 
+/* MAIN */
 #principal {
-  position: relative; 
+  position: relative;
+  height: 100rem;
 }
+
 .brilho {
-  display: flex;   
-  align-items: flex-end;  
+  display: flex;
+  align-items: flex-end;
   flex-direction: column;
   padding: 5% 1% 5% 0%;
-  top: 5rem;  
-  right: 5rem;  
-  height: 80rem; 
+  top: 5rem;
+  right: 5rem;
+  height: 100rem;
 }
-.brilho img {    
-  opacity: 0.5; 
+
+.brilho img {
+  opacity: 0.5;
   right: 5rem;
   transform: translate(-50%, -50%);
   height: 10rem;
-  opacity: 0.5;   
+  opacity: 0.5;
   width: 3rem;
 }
+
 .input-brilho {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   height: 200rem;
-  width: 100px; 
-  cursor: pointer; /* Mostra o ponteiro de mão */
+  width: 100px;
+  cursor: pointer;
+  /* Mostra o ponteiro de mão */
   opacity: 0.5;
 }
 
 .controles {
   display: flex;
-  justify-content: space-around;  
-  align-items: flex-start;  
-  position: relative;    
-  opacity: 0.5;  
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+  opacity: 0.5;
   height: 3rem;
-  cursor: pointer; /* Mostra o ponteiro de mão */
+  cursor: pointer;
+  /* Mostra o ponteiro de mão */
 }
 
-/* FOOTER */ 
+/* FOOTER */
+
+#end {
+  height: 10rem;
+  width: 100%;
+}
+.progresso {
+  width: 100%;
+  padding: 4% 2%;
+  display: flex;
+}
+.progresso input[type="range"] {
+  -webkit-appearance: none;
+  /* Remove o estilo padrão do controle no WebKit */
+  appearance: none;
+  /* Remove o estilo padrão do controle */
+  width: 100%;
+  /* Faz a barra de progresso ocupar toda a largura disponível */
+  height: 6px;
+  /* Define a altura da barra de progresso */
+  background: #a5a1a1;
+  /* Define uma cor cinza escura para a barra de progresso */
+  border-radius: 5%;
+  /* Arredonda os cantos da barra */
+  outline: none;
+  /* Remove a borda padrão ao focar no controle */
+  cursor: pointer;
+  /* Muda o cursor para uma mão ao passar sobre a barra */
+}
+.progresso input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Remove o estilo padrão do "thumb" no WebKit */
+  appearance: none;
+  /* Remove o estilo padrão do "thumb" */
+  width: 1%;
+  /* Define a largura do "thumb" */
+  height: 15px;
+  /* Define a altura do "thumb" */
+  background: #fff;
+  /* Define a cor do "thumb" como branco */
+  border-radius: 50%;
+  /* Torna o "thumb" redondo */
+  cursor: pointer;
+  /* Muda o cursor para uma mão ao passar sobre o "thumb" */
+}
+
+.controlFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  height: 100%;
+}
 .controlFooter img {
   opacity: 0.5;
   width: 100%;
   height: 3rem;
-  cursor: pointer; /* Mostra o ponteiro de mão */
-}  
-.controlFooter {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 50%;
-  height: 100%;
-}
-.progresso {
-  width: 100%;
-  padding: 4% 5%; 
-  display: flex;
-}
-.progresso input[type="range"] {
-  -webkit-appearance: none; /* Remove o estilo padrão do controle no WebKit */
-  appearance: none; /* Remove o estilo padrão do controle */
-  width: 100%; /* Faz a barra de progresso ocupar toda a largura disponível */
-  height: 6px; /* Define a altura da barra de progresso */
-  background: #a5a1a1; /* Define uma cor cinza escura para a barra de progresso */
-  border-radius: 5%; /* Arredonda os cantos da barra */
-  outline: none; /* Remove a borda padrão ao focar no controle */
-  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre a barra */
-}
-.progresso input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Remove o estilo padrão do "thumb" no WebKit */
-  appearance: none; /* Remove o estilo padrão do "thumb" */
-  width: 1%; /* Define a largura do "thumb" */
-  height: 15px; /* Define a altura do "thumb" */
-  background: #fff; /* Define a cor do "thumb" como branco */
-  border-radius: 50%; /* Torna o "thumb" redondo */
-  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o "thumb" */
+  cursor: pointer;
+  /* Mostra o ponteiro de mão */
 }
 
-/* RESPONSIVIDADE */ 
 
 
-@media (max-width: 1400px) {
-  main::before {
-    background-size: cover; /* Faz com que a imagem de fundo cubra completamente o elemento, mantendo a proporção. */ 
-    background-repeat: no-repeat; /* Impede que a imagem de fundo seja repetida. */
-    background-position: center; /* Centraliza a imagem de fundo tanto horizontalmente quanto verticalmente no elemento. */
+/* __________________________________________________________ RESPONSIVIDADE _____________________________________________________ */
+
+
+@media (max-width: 1200px) {
+  #cabecalho img {
+    height: 2rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  .centro {
+    height: 50rem;
+  }
+
+  .controles img {
+    height: 2rem;
+    justify-items: flex-start;
+  }
+
+  .brilho {
+    padding: 20% 1% 5% 0%;
+    right: 5rem;
+    height: 100rem;
+  }
+  .brilho img {
+    height: 3rem;
+    padding: auto;
+  }
+  .input-brilho {
+    height: 4
+    0%;
+  }
+
+  .progresso {
+    width: 70rem;
+    padding: 5rem;
+
+  }
+  .controlFooter img {
+    height: 2rem;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  #cabecalho img {
+    padding: 0;
+  }
+
+  .centro {
+    width: 100%;
+    height: 50rem;
+  }
+
+  .controles img {
+    height: 1rem;
+    justify-items: flex-start;
+  }
+
+  .brilho {
+    padding: 20% 1% 5% 0%;
+    right: 2rem;
+    height: 80rem;
+  }
+  .brilho img {
+    height: 3rem;
+    padding: auto;
+  }
+  .input-brilho {
+    height: 40%;
+  }
+
+  .progresso {
+    width: 60rem;
+    padding: 5rem;
+
+  }
+  .controlFooter img {
+    padding-bottom: 1rem;
+  }
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up)*/
+
+
