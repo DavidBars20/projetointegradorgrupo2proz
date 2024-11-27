@@ -1,8 +1,9 @@
 /* Remove o fundo e bordas padrão de todos os elementos */
 * {
   background: transparent; /* Remove qualquer cor ou imagem de fundo padrão */
-  border: none; /* Remove qualquer borda padrão */
+  border: none; /* Remove qualquer borda padrão */  
 }
+
 
 /* Estiliza o cabeçalho da página */
 #cabecalho {
@@ -13,28 +14,22 @@
   align-items: center; /* Centraliza o conteúdo verticalmente */
 }
 
+#cabecalho img {
+  opacity: 0.5;
+  
+}  
+
 /* Estiliza o elemento <h5> */
 h5 {
   margin: 0 auto; /* Remove margens padrão e centraliza o elemento horizontalmente */
+  opacity: 0.5;
 }
 
-/* Adiciona uma imagem de fundo ao elemento <main> usando ::before */
-main::before {
-  content: ''; /* Cria um pseudo-elemento vazio */
-  position: fixed; /* Fixa o elemento em relação à tela */
-  top: 0; /* Posiciona no topo */
-  left: 0; /* Posiciona à esquerda */
-  bottom: 0; /* Faz o elemento ocupar até o rodapé */
-  right: 0; /* Faz o elemento ocupar toda a largura */
-  width: 100%; /* Define que a largura do fundo ocupa 100% */
-  height: 100%; /* Define que a altura do fundo ocupa 100% */
-  background-image: url(/img/planoTela.webp); /* Adiciona a imagem de fundo */
-  background-size: cover; /* Faz a imagem cobrir toda a área, mantendo a proporção */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
-  background-position: center; /* Centraliza a imagem no plano de fundo */
-  opacity: 0.6; /* Aplica transparência ao fundo */
-  z-index: -1; /* Coloca o pseudo-elemento atrás de outros elementos na tela */
-}
+.imagemTela {
+  opacity: 0.5;
+  z-index: -1;
+   
+ }
 
 /* Estiliza o contêiner com classe "brilho" */
 .brilho {
@@ -61,6 +56,7 @@ main::before {
   margin: 10px -20px; /* Define margens específicas: 10px acima/abaixo e -20px laterais */
   right: 0px; /* Não desloca horizontalmente */
   transform: translate(-50%, -50%); /* Move a imagem para o centro relativo */
+  opacity: 0.5;
 }
 
 /* Estiliza inputs com a classe "input-brilho" */
@@ -73,20 +69,29 @@ main::before {
 }
 
 /* Estiliza o contêiner com classe "contoles" */
-.contoles {
+.controles {
   display: flex; /* Ativa flexbox para alinhamento */
   justify-content: space-around; /* Distribui espaço uniformemente entre os itens */
-  align-items: flex-start; /* Alinha itens ao início verticalmente */
-  margin: 0px 50px 200px 10px; /* Define margens: sem margens acima, laterais variadas e 200px abaixo */
-  padding: auto; /* Não tem efeito válido aqui */
+  align-items: center; /* Alinha itens ao centro verticalmente */
+  margin: 0px 50px 200px 10px; /* Define margens: sem margens acima, laterais variadas e 200px abaixo */  
 }
+
+.controles img {
+  opacity: 0.5;
+}  
 
 /* Estiliza o rodapé com classe "footer" */
 .footer {
   display: flex; /* Ativa flexbox para alinhamento */
-  align-items: flex-end; /* Alinha os itens no final verticalmente */
+  align-items: center; /* Alinha os itens no final verticalmente */
+  justify-content: space-around; /* Distribui espaço uniformemente entre os itens */
   height: 150%; /* Define altura do rodapé 50% maior que o padrão */
+  margin: 0px 30px; /* Define margens: 50px em cima/embaixo e 30px laterais */  
 }
+
+.footer img {
+  opacity: 0.5;
+}  
 
 /* Estiliza o progresso */
 .progresso {
@@ -94,23 +99,9 @@ main::before {
   padding: 20px; /* Adiciona espaço interno ao redor */
 }
 
-/* Rodapé com ajuste para alinhamento */
-.footer {
-  display: flex; /* Ativa flexbox para alinhamento */
-  justify-content: space-around; /* Distribui espaço uniformemente entre os itens */
-  align-items: center; /* Centraliza os itens verticalmente */
-  margin: 50px 30px; /* Define margens: 50px em cima/embaixo e 30px laterais */
-}
 
-/* Ajuste de largura para o progresso */
-.progresso {
-  width: 98%; /* Faz o progresso ocupar 98% da largura */
-}
 
 /* ------------ RESPONSIVIDADE ------------- */
 
-@media (max-width: 1400px) { /* Aplica estilos para telas com largura menor que 1400px */
-  main::before {    
-    background-size: 100%; /* Ajusta a imagem para ocupar 100% da largura, sem recortar */
-  }
-}
+
+
