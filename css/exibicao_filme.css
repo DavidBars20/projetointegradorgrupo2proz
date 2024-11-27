@@ -1,107 +1,130 @@
-/* Remove o fundo e bordas padrão de todos os elementos */
 * {
-  background: transparent; /* Remove qualquer cor ou imagem de fundo padrão */
-  border: none; /* Remove qualquer borda padrão */  
+  background: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%; 
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(55, 44, 44);
+  background: rgba(0, 0, 0, 0.8); /* Fundo preto translúcido */
+  z-index: 1000; /* Prioridade alta no empilhamento */
+}
 
-/* Estiliza o cabeçalho da página */
 #cabecalho {
-  width: 100%; /* Faz o cabeçalho ocupar toda a largura da tela */
-  display: flex; /* Ativa o flexbox para facilitar o alinhamento */
-  height: 70px; /* Define a altura fixa do cabeçalho */
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  width: 100%;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center; 
+  padding: 2%; 
 }
-
 #cabecalho img {
   opacity: 0.5;
-  
-}  
+  width: 100%;
+  height: auto;
+  height: 3rem;
+  cursor: pointer; /* Mostra o ponteiro de mão */
+} 
 
-/* Estiliza o elemento <h5> */
 h5 {
-  margin: 0 auto; /* Remove margens padrão e centraliza o elemento horizontalmente */
+  margin: 0 auto;
   opacity: 0.5;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
 }
 
-.imagemTela {
-  opacity: 0.5;
-  z-index: -1;
-   
- }
-
-/* Estiliza o contêiner com classe "brilho" */
+/* MAIN */ 
+#principal {
+  position: relative; 
+}
 .brilho {
-  display: flex; /* Ativa flexbox para alinhamento */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-  align-items: flex-end; /* Sobrescreve o alinhamento vertical para o final */
-  position: relative; /* Posiciona em relação ao contêiner pai */
-  flex-direction: column; /* Organiza os itens na vertical */
-  margin: 0px; /* Remove margens */
-  top: 80px; /* Move o contêiner 80px para baixo */
-  right: 20px; /* Move o contêiner 20px para a esquerda */
-  height: 600px; /* Define altura fixa do contêiner */
+  display: flex;   
+  align-items: flex-end;  
+  flex-direction: column;
+  padding: 5% 1% 5% 0%;
+  top: 5rem;  
+  right: 5rem;  
+  height: 80rem; 
 }
-
-/* Estiliza imagens dentro do contêiner "brilho" */
-.brilho img {
-  display: flex; /* Ativa flexbox para a imagem */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: flex-end; /* Alinha ao final horizontalmente */
-  align-items: flex-end; /* Sobrescreve o alinhamento vertical para o final */
-  position: relative; /* Posiciona em relação ao contêiner pai */
-  flex-direction: column; /* Organiza os itens na vertical */
-  margin: 10px -20px; /* Define margens específicas: 10px acima/abaixo e -20px laterais */
-  right: 0px; /* Não desloca horizontalmente */
-  transform: translate(-50%, -50%); /* Move a imagem para o centro relativo */
-  opacity: 0.5;
+.brilho img {    
+  opacity: 0.5; 
+  right: 5rem;
+  transform: translate(-50%, -50%);
+  height: 10rem;
+  opacity: 0.5;   
+  width: 3rem;
 }
-
-/* Estiliza inputs com a classe "input-brilho" */
 .input-brilho {
-  writing-mode: vertical-lr; /* Altera a direção do texto para vertical */
-  transform: rotate(180deg); /* Gira o elemento 180 graus (de cabeça para baixo) */
-  height: 100%; /* Faz o input ocupar toda a altura do contêiner */
-  width: 100px; /* Define largura fixa */
-  margin: 0px -20px; /* Define margens: sem margens acima/abaixo e -20px laterais */
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  height: 200rem;
+  width: 100px; 
+  cursor: pointer; /* Mostra o ponteiro de mão */
+  opacity: 0.5;
 }
 
-/* Estiliza o contêiner com classe "contoles" */
 .controles {
-  display: flex; /* Ativa flexbox para alinhamento */
-  justify-content: space-around; /* Distribui espaço uniformemente entre os itens */
-  align-items: center; /* Alinha itens ao centro verticalmente */
-  margin: 0px 50px 200px 10px; /* Define margens: sem margens acima, laterais variadas e 200px abaixo */  
+  display: flex;
+  justify-content: space-around;  
+  align-items: flex-start;  
+  position: relative;    
+  opacity: 0.5;  
+  height: 3rem;
+  cursor: pointer; /* Mostra o ponteiro de mão */
 }
 
-.controles img {
+/* FOOTER */ 
+.controlFooter img {
   opacity: 0.5;
+  width: 100%;
+  height: 3rem;
+  cursor: pointer; /* Mostra o ponteiro de mão */
 }  
-
-/* Estiliza o rodapé com classe "footer" */
-.footer {
-  display: flex; /* Ativa flexbox para alinhamento */
-  align-items: center; /* Alinha os itens no final verticalmente */
-  justify-content: space-around; /* Distribui espaço uniformemente entre os itens */
-  height: 150%; /* Define altura do rodapé 50% maior que o padrão */
-  margin: 0px 30px; /* Define margens: 50px em cima/embaixo e 30px laterais */  
+.controlFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50%;
+  height: 100%;
 }
-
-.footer img {
-  opacity: 0.5;
-}  
-
-/* Estiliza o progresso */
 .progresso {
-  width: 100%; /* Faz o progresso ocupar toda a largura */
-  padding: 20px; /* Adiciona espaço interno ao redor */
+  width: 100%;
+  padding: 4% 5%; 
+  display: flex;
+}
+.progresso input[type="range"] {
+  -webkit-appearance: none; /* Remove o estilo padrão do controle no WebKit */
+  appearance: none; /* Remove o estilo padrão do controle */
+  width: 100%; /* Faz a barra de progresso ocupar toda a largura disponível */
+  height: 6px; /* Define a altura da barra de progresso */
+  background: #a5a1a1; /* Define uma cor cinza escura para a barra de progresso */
+  border-radius: 5%; /* Arredonda os cantos da barra */
+  outline: none; /* Remove a borda padrão ao focar no controle */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre a barra */
+}
+.progresso input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove o estilo padrão do "thumb" no WebKit */
+  appearance: none; /* Remove o estilo padrão do "thumb" */
+  width: 1%; /* Define a largura do "thumb" */
+  height: 15px; /* Define a altura do "thumb" */
+  background: #fff; /* Define a cor do "thumb" como branco */
+  border-radius: 50%; /* Torna o "thumb" redondo */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o "thumb" */
 }
 
+/* RESPONSIVIDADE */ 
 
 
-/* ------------ RESPONSIVIDADE ------------- */
-
-
-
+@media (max-width: 1400px) {
+  main::before {
+    background-size: cover; /* Faz com que a imagem de fundo cubra completamente o elemento, mantendo a proporção. */ 
+    background-repeat: no-repeat; /* Impede que a imagem de fundo seja repetida. */
+    background-position: center; /* Centraliza a imagem de fundo tanto horizontalmente quanto verticalmente no elemento. */
+  }
+}
