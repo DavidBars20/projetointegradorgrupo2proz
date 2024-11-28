@@ -45,133 +45,148 @@
   </head>
 
   <body class="d-flex flex-column vh-100">
+    <!-- Define o corpo da página com flexbox, organizando os elementos em uma coluna e ocupando 100% da altura da viewport -->
+  
     <!-- Header -->
-
     <header id="cabecalho">
-
+      <!-- Define o cabeçalho da página -->
+  
+      <!-- Botão "Voltar" -->
       <button class="btn-voltar">
         <a href="sinopse.html">
+          <!-- Link para a página de sinopse -->
           <img src="./img/sair.svg" alt="Sair" title="sair" />
+          <!-- Ícone para sair, com texto alternativo e título -->
         </a>
       </button>
-
+  
+      <!-- Título do filme -->
       <h5>Nome do filme</h5>
-
+      <!-- Exibe o nome do filme centralizado no cabeçalho -->
+  
+      <!-- Botão "Compartilhar" -->
       <button class="btn-compartilhar">
         <a href="">
+          <!-- Link vazio para o botão de compartilhar -->
           <img
             src="./img/Compartilhar.svg"
             alt="Compartilhar"
-            title="Compartilhar"/>
+            title="Compartilhar" />
+          <!-- Ícone para compartilhar, com texto alternativo e título -->
         </a>
       </button>
     </header>
-
+  
     <!-- Main -->
     <main id="principal">
-
+      <!-- Define o conteúdo principal da página -->
+  
       <div class="centro">
-        
-        <!-- Ícone e barra de "brilho" -->   
-        <div class="brilho">                  
+        <!-- Centraliza o conteúdo principal -->
+  
+        <!-- Ícone e barra de "brilho" -->
+        <div class="brilho">
           <img
-            src="./img/briho.svg"            
+            src="./img/briho.svg"
             alt="Brilho"
-            title="brilho"
-          />        
-          <input
-            type="range"
+            title="brilho" />
+          <!-- Ícone para o ajuste de brilho -->          
+          <input 
+            type="range"            
             min="0"
             max="100"
             value="50"
-            class="input-brilho"
-          />          
+            class="input-brilho" />
+          <!-- Controle deslizante para ajustar o brilho -->
         </div>
-
+  
         <div class="controles">
-
+          <!-- Controles de reprodução -->
+  
           <!-- Botão "Para trás" -->
           <button class="btn-para-tras">
             <img src="./img/para_tras.svg" width="50" alt="Para Trás" title="para trás" />
+            <!-- Ícone para voltar na reprodução -->
           </button>
-
+  
           <!-- Botão "Pause" -->
           <button class="btn-pause">
             <img src="./img/pause.svg" width="40" alt="Pause" title="pause" />
+            <!-- Ícone para pausar a reprodução -->
           </button>
-
+  
           <!-- Botão "Play" -->
           <button class="btn-play">
             <img src="./img/play.svg" width="40" alt="Play" title="play" />
+            <!-- Ícone para iniciar a reprodução -->
           </button>
-
+  
           <!-- Botão "Avançar" -->
           <button class="btn-avancar">
             <img src="./img/avancar.svg" width="50" alt="Avançar" title="avançar" />
-          </button> 
+            <!-- Ícone para avançar na reprodução -->
+          </button>
         </div>
-      </div>       
+      </div>
     </main>
-
+  
     <!-- Footer -->
-
-    <footer id="end">      
-        
+    <footer id="end">
+      <!-- Define o rodapé da página -->
+  
       <!-- Barra de progresso -->
-    
       <div class="progresso">
         <input type="range" min="0" max="100" value="0" class="w-100" />
-      </div>   
-    
+        <!-- Controle deslizante para mostrar o progresso da reprodução -->
+      </div>
+  
       <div class="controlFooter">
-
-        <!-- Botão "não curtir" -->
-        <button class="btn-naoCurtir">
+        <!-- Controles adicionais no rodapé -->
+  
+        <!-- Botão "Não Curtir" -->
+        <button class="btn-nao-curtir">
           <img
-            src="./img/nao_curtir.svg"                  
+            src="./img/nao_curtir.svg"
             alt="Não Curtir"
-            title="Não Curtir"
-          />
+            title="Não Curtir" />
+          <!-- Ícone para indicar "Não Curtir" -->
         </button>
-
-        <!-- Botão "curtir" -->
-        <button class="btn/curtir">
+  
+        <!-- Botão "Curtir" -->
+        <button class="btn-curtir">
           <img
-            src="./img/curti.svg"                  
+            src="./img/curti.svg"
             alt="Curtir"
-            title="Curtir"
-          />
+            title="Curtir" />
+          <!-- Ícone para indicar "Curtir" -->
         </button>
-
-        <!-- Botão "velocidade" -->
+  
+        <!-- Botão "Velocidade" -->
         <button class="btn-velocidade">
           <img
-            src="./img/velocidade_filme.svg"   
-            width="60"               
+            src="./img/velocidade_filme.svg"            
             alt="Velocidade"
-            title="Velocidade"
-          />
+            title="Velocidade" />
+          <!-- Ícone para ajustar a velocidade de reprodução -->
         </button>
-
-        <!-- Botão "volume" -->
+  
+        <!-- Botão "Volume" -->
         <button class="btn-volume">
           <img
-            src="./img/volume.svg"            
+            src="./img/volume.svg"
             alt="Volume"
-            title="Volume"
-          />
+            title="Volume" />
+          <!-- Ícone para ajustar o volume -->
         </button>
-
-        <!-- Botão "legenda e idioma" -->
+  
+        <!-- Botão "Legenda e Idioma" -->
         <button class="btn-legenda-idioma">
           <img
-            src="./img/legenda_e_idioma.svg"                 
+            src="./img/legenda_e_idioma.svg"
             alt="Legenda e Idioma"
-            title="Legenda e Idiomas"
-          />
+            title="Legenda e Idiomas" />
+          <!-- Ícone para acessar configurações de legendas e idiomas -->
         </button>
       </div>
-       
     </footer>
   </body>
-</html>
