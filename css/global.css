@@ -132,6 +132,86 @@ a:hover {
 }
 
 
+
+/*///////////////////////////////////////////*/
+/*/////// RODAPÉ*/
+#rodape {
+    background: #0E0E0E;
+    padding: 2em;
+    display: grid;
+    grid-template-areas: "logo links contato";
+    grid-gap: 1em;
+    color: #FEF9FF;
+}
+
+#rodape .logo {
+    grid-area: "logo";
+}
+
+#rodape .links ul {
+    grid-area: "links";
+}
+
+#rodape .links ul a {
+ color: #FEF9FF;
+ transition: all 0.3s ease;
+}
+
+#rodape .links ul a:hover {
+    color: #7B00FF;
+}
+
+#rodape .contato {
+    grid-area: "contato";
+    display: grid;
+    grid-template-areas: 
+    "icones"
+    "sac";
+    justify-content: center;
+}
+
+#rodape .contato .icones {
+    grid-area: "icones";
+}
+
+#rodape .contato .icones a img{
+    width: 40px;
+    height: 40px;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+}
+
+#rodape .contato .sac {
+    grid-area: "sac";
+}
+
+@media (max-width: 799px) {
+    #rodape {
+        display: grid;
+        grid-template-areas:
+            "logo"
+            "links"
+            "contato";
+        padding-left: 5em;
+        justify-items: center;
+    }
+
+    #rodape .links {
+        margin-top: 1em;
+        width: 25%;
+    }
+
+
+    #rodape .contato {
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+}
+
+
+
+
+/*///////////////////////////////////////////*/
 /*////////   FORMULARIO DE CADASTRO*/
 
 #formulario {
@@ -238,82 +318,33 @@ a:hover {
 }
 
 
-
-/*RODAPÉ*/
-#rodape {
-    background: #0E0E0E;
-    padding: 2em;
-    display: grid;
-    grid-template-areas: "logo links contato";
-    grid-gap: 1em;
-    color: #FEF9FF;
+input.error {
+    border: 1px solid rgb(202, 53, 53);
+    color: rgb(161, 36, 36);
+    background-color: #ccbbbb;
 }
 
-#rodape .logo {
-    grid-area: "logo";
+input.correct {
+    background-color: #bbccbb;
+    color: rgb(27, 145, 27);
+    border: 1px solid rgb(32, 163, 32);
 }
 
-#rodape .links ul {
-    grid-area: "links";
+.error-text {
+    display: none;
+    font-size: 8rem;
+    font-weight: 600;
+    color: rgb(202, 53, 53);
 }
 
-#rodape .links ul a {
- color: #FEF9FF;
- transition: all 0.3s ease;
+.visible {
+    display: block;
 }
 
-#rodape .links ul a:hover {
-    color: #7B00FF;
-}
-
-#rodape .contato {
-    grid-area: "contato";
-    display: grid;
-    grid-template-areas: 
-    "icones"
-    "sac";
-    justify-content: center;
-}
-
-#rodape .contato .icones {
-    grid-area: "icones";
-}
-
-#rodape .contato .icones a img{
-    width: 40px;
-    height: 40px;
-    margin-right: 1.5em;
-    margin-bottom: 1em;
-}
-
-#rodape .contato .sac {
-    grid-area: "sac";
-}
-
-@media (max-width: 799px) {
-    #rodape {
-        display: grid;
-        grid-template-areas:
-            "logo"
-            "links"
-            "contato";
-        padding-left: 5em;
-        justify-items: center;
-    }
-
-    #rodape .links {
-        margin-top: 1em;
-        width: 25%;
-    }
 
 
-    #rodape .contato {
-        margin-top: 1em;
-        margin-left: 1em;
-    }
-}
-
-/*MEDIA QUERIES P/ COPIAR*/
+/*///////////////////////////////////////////*/
+/*///// MEDIA QUERIES P/ COPIAR*/
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {}
