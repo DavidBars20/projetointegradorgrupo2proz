@@ -15,7 +15,7 @@
     />
 
     <!-- Bootstrap CSS -->
-   <link
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -37,7 +37,9 @@
 
     <!-- Estilo customizado -->    
     <link rel="stylesheet" type="text/css" href="./css/exibicao_filme.css" />
-    
+
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.ico" />
 
     <title>Streamflix</title>
   </head>
@@ -45,23 +47,22 @@
   <body class="d-flex flex-column vh-100">
     <!-- Define o corpo da página com flexbox, organizando os elementos em uma coluna e ocupando 100% da altura da viewport -->
   
-    <div class="imagemTela">
-      <img src="./img/planoTela.webp"></img>
-    </div>
-
     <!-- Header -->
     <header id="cabecalho">
       <!-- Define o cabeçalho da página -->
   
-      <!-- Botão "Voltar para a página de sinopse" -->
+      <!-- Botão "Voltar" -->
       <button class="btn-voltar">
-        <a href="sinopse.html">          
-          <img src="./img/sair.svg" alt="Sair" title="sair" />          
+        <a href="sinopse.html">
+          <!-- Link para a página de sinopse -->
+          <img src="./img/sair.svg" alt="Sair" title="sair" />
+          <!-- Ícone para sair, com texto alternativo e título -->
         </a>
       </button>
   
       <!-- Título do filme -->
-      <h5>Nome do filme</h5>      
+      <h5>Nome do filme</h5>
+      <!-- Exibe o nome do filme centralizado no cabeçalho -->
   
       <!-- Botão "Compartilhar" -->
       <button class="btn-compartilhar">
@@ -70,71 +71,76 @@
           <img
             src="./img/Compartilhar.svg"
             alt="Compartilhar"
-            title="Compartilhar" />          
+            title="Compartilhar" />
+          <!-- Ícone para compartilhar, com texto alternativo e título -->
         </a>
       </button>
     </header>
   
     <!-- Main -->
     <main id="principal">
-      <!-- Define o conteúdo principal da página -->     
-      
+      <!-- Define o conteúdo principal da página -->
   
-        <div class="centro">
-          <!-- Centraliza o conteúdo principal -->
-    
-          <!-- Ícone e barra de "brilho" -->
-          <div class="brilho">
-            <img
-              src="./img/briho.svg"
-              alt="Brilho"
-              title="brilho" />          
-    
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value="50"
-              class="input-brilho" />
-          </div>
-    
-          <div class="controles">
-            <!-- Controles de reprodução -->
-    
-            <!-- Botão "Para trás" -->
-            <button class="btn-para-tras">
-              <img src="./img/para_tras.svg" width="50" alt="Para Trás" title="para trás" />            
-            </button>
-    
-            <!-- Botão "Pause" -->
-            <button class="btn-pause">
-              <img src="./img/pause.svg" width="40" alt="Pause" title="pause" />            
-            </button>
-    
-            <!-- Botão "Play" -->
-            <button class="btn-play">
-              <img src="./img/play.svg" width="40" alt="Play" title="play" />            
-            </button>
-    
-            <!-- Botão "Avançar" -->
-            <button class="btn-avancar">
-              <img src="./img/avancar.svg" width="50" alt="Avançar" title="avançar" />            
-            </button>
-          </div>
+      <div class="centro">
+        <!-- Centraliza o conteúdo principal -->
+  
+        <!-- Ícone e barra de "brilho" -->
+        <div class="brilho">
+          <img
+            src="./img/briho.svg"
+            alt="Brilho"
+            title="brilho" />
+          <!-- Ícone para o ajuste de brilho -->          
+          <input 
+            type="range"            
+            min="0"
+            max="100"
+            value="50"
+            class="input-brilho" />
+          <!-- Controle deslizante para ajustar o brilho -->
         </div>
-    </div>
+  
+        <div class="controles">
+          <!-- Controles de reprodução -->
+  
+          <!-- Botão "Para trás" -->
+          <button class="btn-para-tras">
+            <img src="./img/para_tras.svg" width="50" alt="Para Trás" title="para trás" />
+            <!-- Ícone para voltar na reprodução -->
+          </button>
+  
+          <!-- Botão "Pause" -->
+          <button class="btn-pause">
+            <img src="./img/pause.svg" width="40" alt="Pause" title="pause" />
+            <!-- Ícone para pausar a reprodução -->
+          </button>
+  
+          <!-- Botão "Play" -->
+          <button class="btn-play">
+            <img src="./img/play.svg" width="40" alt="Play" title="play" />
+            <!-- Ícone para iniciar a reprodução -->
+          </button>
+  
+          <!-- Botão "Avançar" -->
+          <button class="btn-avancar">
+            <img src="./img/avancar.svg" width="50" alt="Avançar" title="avançar" />
+            <!-- Ícone para avançar na reprodução -->
+          </button>
+        </div>
+      </div>
     </main>
   
     <!-- Footer -->
-    <footer id="rodapes">
+    <footer id="end">
       <!-- Define o rodapé da página -->
   
       <!-- Barra de progresso -->
       <div class="progresso">
-        <input type="range" min="0" max="100" value="0" class="w-100" />        
+        <input type="range" min="0" max="100" value="0" class="w-100" />
+        <!-- Controle deslizante para mostrar o progresso da reprodução -->
       </div>
   
-      <div class="footer">
+      <div class="controlFooter">
         <!-- Controles adicionais no rodapé -->
   
         <!-- Botão "Não Curtir" -->
@@ -142,7 +148,8 @@
           <img
             src="./img/nao_curtir.svg"
             alt="Não Curtir"
-            title="Não Curtir" />          
+            title="Não Curtir" />
+          <!-- Ícone para indicar "Não Curtir" -->
         </button>
   
         <!-- Botão "Curtir" -->
@@ -150,16 +157,17 @@
           <img
             src="./img/curti.svg"
             alt="Curtir"
-            title="Curtir" />  
+            title="Curtir" />
+          <!-- Ícone para indicar "Curtir" -->
         </button>
   
-        <!-- Botão "Velocidade de reprodução" -->
+        <!-- Botão "Velocidade" -->
         <button class="btn-velocidade">
           <img
-            src="./img/velocidade_filme.svg"
-            width="60"
+            src="./img/velocidade_filme.svg"            
             alt="Velocidade"
-            title="Velocidade" />         
+            title="Velocidade" />
+          <!-- Ícone para ajustar a velocidade de reprodução -->
         </button>
   
         <!-- Botão "Volume" -->
@@ -167,7 +175,8 @@
           <img
             src="./img/volume.svg"
             alt="Volume"
-            title="Volume" />          
+            title="Volume" />
+          <!-- Ícone para ajustar o volume -->
         </button>
   
         <!-- Botão "Legenda e Idioma" -->
@@ -175,9 +184,9 @@
           <img
             src="./img/legenda_e_idioma.svg"
             alt="Legenda e Idioma"
-            title="Legenda e Idiomas" />       
+            title="Legenda e Idiomas" />
+          <!-- Ícone para acessar configurações de legendas e idiomas -->
         </button>
       </div>
     </footer>
   </body>
-  
