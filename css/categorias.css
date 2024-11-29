@@ -16,7 +16,7 @@ body {
 header {
     background-color: #4a52c9;
     color: white;
-    padding: 15px;
+    padding: 30px;
 }
 .navbar {
     display: flex;
@@ -25,7 +25,7 @@ header {
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
 }
 .navbar h1 {
-    font-size: 28px;
+    font-size: 55px;
 }
 .navbar nav ul {
     display: flex;
@@ -95,7 +95,7 @@ h2 {
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 .footer-logo {
@@ -103,6 +103,7 @@ footer {
     margin-bottom: 10px;
 }
 .footer-links a {
+    align-items: flex-start;
     color: white;
     margin: 0 15px;
     text-decoration: none;
@@ -123,18 +124,16 @@ footer {
     margin-top: 15px;
 }
 
+
 /* Media Queries para Responsividade */
 @media (max-width: 1200px) {
-
 .navbar nav ul {
-flex-direction: column;
-/* Coloca os itens em coluna em telas menores */
- gap: 10px;
+flex-direction: column; /* Coloca os itens em coluna em telas menores */
+ gap: 5px;
 }
 
 .navbar h1 {
-font-size: 24px;
-/* Reduz o tamanho da fonte do título */
+font-size: 24px; /* Reduz o tamanho da fonte do título */
  }
 
 .filmes-slider img {
@@ -146,34 +145,37 @@ h2 {
 font-size: 22px; 
 /* Reduz o tamanho da fonte dos cabeçalhos */
 }
+.footer {
+align-items: flex-start;
+}
 }
 
 @media (max-width: 768px) {
 .navbar {
-flex-direction: column; 
-/* Coloca a navbar em coluna */
-align-items: flex-start;
-/* Alinha os itens à esquerda */
+flex-direction: line; /* Coloca a navbar em coluna */
+align-items: center; /* Alinha os itens à esquerda */
+}
+
+header{
+flex-direction: line; /* Coloca a navbar em coluna */
+align-items:flex-start; /* Alinha os itens à esquerda */
+font-size: smaller;
 }
 
 .navbar nav ul {
-align-items: flex-start;
-/* Alinha os itens da navbar à esquerda */
+align-items: flex-start; /* Alinha os itens da navbar à esquerda */
 }
 
 .filmes-slider img {
-width: 100px; 
-/* Mais redução na largura das imagens */
+width: 150px; /* Mais redução na largura das imagens */
 }
 
 h2 {
-font-size: 20px; 
-/* Mais redução no tamanho da fonte dos cabeçalhos */
+font-size: 20px; /* Mais redução no tamanho da fonte dos cabeçalhos */
 }
 
 .user-profile {
-margin-top: 10px; 
-    /* Adiciona espaço entre a navbar e o perfil do usuário */
+margin-top: 10px; /* Adiciona espaço entre a navbar e o perfil do usuário */
 }
 }
 
@@ -183,10 +185,14 @@ font-size: 20px; /* Reduz ainda mais o tamanho do título */
 }
 
 .filmes-slider {
-flex-direction: column; 
-/* Alinha os filmes verticalmente */
-align-items: center;
-/* Centraliza os filmes */
+flex: center;
+flex-direction: column; /* Alinha os filmes verticalmente */
+align-items: center; /* Centraliza os filmes */
+}
+
+.filmes-slider img {
+width: 100px; /* Reduz ainda mais a largura das imagens */
+}
 }
 
 .filmes-slider img {

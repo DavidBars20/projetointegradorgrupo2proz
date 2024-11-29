@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', 'Gotham Black', sans-serif;
+    font-family: 'Roboto', 'Montserrat Black', sans-serif;
     font-weight: 400;
     font-style: normal;
     box-sizing: border-box;
@@ -132,114 +132,9 @@ a:hover {
 }
 
 
-/*////////   FORMULARIO DE CADASTRO*/
 
-#formulario {
-    margin-top: 75px;
-    padding: 3em 2em;
-}
-
-.container #progress-bar {
-    display: flex;
-    margin: 1em 0 4em 0;
-    justify-content: space-around;
-}
-
-.step {
-    text-align: center;
-    width: 100%;
-}
-
-.step p {
-    font-family: "gotham black";
-    text-transform: uppercase;
-    margin-bottom: 8px;
-    font-size: x-large;
-    color: #470094;
-}
-
-
-.step .bullet {
-    background: linear-gradient(180deg, #7B00FF, #470094);
-    color: #FEF9FF;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    display: inline-block;
-    position: relative;
-}
-
-.step span {
-    font-family: "gotham black";
-    text-transform: uppercase;
-    font-size: 200%;
-    line-height: 30px;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%);
-}
-
-.step .bullet::after, .step .bullet::before {
-    position: absolute;
-    content: '';
-    height: 8px;
-    width: 310px;
-    background: #470094;
-    bottom: 20px;
-    right: -310px;
-}
-
-.step:last-child .bullet::after, 
-.step:last-child .bullet::before {
-    display: none;
-}
-
-.step .bullet::after {
-    background: #70A3CC;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s linear forwards;
-}
-
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .step .bullet::after, .step .bullet::before {
-        width: 300px;
-        right: -299px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .step .bullet::after, .step .bullet::before {
-        width: 200px;
-        right: -199px;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .step .bullet::after, .step .bullet::before {
-        width: 110px;
-        right: -109px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .step .bullet::after, .step .bullet::before {
-        width: 122px;
-        right: -121px;
-    }
-}
-
-
-
-/*RODAPÉ*/
+/*///////////////////////////////////////////*/
+/*/////// RODAPÉ*/
 #rodape {
     background: #0E0E0E;
     padding: 2em;
@@ -313,7 +208,11 @@ a:hover {
     }
 }
 
-/*MEDIA QUERIES P/ COPIAR*/
+
+
+
+/*///////////////////////////////////////////*/
+/*///// MEDIA QUERIES P/ COPIAR*/
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {}
