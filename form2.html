@@ -23,9 +23,9 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/form-global.css">
-    <link rel="stylesheet" type="text/css" href="form2.css">
+    <link rel="stylesheet" type="text/css" href="css/form2.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
 
     <title>Streamflix</title>
 
@@ -96,55 +96,62 @@
 
           <fieldset class="fild">
 
+            <!---USERNAME-->
             <label for="username">Nome Completo:</label>
-            <input type="text" id="username" name="username" placeholder="Digite seu nome completo" required>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome completo">
             <p id="username-helper" class="helper-text"></p>
 
+            <!---CPF-->
             <label for="cpf">CPF:</label>
-            <input type="number" id="cpf" name="cpf" placeholder="Digite seu número de CPF" required>
+            <input type="number" id="cpf" name="cpf" placeholder="Digite seu número de CPF">
             <p id="cpf-helper" class="helper-text"></p>
 
+            <!---E-MAIL-->
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
             <p id="email-helper" class="helper-text"></p>
 
+            <!---RUA-->
             <label for="rua">Logadouro:</label>
-            <input type="text" id="rua" name="rua" placeholder="Digite seu endereço" required>
+            <input type="text" id="rua" name="rua" placeholder="Digite seu endereço">
             <p id="rua-helper" class="helper-text"></p>
 
             <div id="endereco">
-
+                <!---NUMERO-->
                 <div id="numero">
                     <label for="numero">Número:</label>
-                    <input type="number" id="numero" name="numero" placeholder="Número da casa" required>
+                    <input type="number" id="numero" name="numero" placeholder="Número da casa">
                     <p id="numero-helper" class="helper-text"></p>
                 </div>
 
+                <!---COMPLEMENTO-->
                 <div id="completo">
                     <label for="complemento-casa">Complemento:</label>
-                    <input type="text" id="complemento-casa" name="complemento-casa" placeholder="Complemento." required>
+                    <input type="text" id="complemento-casa" name="complemento-casa" placeholder="Complemento.">
                     <p id="complemento-helper" class="helper-text"></p>
                 </div>
 
+                <!---CEP-->
                 <div id="cep">
                     <label for="cep">CEP:</label>
-                    <input type="number" id="cep" name="cep" placeholder="CEP" required>
+                    <input type="number" id="cep" name="cep" placeholder="CEP">
                     <p id="cep-helper" class="helper-text"></p>
                 </div>
 
             </div>
 
             <div id="campo-senha">
-
+              <!---SENHA-->
               <div id="senha">
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
                 <p id="senha-helper" class="helper-text"></p>
               </div>
 
+              <!---CONFIRMAR SENHA-->
               <div id="confirmar-senha">
                   <label for="confirma-senha">confirmar senha:</label>
-                  <input type="text" id="confirma-senha" name="confirma-senha" placeholder="Confirme sua senha" required>
+                  <input type="text" id="confirma-senha" name="confirma-senha" placeholder="Confirme sua senha">
                   <p id="confirma-senha-helper" class="helper-text"></p>
               </div>
 
@@ -213,12 +220,8 @@
 
     </footer>
 
-  <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+    <script src="js/form.js" defer></script>
 
-  <script src="js/form2.js" defer></script>
 
   </body>
 </html>

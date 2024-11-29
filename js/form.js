@@ -20,7 +20,6 @@ let ruaInput = document.getElementById('rua');
 let ruaLabel = document.querySelector('label[for="rua"]');
 let ruaHelper = document.getElementById('rua-helper');
 
-
 /*  NÚMERO  */
 let numeroInput = document.getElementById('numero');
 let numeroLabel = document.querySelector('label[for="numero"]');
@@ -30,7 +29,6 @@ let numeroHelper = document.getElementById('numero-helper');
 let complementoInput = document.getElementById('complemento');
 let complementoLabel = document.querySelector('label[for="complemento"]');
 let complementoHelper = document.getElementById('complemento-helper');
-
 
 /*  CEP  */
 let cepInput = document.getElementById('cep');
@@ -69,12 +67,13 @@ function popup(input, label){
 
 /* CHAMAR A FUNÇÃO POPUP */
 popup(userInput, userLabel);
-popup(cpfInput, emailLabel);
+popup(cpfInput, cpfLabel);
 popup(emailInput, emailLabel);
+/*
 popup(ruaInput, emailLabel);
 popup(numeroInput, emailLabel);
-popup(complementoInput, emailLabel);
 popup(cepInput, emailLabel);
+*/
 popup(senhaInput, senhaLabel);
 popup(confirmaSenhaInput, confirmaSenhaLabel);
 
@@ -108,14 +107,14 @@ userInput.addEventListener("change", (e)=> {
     if (valor.length < 3) {
         //Adicionar estilos dinâmicos se o valor estiver incorreto
         inputIncorreto(userInput, userHelper);
-        userHelper.innerText = "Seu username precisa ter 3 ou mais caracteres";
+        userHelper.innerText = "Seu nome de usuário precisa ter 3 ou mais caracteres";
         //Adicionando variável com valor para o submit/validação do formulário
-        inputsCorretos.username = false;
+        inputsCorretos.user = false;
     } else { 
         //Adicionar estilos dinâmicos se o valor estiver correto
         inputCorreto(userInput, userHelper);
         //Adicionando variável com valor para o submit/validação do formulário
-        inputsCorretos.username = true;
+        inputsCorretos.user = true;
     }
 })
 
@@ -134,10 +133,51 @@ emailInput.addEventListener("change", (e)=> {
     }
 })
 
-
-
 /* FAZER: rua numero complemento cep */
 
+/*  RUA  
+ruaInput.addEventListener("change", (e)=> {
+    let valor = e.target.value;
+
+    if () { 
+        inputCorreto(ruaInput, ruaHelper);
+        inputsCorretos.email = true;
+    } else { 
+        inputIncorreto(ruaInput, ruaHelper);
+        ruaHelper.innerText = "Insira um endereço válido";
+        inputsCorretos.rua = false;
+    }
+})
+
+/*  NÚMERO  
+numeroInput.addEventListener("change", (e)=> {
+    let valor = e.target.value;
+
+    if () { 
+        inputCorreto(numeroInput, numeroHelper);
+        inputsCorretos.numero = true;
+    } else { 
+        inputIncorreto(numeroInput, numeroHelper);
+        numeroHelper.innerText = "Insira um número válido";
+        inputsCorretos.numero = false;
+    }
+})
+
+/*  CEP  
+cepInput.addEventListener("change", (e)=> {
+    let valor = e.target.value;
+
+    if () { 
+        inputCorreto(cepInput, cepHelper);
+        inputsCorretos.cep = true;
+    } else { 
+        inputIncorreto(cepInput, cepHelper);
+        cepHelper.innerText = "Insira um CEP válido";
+        inputsCorretos.cep = false;
+    }
+})
+
+*/
 
 /*  SENHA  */
 senhaInput.addEventListener("blur", (e)=> {
