@@ -1,350 +1,186 @@
+/* Estiliza todos os elementos da página */
 * {
-  background: none;
-  border: none;
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
-  margin: 0%;
-  padding: 0%;
+  background: none; /* Remove o fundo padrão */
+  border: none; /* Remove bordas padrão */
+  font-family: 'Roboto', sans-serif; /* Define a fonte padrão */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+  margin: 0%; /* Remove margens */
+  padding: 0%; /* Remove preenchimento */
 }
 
+/* Classe para botões */
 .btn {
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 0 auto; /* Remove preenchimento interno */
 }
 
+/* Corpo da página */
 body {
+  width: 100%; /* Ocupa toda a largura */
+  background-color: rgb(55, 44, 44); /* Cor de fundo escuro */
+  background: rgba(0, 0, 0, 0.8); /* Fundo preto translúcido */
+  z-index: 1000; /* Garante prioridade no empilhamento */
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: rgb(55, 44, 44);
-  background: rgba(0, 0, 0, 0.8);
-  /* Fundo preto translúcido */
-  z-index: 1000;
-  /* Prioridade alta no empilhamento */
-
-}
-
-#cabecalho {
-  width: 100%;
-  display: flex;
-  height: 1%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2%;
-  margin: auto;
-}
-
-header img {
-  opacity: 0.5;
-  width: 30%;
-  height: 50%;
-  cursor: pointer;
-  /* Mostra o ponteiro de mão */
-  display: flex;
-}
-
-#cabecalho h5 {
-  margin: 0 auto;
-  opacity: 0.5;
   height: 100%;
-  color: #fff;
-  font-size: 70%;
+  background-image: url(/img/planoTela.webp);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
 }
 
-#principal {
-  margin-left: 1%;
-  width: 100%;
+/* Cabeçalho da página */
+#cabecalho {
+  width: 100%; /* Ocupa toda a largura */  
+  display: flex; /* Usa Flexbox para layout */  
+  justify-content: space-between; /* Espaça os itens */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 2%; /* Espaçamento interno */
+  margin: auto; /* Centraliza no eixo horizontal */
+  
 }
 
+/* Imagens no cabeçalho */
+header img {
+  opacity: 0.5; /* Semitransparente */
+  width: clamp(20%, 40%, 30%); /* Ajusta dinamicamente 
+  height: 50%; /* Altura proporcional */
+  cursor: pointer; /* Indica interatividade */
+  display: flex; /* Configuração de layout */
+}
+
+/* Títulos no cabeçalho */
+#cabecalho h5 { 
+  opacity: 0.5; /* Semitransparente */
+  height: 50%; /* Ocupa a altura disponível */
+  color: #fff; /* Cor do texto branca */
+  font-size: 50%; /* Tamanho relativo */
+}
+
+/* Conteúdo principal */
+#principal {  
+  width: 100%; /* Ocupa toda a largura */
+  height: 100%;
+}
+
+/* Centralização geral */
 .centro {
-  display: flex;
-  justify-content: stretch;  
-  align-items: center;
-  /* Centraliza verticalmente */
-  height: stretch;
-  /* Ajusta à altura do pai */
-  flex-direction: column;
-  margin-top: 1%;
-  padding: 0 auto;
-
+  display: flex; /* Usa Flexbox */
+  justify-content: stretch; /* Estica os itens horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: stretch; /* Ajusta à altura do pai */
+  flex-direction: column; /* Alinha itens em coluna */
+  margin-top: 1%; /* Espaço acima */
+  padding: 0 auto; /* Remove preenchimento */
 }
 
+/* Estilos específicos para a classe 'brilho' */
 .brilho {
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  padding: 2% 0% 2% 0%;
-  top: 0 auto;
-  height: stretch;
-  margin-left: auto;
+  display: flex; /* Flexbox para layout */
+  align-items: stretch; /* Estica verticalmente */
+  flex-direction: column; /* Direção de coluna */
+  padding: 2% 0% 2% 0%; /* Preenchimento interno */
+  top: 0 auto; /* Alinhamento no topo */
+  height: stretch; /* Ajusta à altura do pai */
+  margin-left: auto; /* Alinha à direita */
+  width: clamp(3vw, 5vw, 5vw); /* Ajusta dinamicamente o tamanho */
 }
 
+/* Imagens na classe 'brilho' */
 .brilho img {
-  opacity: 0.5;
-  right: 5rem;
-  transform: translate(-50%, -50%);
-  height: 2.5%;
-  opacity: 0.5;
-  width: 40%;
-  padding: 2%;
+  opacity: 0.5; /* Semitransparente */
+  right: 5rem; /* Distância da borda direita */
+  transform: translate(-50%, -50%); /* Posicionamento centralizado */
+  height: 2.5%; /* Altura proporcional */
+  width: clamp(7%, 60%, 40%); /* Ajusta dinamicamente o tamanho */
+
+  padding: 2%; /* Espaçamento interno */
 }
 
+/* Entrada vertical */
 .input-brilho {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  height: 40%;
-  width: 4%;
-  cursor: pointer;
-  /* Mostra o ponteiro de mão */
-  opacity: 0.5;
+  writing-mode: vertical-lr; /* Texto na vertical */
+  transform: rotate(180deg); /* Rotaciona o texto */
+  height: 40%; /* Altura proporcional */
+  width: 4%; /* Largura proporcional */
+  cursor: pointer; /* Indica interatividade */
+  opacity: 0.5; /* Semitransparente */
 }
 
+/* Controles */
 .controles {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  position: cover;
-  opacity: 0.5;
-  cursor: pointer;  
-  margin-bottom: -9%;
-  /* Mostra o ponteiro de mão */
+  display: flex; /* Usa Flexbox */
+  justify-content: space-between; /* Espaça itens */
+  align-items: flex-start; /* Alinha ao topo */
+  flex-wrap: wrap; /* Permite quebra de linha */  
+  opacity: 0.5; /* Semitransparente */
+  cursor: pointer; /* Indica interatividade */
+  margin-bottom: -9%; /* Sobrepõe margem inferior */
 }
 
-
-
+/* Imagens dentro dos controles */
 .controles img {
-  height: 2%;
-  width: 30%;  
+  height: 2%; /* Altura proporcional */
+  width: 25%; /* Largura proporcional */
+  
 }
 
-/* FOOTER */
-
+/* Rodapé */
 #end {
-  margin-top: 9%;   
-  width: 100%;
-  height: stretch;
+  margin-top: 9%; /* Espaço acima */
+  width: 100%; /* Ocupa toda a largura */
+  height: stretch; /* Ajusta à altura disponível */
 }
 
+/* Barra de progresso */
 .progresso {
-  width: 100%;
-  padding: 5% 5%;
-  display: flex;
-  align-items: stretch;
-  
-
+  width: clamp(97%, 10%, 10%);
+  padding: clamp(1%, 5%, 2%);
+  display: flex; /* Usa Flexbox */
+  align-items: stretch; /* Alinha verticalmente */
 }
 
+/* Entrada tipo range */
 .progresso input[type="range"] {
-  -webkit-appearance: none;
-  /* Remove o estilo padrão do controle no WebKit */
-  appearance: none;
-  /* Remove o estilo padrão do controle */
-  width: 100%;
-  /* Faz a barra de progresso ocupar toda a largura disponível */
-  height: 0.05rem;
-  /* Define a altura da barra de progresso */
-  background: #a5a1a1;
-  /* Define uma cor cinza escura para a barra de progresso */
-  border-radius: 5%;
-  /* Arredonda os cantos da barra */
-  outline: none;
-  /* Remove a borda padrão ao focar no controle */
-  cursor: pointer;
-  /* Muda o cursor para uma mão ao passar sobre a barra */
+  -webkit-appearance: none; /* Remove estilos padrão (WebKit) */
+  appearance: none; /* Remove estilos padrão */
+  width: 100%; /* Largura total */
+  height: 0.05rem; /* Altura da barra */
+  background: #a5a1a1; /* Cor de fundo */
+  border-radius: 5%; /* Bordas arredondadas */
+  outline: none; /* Remove o contorno ao foco */
+  cursor: pointer; /* Indica interatividade */
 }
 
+/* Estilos do 'thumb' na barra de progresso */
 .progresso input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  /* Remove o estilo padrão do "thumb" no WebKit */
-  appearance: none;
-  /* Remove o estilo padrão do "thumb" */
-  width: 1%;
-  /* Define a largura do "thumb" */
-  height: 10px;
-  /* Define a altura do "thumb" */
-  background: #fff;
-  /* Define a cor do "thumb" como branco */
-  border-radius: 50%;
-  /* Torna o "thumb" redondo */
-  cursor: pointer;
-  /* Muda o cursor para uma mão ao passar sobre o "thumb" */
+  -webkit-appearance: none; /* Remove estilos padrão (WebKit) */
+  appearance: none; /* Remove estilos padrão */
+  width: 1%; /* Largura proporcional */
+  height: 10px; /* Altura fixa */
+  background: #fff; /* Fundo branco */
+  border-radius: 50%; /* Formato circular */
+  cursor: pointer; /* Indica interatividade */
 }
 
+/* Controles no rodapé */
 .controlFooter {
-  display: flex; 
-  justify-content: space-around;
-  align-items: stretch;    
-  
+  display: flex; /* Usa Flexbox */
+  justify-content: space-around; /* Espaça uniformemente */
+  align-items: stretch; /* Estica verticalmente */
 }
 
-
+/* Imagens no rodapé */
 .controlFooter img {
-  opacity: 0.5;
-  width: 100%;
-  height: 1rem;
-  cursor: pointer;
-  /* Mostra o ponteiro de mão */
-}
-
-
-/* __________________________________________________________ RESPONSIVIDADE _____________________________________________________ */
-
-@media (max-width: 320px) and (max-height:468px) {
- 
-  #cabecalho img {
-    height: 1%;
-    width: 10%;    
-    margin: 0;
-  }
-
-  #cabecalho h5 {
-    font-size: 15%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .brilho {
-    padding: 0 auto;
-    max-width: 5%;
-  }
-
-  .brilho img {
-    height: 40%;
-    width: 60%;
-  }
-
-  .centro {
-    margin: 0 auto;
-    padding: 0 auto;
-  }
-
-  .end {
-    margin: auto auto;
-  }
-  .controles img {
-    height: 10%;
-    width: 15%;
-  }
-
-  .controlFooter img {
-    height: 1%;
-    width: 8px;
-    
-  }
-}
-
-@media (min-width: 1440px) and (max-height: 478) {
-
-  #cabecalho {
-    margin: 0 auto;
-    padding: 0 auto;
-  }
-  .centro {
-    margin: 0 auto;
-  }
-
-  .brilho {
-    margin: 0 auto;
-    margin-top: 0 auto;
-  }
-
-  .controles {
-    margin-bottom: 2%;
-  }
-
-  #end {
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .controlFooter {
-    padding: 0 auto;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 576px) and (max-width: 767px) {
-
-  #cabacalho {
-    margin-bottom: 100%;
-
-  }
-
-  #cabecalho h5 {
-    margin: 0;
-    padding: 0;
-    font-size: 50%;
-  }
-
-  .centro {
-    height: 100%;
-  }
-
-  .brilho {
-    margin-left: 96%;
-    margin-bottom: 5%;
-  }
-
-  .brilho img {
-    width: 30%;
-  }
-
-  .centro {
-    margin-top: 30%;
-
-  }
-
-}
-
-@media(max-width: 320px) and (max-width: 520px) {
-
-  .controles {
-    margin-top: 5%;
-    margin-bottom: -10%;
-  }
-
-  .controles img {
-    height: 3%;
-    width: 25%;  
-  }
-
-  .progresso {    
-    padding: 15% 5% 5% 5%;
-    
-  }
-
-  .controlFooter {    
-    margin-top: -4%;
-  }
-
-  .controlFooter img {    
-    height: 50%;
-    width: 25%;    
-  }
-}
-
-@media (max-width: 425px) and (max-width: 520px) {
- 
-  .controles {
-    margin-top: 5%;
-    margin-bottom: -5%;
-  }
-
-  .controles img {
-    height: 3%;
-    width: 15%;  
-  }
-
-  .progresso {    
-    padding: 10% 5% 5% 5%;
-    
-  }
-
-  .controlFooter {    
-    margin-top: -2%;
-  }
-
-  .controlFooter img {    
-    height: 50%;
-    width: 15%;    
-  }
+  opacity: 0.5; /* Semitransparente */
+  width: clamp(10%, 100%, 100%); /* Ajusta dinamicamente o tamanho */
+  height: clamp(10%, 40%, 20%);
+  cursor: pointer; /* Indica interatividade */
 }
