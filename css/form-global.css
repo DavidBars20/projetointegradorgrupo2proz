@@ -182,15 +182,14 @@ fieldset button:hover {
     margin-top: 1rem;
 }
 
-.error {
+input.error {
     border: solid 2px #992020;
     background-color: #ccbbbb;
     color: #662020;
     border-radius: 5px;
 }
 
-.correct {
-    background-color: #bbccbb;
+input.correct {
     border: solid 2px #206620;
     color: #206620;
     border-radius: 5px;

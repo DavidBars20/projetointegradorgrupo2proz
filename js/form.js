@@ -49,10 +49,9 @@ let confirmaSenhaHelper = document.getElementById('confirma-senha-helper');
 let bnt = document.querySelector("button[type=submit]");
 
 
-
 //---------------------------------------------//
 /*FUNÇÃO GERAL TOGGLE POPUP */
-function popup(input, label){
+function togglePopup(input, label){
 
     /* MOSTRAR POPUP DE CAMPO OBRIGATÓRIO */
     input.addEventListener("focus", () => {
@@ -66,16 +65,16 @@ function popup(input, label){
 }
 
 /* CHAMAR A FUNÇÃO POPUP */
-popup(userInput, userLabel);
-popup(cpfInput, cpfLabel);
-popup(emailInput, emailLabel);
+togglePopup(userInput, userLabel);
+togglePopup(cpfInput, cpfLabel);
+togglePopup(emailInput, emailLabel);
 /*
 popup(ruaInput, emailLabel);
 popup(numeroInput, emailLabel);
 popup(cepInput, emailLabel);
 */
-popup(senhaInput, senhaLabel);
-popup(confirmaSenhaInput, confirmaSenhaLabel);
+togglePopup(senhaInput, senhaLabel);
+togglePopup(confirmaSenhaInput, confirmaSenhaLabel);
 
 
 
@@ -123,7 +122,7 @@ userInput.addEventListener("change", (e)=> {
 emailInput.addEventListener("change", (e)=> {
     let valor = e.target.value;
 
-    if (valor.includes('@') && valor.includes('.com') === true) { 
+    if (valor.includes('@') && valor.includes('.com')) { 
         inputCorreto(emailInput, emailHelper);
         inputsCorretos.email = true;
     } else { 
@@ -183,7 +182,7 @@ cepInput.addEventListener("change", (e)=> {
 senhaInput.addEventListener("blur", (e)=> {
     let valor = e.target.value;
 
-    if (valor.length >= 6 === true) {
+    if (valor.length >= 6) {
         inputCorreto(senhaInput, senhaHelper);
         inputsCorretos.senha = true;
     } else {
@@ -216,16 +215,18 @@ let inputsCorretos = {
     username: false,
     cpf: false,
     email: false,
+    /*
     rua: false,
     numero: false,
     complemento: false,
     cep: false,
+    */
     senha: false,
     confirmaSenha: false
 } // Primeiramente eles são carregados com false, pois se eles forem true, o formulário será enviado com sucesso no 1° carregamento da página
 
 bnt.addEventListener("click", (e) => {
-    if (inputsCorretos.username == false || inputsCorretos.cpf == false || inputsCorretos.email == false || inputsCorretos.rua == false || inputsCorretos.numero == false || inputsCorretos.complemento == false || inputsCorretos.cep == false || inputsCorretos.senha == false || inputsCorretos.confirmaSenha == false) {
+    if (inputsCorretos.username == false || inputsCorretos.cpf == false || inputsCorretos.email == false || /* inputsCorretos.rua == false || inputsCorretos.numero == false || inputsCorretos.complemento == false || inputsCorretos.cep == false || */inputsCorretos.senha == false || inputsCorretos.confirmaSenha == false) {
         e.preventDefault();
         alert("Verifique os campos e tente novamente");
     } else {
