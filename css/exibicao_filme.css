@@ -7,6 +7,11 @@
   padding: 0%;
 }
 
+.btn {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
 body {
   width: 100%;
   background-color: rgb(55, 44, 44);
@@ -97,7 +102,7 @@ header img {
   display: flex;
   justify-content: stretch;
   align-items: flex-start;
-  position: relative;
+  position: cover;
   opacity: 0.5;
   cursor: pointer;
   margin-top: 5%;
@@ -121,6 +126,9 @@ header img {
   width: 100%;
   padding: 5% 5%;
   display: flex;
+  align-items: stretch;
+  
+
 }
 
 .progresso input[type="range"] {
@@ -165,6 +173,7 @@ header img {
   align-items: stretch;  
   margin-top: -3%;
 }
+
 
 .controlFooter img {
   opacity: 0.5;
@@ -282,4 +291,58 @@ header img {
 
   }
 
+}
+
+@media(max-width: 320px) and (max-width: 520px) {
+
+  .controles {
+    margin-top: 5%;
+    margin-bottom: -10%;
+  }
+
+  .controles img {
+    height: 3%;
+    width: 25%;  
+  }
+
+  .progresso {    
+    padding: 15% 5% 5% 5%;
+    
+  }
+
+  .controlFooter {    
+    margin-top: -4%;
+  }
+
+  .controlFooter img {    
+    height: 50%;
+    width: 25%;    
+  }
+}
+
+@media (max-width: 425px) and (max-width: 520px) {
+ 
+  .controles {
+    margin-top: 5%;
+    margin-bottom: -5%;
+  }
+
+  .controles img {
+    height: 3%;
+    width: 15%;  
+  }
+
+  .progresso {    
+    padding: 10% 5% 5% 5%;
+    
+  }
+
+  .controlFooter {    
+    margin-top: -2%;
+  }
+
+  .controlFooter img {    
+    height: 50%;
+    width: 15%;    
+  }
 }
