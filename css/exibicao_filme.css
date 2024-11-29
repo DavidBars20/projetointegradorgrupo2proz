@@ -51,15 +51,14 @@ header img {
 
 .centro {
   display: flex;
-  justify-content: space-around;
-  /* Alinha a barra à direita */
+  justify-content: stretch;  
   align-items: center;
   /* Centraliza verticalmente */
   height: 100%;
   /* Ajusta à altura do pai */
   flex-direction: column;
   margin-top: -5%;
-  padding: 2% 0%;
+  padding: 2% 1%;
 
 }
 
@@ -67,9 +66,8 @@ header img {
   display: flex;
   align-items: stretch;
   flex-direction: column;
-  padding: 5% 1% 5% 0%;
+  padding: 5% 0% 5% 0%;
   top: 5rem;
-  right: 5rem;
   height: 1%;
   margin-left: auto;
 }
@@ -88,7 +86,7 @@ header img {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   height: 40%;
-  width: 2%;
+  width: 4%;
   cursor: pointer;
   /* Mostra o ponteiro de mão */
   opacity: 0.5;
@@ -97,12 +95,13 @@ header img {
 
 .controles {
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
   align-items: flex-start;
   position: relative;
   opacity: 0.5;
   cursor: pointer;
-  margin-top: 3%;
+  margin-top: 5%;
+  margin-bottom: -9%;
   /* Mostra o ponteiro de mão */
 }
 
@@ -114,13 +113,13 @@ header img {
 /* FOOTER */
 
 #end {
-  margin-top: 5%;
+  margin-top: 4%;   
   width: 100%;
 }
 
 .progresso {
   width: 100%;
-  padding: 2% 5%;
+  padding: 5% 5%;
   display: flex;
 }
 
@@ -163,8 +162,8 @@ header img {
 .controlFooter {
   display: flex; 
   justify-content: space-around;
-  align-items: center;
-  padding: 1% 2% 3% 2%;
+  align-items: stretch;  
+  margin-top: -3%;
 }
 
 .controlFooter img {
@@ -193,7 +192,7 @@ header img {
   }
 
   .brilho {
-    padding: 5% 0%;
+    padding: 0 auto;
     max-width: 5%;
   }
 
@@ -203,9 +202,13 @@ header img {
   }
 
   .centro {
-    margin-top: 0%;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
+  .end {
+    margin: auto auto;
+  }
   .controles img {
     height: 10%;
     width: 15%;
@@ -218,13 +221,19 @@ header img {
   }
 }
 
-@media (max-width: 1440px) and (max-height: 480px) {
+@media (min-width: 1440px) and (max-height: 478) {
+
+  #cabecalho {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
   .centro {
-    margin-top: -8%;
+    margin: 0 auto;
   }
 
   .brilho {
-    margin-top: 1%;
+    margin: 0 auto;
+    margin-top: 0 auto;
   }
 
   .controles {
@@ -232,12 +241,13 @@ header img {
   }
 
   #end {
-    margin-top: -6%;
+    margin: 0 auto;
     width: 100%;
   }
 
   .controlFooter {
-    padding: 0% 0% 50% 0%;
+    padding: 0 auto;
+    margin: 0 auto;
   }
 }
 
