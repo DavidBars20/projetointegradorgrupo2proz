@@ -59,11 +59,11 @@ header img {
   justify-content: stretch;  
   align-items: center;
   /* Centraliza verticalmente */
-  height: 100%;
+  height: stretch;
   /* Ajusta à altura do pai */
   flex-direction: column;
-  margin-top: -5%;
-  padding: 2% 1%;
+  margin-top: 1%;
+  padding: 0 auto;
 
 }
 
@@ -71,9 +71,9 @@ header img {
   display: flex;
   align-items: stretch;
   flex-direction: column;
-  padding: 5% 0% 5% 0%;
-  top: 5rem;
-  height: 1%;
+  padding: 2% 0% 2% 0%;
+  top: 0 auto;
+  height: stretch;
   margin-left: auto;
 }
 
@@ -97,29 +97,31 @@ header img {
   opacity: 0.5;
 }
 
-
 .controles {
   display: flex;
-  justify-content: stretch;
+  justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   position: cover;
   opacity: 0.5;
-  cursor: pointer;
-  margin-top: 5%;
+  cursor: pointer;  
   margin-bottom: -9%;
   /* Mostra o ponteiro de mão */
 }
 
+
+
 .controles img {
-  height: 3%;
-  width: 40%;  
+  height: 2%;
+  width: 30%;  
 }
 
 /* FOOTER */
 
 #end {
-  margin-top: 4%;   
+  margin-top: 9%;   
   width: 100%;
+  height: stretch;
 }
 
 .progresso {
@@ -170,8 +172,8 @@ header img {
 .controlFooter {
   display: flex; 
   justify-content: space-around;
-  align-items: stretch;  
-  margin-top: -3%;
+  align-items: stretch;    
+  
 }
 
 
