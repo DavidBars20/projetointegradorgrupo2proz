@@ -14,17 +14,21 @@ fieldset {
     margin: 0 auto;
 }
 
-
-label {
+#formulario label {
     font-size: 150%;
     color: #470094;
     font-family: "Montserrat Black";
     text-transform: uppercase;
     display: block;
+    position: relative;
     margin: 1em 0 0.3em 0;
 }
 
-input {
+#formulario label:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+#formulario input {
     width: 100%;
     height: 50px;
     padding: 0.5em;
@@ -175,6 +179,7 @@ fieldset button:hover {
     padding: .2rem .3rem;
     width: auto;
     display: block;
+    margin-top: 1rem;
 }
 
 .error {
