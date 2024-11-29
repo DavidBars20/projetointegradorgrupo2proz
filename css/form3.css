@@ -11,7 +11,7 @@ fieldset {
 label {
     font-size: 150%;
     color: #470094;
-    font-family: "gotham black";
+    font-family: "Montserrat Black";
     text-transform: uppercase;
     display: block;
     margin: 1em 0 0.3em 0;
@@ -51,7 +51,7 @@ fieldset button {
     color: #FEF9FF;
     padding: 10px 0;
     border-radius: 5px;
-    font-family: "gotham black";
+    font-family: "Montserrat Black";
     text-transform: uppercase;
     font-size: x-large;
     letter-spacing: 0.1em;

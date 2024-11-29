@@ -4,20 +4,19 @@
     background-size: cover;
     margin: 0 auto;
     height: 600px;
-    border: 1px solid red;
 }
 
 #home h2 {
-    font-family: "Gotham Black", sans-serif;
-    font-size: 1.9em;
-    margin-bottom: 1em;
+    font-family: "Montserrat Black", sans-serif;
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
 }
 
 .card.card_home {
     background: #1e1e1e;
     color: #FEF9FF;
     width: 300px;
-    height: 300px;
+    height: 260px;
     text-transform: uppercase;
     padding: 1em;
     font-style: italic;
