@@ -230,7 +230,7 @@ fieldset {
     margin: 0 auto;
 }
 
-#formulario label {
+.fild-dados label {
     font-size: 150%;
     color: #470094;
     font-family: "Montserrat Black";
@@ -240,16 +240,20 @@ fieldset {
     margin: 1em 0 0.3em 0;
 }
 
-#formulario label:not(:first-of-type) {
+.fild-dados label:not(:first-of-type) {
     margin-top: 1rem;
 }
 
-#formulario input {
+.fild-dados input {
     width: 100%;
     height: 50px;
     padding: 0.5em;
     border: 1px solid #470094;
     border-radius: 5px;
+}
+
+.fild-dados input:active {
+    border: 1.5px solid #206620;
 }
 
 fieldset button {
@@ -396,14 +400,14 @@ fieldset button:hover {
     margin-top: 1rem;
 }
 
-input.error {
+input .error {
     border: solid 2px #992020;
     background-color: #ccbbbb;
     color: #662020;
     border-radius: 5px;
 }
 
-input.correct {
+input .correct {
     border: solid 2px #206620;
     color: #206620;
     border-radius: 5px;
