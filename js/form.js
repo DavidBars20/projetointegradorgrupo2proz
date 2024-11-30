@@ -1,119 +1,103 @@
-//* CAPTURAR ELEMENTOS NO DOM E ASSOCIAR A VARIÁVEIS */
+/////////////////////////////////////////////////////
+// Capturando elementos
 
 /*  USERNAME  */
-let userInput = document.getElementById('username');
-let userLabel = document.querySelector('label[for="username"]');
-let userHelper = document.getElementById('username-helper');
+let usernameLabel = document.querySelector("label[for='username']");
+let usernameInput = document.getElementById("username");
+let usernameHelper = document.getElementById("username-helper");
 
 /*  CPF  */
-let cpfInput = document.getElementById('cpf');
-let cpfLabel = document.querySelector('label[for="cpf"]');
-let cpfHelper = document.getElementById('cpf-helper');
+let cpfLabel = document.querySelector("label[for='cpf']");
+let cpfInput = document.getElementById("cpf");
+let cpfHelper = document.getElementById("cpf-helper");
 
 /*  EMAIL  */
-let emailInput = document.getElementById('email');
-let emailLabel = document.querySelector('label[for="email"]');
-let emailHelper = document.getElementById('email-helper');
+let emailLabel = document.querySelector("label[for='email']");
+let emailInput = document.getElementById("email");
+let emailHelper = document.getElementById("email-helper");
 
 /*  RUA  */
-let ruaInput = document.getElementById('rua');
-let ruaLabel = document.querySelector('label[for="rua"]');
-let ruaHelper = document.getElementById('rua-helper');
+let ruaLabel = document.querySelector("label[for='rua']");
+let ruaInput = document.getElementById("rua");
+let ruaHelper = document.getElementById("rua-helper");
 
-/*  NÚMERO  */
-let numeroInput = document.getElementById('numero');
-let numeroLabel = document.querySelector('label[for="numero"]');
-let numeroHelper = document.getElementById('numero-helper');
+/*  NUMERO  */
+let numeroLabel = document.querySelector("label[for='numero']");
+let numeroInput = document.getElementById("numero");
+let numeroHelper = document.getElementById("numero-helper");
 
 /*  COMPLEMENTO  */
-let complementoInput = document.getElementById('complemento');
-let complementoLabel = document.querySelector('label[for="complemento"]');
-let complementoHelper = document.getElementById('complemento-helper');
+let complementoLabel = document.querySelector("label[for='complemento']");
+let complementoInput = document.getElementById("complemento");
+let complementoHelper = document.getElementById("complemento-helper");
 
 /*  CEP  */
-let cepInput = document.getElementById('cep');
-let cepLabel = document.querySelector('label[for="cep"]');
-let cepHelper = document.getElementById('cep-helper');
+let cepLabel = document.querySelector("label[for='cep']");
+let cepInput = document.getElementById("cep");
+let cepHelper = document.getElementById("cep-helper");
 
 /*  SENHA  */
-let senhaInput = document.getElementById('senha');
-let senhaLabel = document.querySelector('label[for="senha"]');
-let senhaHelper = document.getElementById('senha-helper');
+let senhaLabel = document.querySelector("label[for='senha']");
+let senhaInput = document.getElementById("senha");
+let senhaHelper = document.getElementById("senha-helper");
 
 /*  CONFIRMA SENHA  */
-let confirmaSenhaInput = document.getElementById('confirma-senha');
-let confirmaSenhaLabel = document.querySelector('label[for="confirma-senha"]');
-let confirmaSenhaHelper = document.getElementById('confirma-senha-helper');
+let confirmarSenhaLabel = document.querySelector("label[for='confirmar-senha']");
+let confirmarSenhaInput = document.getElementById("confirmar-senha");
+let confirmarSenhaHelper = document.getElementById("confirmar-senha-helper");
 
-/* SUBMIT */
-let bnt = document.querySelector("button[type=submit]");
-
-
-//---------------------------------------------//
-/*FUNÇÃO GERAL TOGGLE POPUP */
-function togglePopup(input, label){
-
-    /* MOSTRAR POPUP DE CAMPO OBRIGATÓRIO */
-    input.addEventListener("focus", () => {
-        label.classList.add('required-popup');
-    });
-
-    /* OCULTAR POPUP DE CAMPO OBRIGATÓRIO */
-    input.addEventListener("blur", () => {
-        label.classList.remove('required-popup');
-    });
+/////////////////////////////////////////////////////
+// Tooggle POPUP
+function togglePopup(input, label) {
+    input.addEventListener("focus", ()=> {
+        label.classList.add("required-popup");
+    })
+    input.addEventListener("blur", ()=> {
+        label.classList.remove("required-popup");
+    })
 }
 
-/* CHAMAR A FUNÇÃO POPUP */
-togglePopup(userInput, userLabel);
+togglePopup(usernameInput, usernameLabel);
 togglePopup(cpfInput, cpfLabel);
-togglePopup(emailInput, emailLabel);
-/*
-popup(ruaInput, emailLabel);
-popup(numeroInput, emailLabel);
-popup(cepInput, emailLabel);
-*/
+togglePopup(emailInput, emailLabel);    
+togglePopup(ruaInput, ruaLabel);
+togglePopup(numeroInput, numeroLabel);
+togglePopup(complementoInput, complementoLabel);
+togglePopup(cepInput, cepLabel);
 togglePopup(senhaInput, senhaLabel);
-togglePopup(confirmaSenhaInput, confirmaSenhaLabel);
+togglePopup(confirmarSenhaInput, confirmarSenhaLabel);
 
 
+/////////////////////////////////////////////////////
+// Classes input correto e incorreto
 
-//---------------------------------------------//
-/* FUNÇÃO GERAL VALIDAR VALOR INPUT */
-/* CORRETO*/
-function inputCorreto(input, helper) {
-    helper.classList.remove('visible');
-    input.classList.remove('error');
-    input.classList.add('correct');
+function inputCorreto (input, helper) {
+    input.classList.add("correct");
+    input.classList.remove("error");
+    helper.classList.remove("visible");
 }
 
-/* INCORRETO*/
-function inputIncorreto(input, helper) {
-    helper.classList.add('visible');
-    input.classList.add('error');
-    input.classList.remove('correct');
+function inputIncorreto (input, helper) {
+    input.classList.add("error");
+    input.classList.remove("correct");
+    helper.classList.add("visible");
 }
 
 
-
-//---------------------------------------------//
-/* VALIDAR VALOR INPUT */
+/////////////////////////////////////////////////////
+// Condicional para validar
 
 /* USERNAME */
-userInput.addEventListener("change", (e)=> {
+usernameInput.addEventListener("change", (e) => {
     let valor = e.target.value;
-  
-    if (valor.length < 3) {
-        //Adicionar estilos dinâmicos se o valor estiver incorreto
-        inputIncorreto(userInput, userHelper);
-        userHelper.innerText = "Seu nome de usuário precisa ter 3 ou mais caracteres";
-        //Adicionando variável com valor para o submit/validação do formulário
-        inputsCorretos.user = false;
-    } else { 
-        //Adicionar estilos dinâmicos se o valor estiver correto
-        inputCorreto(userInput, userHelper);
-        //Adicionando variável com valor para o submit/validação do formulário
-        inputsCorretos.user = true;
+
+    if (valor.length <3) {
+        inputIncorreto(usernameInput, usernameHelper);
+        usernameHelper.innerText = "O nome de usuário precisa ter pelo menos 3 letras";
+        inputsCorretos = false;
+    } else {
+        inputCorreto(usernameInput, usernameHelper);
+        inputsCorretos = true;
     }
 })
 
@@ -208,8 +192,8 @@ confirmaSenhaInput.addEventListener("blur", (e)=> {
 })
 
 
-//---------------------------------------------//
-/* SUBMETENDO FORMULÁRIO */
+/////////////////////////////////////////////////////
+// Validação Formulário
 
 let inputsCorretos = {
     username: false,
@@ -222,14 +206,14 @@ let inputsCorretos = {
     cep: false,
     */
     senha: false,
-    confirmaSenha: false
-} // Primeiramente eles são carregados com false, pois se eles forem true, o formulário será enviado com sucesso no 1° carregamento da página
+    confirmarSenha: false,
+}
 
-bnt.addEventListener("click", (e) => {
-    if (inputsCorretos.username == false || inputsCorretos.cpf == false || inputsCorretos.email == false || /* inputsCorretos.rua == false || inputsCorretos.numero == false || inputsCorretos.complemento == false || inputsCorretos.cep == false || */inputsCorretos.senha == false || inputsCorretos.confirmaSenha == false) {
+btn.addEventListener("click", (e) => {
+    if(inputsCorretos.username == false || inputsCorretos.cpf == false || inputsCorretos.email == false || /* inputsCorretos.rua == false || inputsCorretos.numero == false || inputsCorretos.complemento == false || inputsCorretos.cep == false || */inputsCorretos.senha == false || inputsCorretos.confirmaSenha == false) {
         e.preventDefault();
-        alert("Verifique os campos e tente novamente");
+        alert("Verifique os dados e tente novamente");
     } else {
-        alert("Formulário enviado com sucesso!");
+        alert("Formulário enviado com sucesso");
     }
 })
