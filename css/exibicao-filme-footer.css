@@ -1,0 +1,68 @@
+.controlFooter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+}
+
+/* Controles no rodapé */
+.curtir {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    opacity: 0.8;
+    gap: 1vw;
+}
+
+.curtir img {
+    width: clamp(1vw, 7vw, 2vw);
+    height: auto;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.curtir img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 0 10%;
+}
+
+.controles img {
+    width: clamp(1vw, 7vw, 2vw);
+    height: auto;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.controles img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.configurar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3vw;
+}
+
+.configurar img {
+    width: clamp(1vw, 7vw, 2vw);
+    height: auto;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.configurar img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
