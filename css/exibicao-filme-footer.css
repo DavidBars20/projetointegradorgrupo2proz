@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    padding: 2%;
+    padding: 2rem;
 }
 
 /* Controles no rodapé */
@@ -13,6 +13,7 @@
     align-items: stretch;
     opacity: 0.8;
     gap: 1vw;
+    
 }
 
 .curtir img {
@@ -20,13 +21,14 @@
     height: auto;
     opacity: 0.5;
     cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background: none;
 }
 
 .curtir img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     opacity: 1;
 }
-
 
 .controles {
     display: flex;
@@ -41,6 +43,8 @@
     height: auto;
     opacity: 0.5;
     cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background: none;
 }
 
 .controles img:hover {
@@ -60,9 +64,11 @@
     height: auto;
     opacity: 0.5;
     cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background: none;
 }
 
 .configurar img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     opacity: 1;
 }

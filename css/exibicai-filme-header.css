@@ -14,10 +14,12 @@
     width: clamp(1vw, 7vw, 1vw);
     cursor: pointer;
     display: flex;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background: none;
 }
 
 #cabecalho img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     opacity: 1;
 }
 
