@@ -2,172 +2,180 @@
 <html lang="pt-br">
   <head>
     <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Tipografia -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-      
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    
-    <!--Favicon-->
-    <link rel="icon" href="img/favicon.ico">
-    
-    <!--Normilize-->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="css/global.css"> 
-    <link rel="stylesheet" href="css/exibicao_filme.css">
-
+    <link rel="stylesheet" href="css/exibicao_filme-global.css" />
+    <link rel="stylesheet" href="css/exibicai-filme-header.css" />
+    <link rel="stylesheet" href="css/exibicao-filme-main.css" />
+    <link rel="stylesheet" href="css/exibicao-filme-footer.css" />
 
     <title>Streamflix</title>
   </head>
 
   <body class="d-flex flex-column vh-100">
-    <!-- Define o corpo da página com flexbox, organizando os elementos em uma coluna e ocupando 100% da altura da viewport -->
-  
+    <div class="fundo-imagem"></div>
+
     <!-- Header -->
     <header id="cabecalho">
-      <!-- Define o cabeçalho da página -->
-  
       <!-- Botão "Voltar" -->
-      <button class="btn-voltar">
+      <button class="btn-voltar" aria-label="Voltar para sinopse">
         <a href="sinopse.html">
-          <!-- Link para a página de sinopse -->
-          <img src="./img/sair.svg" alt="Sair" title="sair" />
-          <!-- Ícone para sair, com texto alternativo e título -->
+          <img
+            src="./img/sair.svg"
+            alt="Voltar para sinopse"
+            title="Voltar para sinopse"
+            loading="lazy"
+          />
         </a>
       </button>
-  
+
       <!-- Título do filme -->
       <h5>Nome do filme</h5>
-      <!-- Exibe o nome do filme centralizado no cabeçalho -->
-  
+
       <!-- Botão "Compartilhar" -->
-      <button class="btn-compartilhar">
+      <button class="btn-compartilhar" aria-label=" Compartilhar">
         <a href="">
-          <!-- Link vazio para o botão de compartilhar -->
           <img
             src="./img/Compartilhar.svg"
             alt="Compartilhar"
-            title="Compartilhar" />
-          <!-- Ícone para compartilhar, com texto alternativo e título -->
+            title="Compartilhar"
+            loading="lazy"
+          />
         </a>
       </button>
     </header>
-  
+
     <!-- Main -->
     <main id="principal">
-      <!-- Define o conteúdo principal da página -->
-  
       <div class="centro">
-        <!-- Centraliza o conteúdo principal -->
-   
         <!-- Ícone e barra de "brilho" -->
         <div class="brilho">
           <img
             src="./img/briho.svg"
             alt="Brilho"
-            title="brilho" />
-          <!-- Ícone para o ajuste de brilho -->          
-          <input type="range" min="0" max="100" value="0" class="input-brilho" />
+            title="brilho"
+            loading="lazy"
+          />
+          <!-- Ícone para o ajuste de brilho -->
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            class="input-brilho"
+            aria-label="Brilho"
+          />
           <!-- Controle deslizante para ajustar o brilho -->
         </div>
-  
-        <div class="controles">
-          <!-- Controles de reprodução -->
-  
-          <!-- Botão "Para trás" -->
-          <button class="btn-recuar">
-            <img src="./img/recuar.svg" width="50" alt="Recuar" title="Recuar" />
-            <!-- Ícone para voltar na reprodução -->
-          </button>
-  
-          <!-- Botão "Pause" -->
-          <button class="btn-pause">
-            <img src="./img/pause.svg" width="40" alt="Pause" title="pause" />
-            <!-- Ícone para pausar a reprodução -->
-          </button>
-  
-          <!-- Botão "Play" -->
-          <button class="btn-play">
-            <img src="./img/play.svg" width="40" alt="Play" title="play" />
-            <!-- Ícone para iniciar a reprodução -->
-          </button>
-  
-          <!-- Botão "Avançar" -->
-          <button class="btn-avancar">
-            <img src="./img/avancar.svg" width="50" alt="Avançar" title="avançar" />
-            <!-- Ícone para avançar na reprodução -->
-          </button>
+
+        <!-- Barra de progresso -->
+        <div class="progressoFilme">
+          <input type="range" min="0" max="100" value="0" class="w-100" />
         </div>
       </div>
     </main>
-  
+
     <!-- Footer -->
     <footer id="end">
-      <!-- Define o rodapé da página -->
-  
-      <!-- Barra de progresso -->
-      <div class="progresso">
-        <input type="range" min="0" max="100" value="0" class="w-100" />
-        <!-- Controle deslizante para mostrar o progresso da reprodução -->
-      </div>
-  
       <div class="controlFooter">
-        <!-- Controles adicionais no rodapé -->
-  
-        <!-- Botão "Não Curtir" -->
-        <button class="btn-nao-curtir">
-          <img
-            src="./img/nao_curtir.svg"
-            alt="Não Curtir"
-            title="Não Curtir" />
-          <!-- Ícone para indicar "Não Curtir" -->
-        </button>
-  
-        <!-- Botão "Curtir" -->
-        <button class="btn-curtir">
-          <img
-            src="./img/curti.svg"
-            alt="Curtir"
-            title="Curtir" />
-          <!-- Ícone para indicar "Curtir" -->
-        </button>
-  
-        <!-- Botão "Velocidade" -->
-        <button class="btn-velocidade">
-          <img
-            src="./img/velocidade_filme.svg"            
-            alt="Velocidade"
-            title="Velocidade" />
-          <!-- Ícone para ajustar a velocidade de reprodução -->
-        </button>
-  
-        <!-- Botão "Volume" -->
-        <button class="btn-volume">
-          <img
-            src="./img/volume.svg"
-            alt="Volume"
-            title="Volume" />
-          <!-- Ícone para ajustar o volume -->
-        </button>
-  
-        <!-- Botão "Legenda e Idioma" -->
-        <button class="btn-legenda-idioma">
-          <img
-            src="./img/legenda_e_idioma.svg"
-            alt="Legenda e Idioma"
-            title="Legenda e Idiomas" />
-          <!-- Ícone para acessar configurações de legendas e idiomas -->
-        </button>
+        <div class="curtir">
+          <!-- Botão "Não Curtir" -->
+          <button class="btn-nao-curtir" aria-label="Não Curtir">
+            <img
+              src="./img/nao_curtir.svg"
+              alt="Não Curtir"
+              title="Não Curtir"
+              loading="lazy"
+            />
+          </button>
+
+          <!-- Botão "Curtir" -->
+          <button class="btn-curtir" aria-label="Curtir">
+            <img src="./img/curti.svg" alt="Curtir" title="Curtir" />
+          </button>
+        </div>
+
+        <div class="controles">
+          <!-- Botão "Voltar" -->
+          <button class="btn-voltar" aria-label="Voltar">
+            <img
+              src="./img/voltar.svg"
+              width="50"
+              alt="Voltar"
+              title="Voltar"
+              loading="lazy"
+            />
+          </button>
+
+          <!-- Botão "Play Pause" -->
+          <button class="btn-play-pause" aria-label="Play Pause">
+            <img
+              src="./img/play-pause.svg"
+              width="40"
+              alt="Play Pause"
+              title="Play Pause"
+              loading="lazy"
+            />
+          </button>
+
+          <!-- Botão "Avançar" -->
+          <button class="btn-avancar">
+            <img
+              src="./img/avancar.svg"
+              width="50"
+              alt="Avançar"
+              title="avançar"
+              loading="lazy"
+            />
+          </button>
+
+          <!-- Botão "Volume" -->
+          <button class="btn-volume" aria-label="Volume">
+            <img src="./img/volume.svg" alt="Volume" title="Volume" />
+          </button>
+        </div>
+
+        <div class="configurar">
+          <!-- Botão "Tela Cheia" -->
+          <button class="btn-Tela-cheia" aria-label="Tela Cheia">
+            <img
+              src="./img/tela-cheia.svg"
+              alt="Tela Cheia"
+              title="Tela Cheia"
+              loading="lazy"
+            />
+          </button>
+
+          <!-- Botão "Legenda e Idioma" -->
+          <button class="btn-legenda-idioma" aria-label="Legenda e Idioma">
+            <img
+              src="./img/legenda_e_idioma.svg"
+              alt="Legenda e Idioma"
+              title="Legenda e Idiomas"
+              loading="lazy"
+            />
+          </button>
+        </div>
       </div>
     </footer>
   </body>
+</html>

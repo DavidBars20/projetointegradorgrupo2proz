@@ -1,0 +1,63 @@
+@viewport {
+  width: device-width;
+  zoom: 1;
+  min-zoom: 0.5;
+  max-zoom: 4;
+  orientation: portrait;
+}
+
+/* Estiliza todos os elementos da página */
+* {
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button:focus,
+input:focus {
+  outline: 0.5vw aliceblue #fff;
+  outline-offset: 0.005vw;
+}
+
+button:active {
+  transform: scale(0.50);
+  transition: transform 0.1s ease-in-out;
+}
+
+/* Corpo da página */
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  width: clamp(100vw, 100vw, 100vw);
+  height: clamp(100vh, 100vh, 100vh);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  z-index: 1000;
+}
+
+.fundo-imagem {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: clamp(100vw, 100vw, 100vw);
+  height: clamp(100vh, 100vh, 100vh);
+  aspect-ratio: 21 / 9;
+  background-image: url(/img/planoTela.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+
+@supports not (background-image: url(/img/planoTela.webp)) {
+  .fundo-imagem {
+    background-image: url(/img/planoTela.jpg);
+  }
+}

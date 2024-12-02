@@ -1,0 +1,32 @@
+/* Cabeçalho da página */
+#cabecalho {
+    width: clamp(93vw, 100vw, 93vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    margin: 0 5% 0 3%;
+}
+
+/* Imagens no cabeçalho */
+#cabecalho img {
+    opacity: 0.5;
+    width: clamp(1vw, 7vw, 1vw);
+    cursor: pointer;
+    display: flex;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background: none;
+}
+
+#cabecalho img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* Títulos no cabeçalho */
+#cabecalho h5 {
+    opacity: 0.5;
+    height: 50%;
+    color: #fff;
+    font-size: 1vw;
+}
