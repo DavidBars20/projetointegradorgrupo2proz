@@ -1,5 +1,38 @@
 /////////////////////////////////////////////////////
-// Capturando elementos
+////BARRA DE PROGRESSO
+
+// CAPTURA ELEMENTOS
+const slideForm =  document.querySelector('.slideForm');
+const nextBtn1 = document.querySelector('.nextBtn');
+const prevBtn1 = document.querySelector('.prev-1');
+const nextBtn2 = document.querySelector('.next-1');
+const prevBtn2 = document.querySelector('.prev-2');
+const submit = document.querySelector('.submit');
+
+
+nextBtn.addEventListener('click', () => {
+    slideForm.computedStyleMap.marginLeft = '-25%';
+})
+nextBtn1.addEventListener('click', () => {
+    slideForm.computedStyleMap.marginLeft = '-50%';
+})
+nextBtn2.addEventListener('click', () => {
+    slideForm.computedStyleMap.marginLeft = '-75%';
+})
+
+
+prevBtn1.addEventListener('click', () => {
+    slideForm.computedStyleMap.marginLeft = '0%';
+})
+prevBtn2.addEventListener('click', () => {
+    slideForm.computedStyleMap.marginLeft = '-25%';
+})
+
+
+/////////////////////////////////////////////////////
+////FORMULARIO
+
+// CAPTURA ELEMENTOS
 
 /*  USERNAME  */
 let usernameLabel = document.querySelector("label[for='username']");
@@ -45,6 +78,7 @@ let senhaHelper = document.getElementById("senha-helper");
 let confirmarSenhaLabel = document.querySelector("label[for='confirmar-senha']");
 let confirmarSenhaInput = document.getElementById("confirmar-senha");
 let confirmarSenhaHelper = document.getElementById("confirmar-senha-helper");
+
 
 /////////////////////////////////////////////////////
 // Tooggle POPUP
