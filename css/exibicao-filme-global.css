@@ -35,8 +35,8 @@ body {
   margin: 0;
   width: clamp(100vw, 100vw, 100vw);
   height: clamp(100vh, 100vh, 100vh);
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fcfafa;
   z-index: 1000;
 }
 
