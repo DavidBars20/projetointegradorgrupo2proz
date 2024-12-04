@@ -3,9 +3,28 @@
 
 /*//////////////////////////////////////*/
 /* GERAL */
-#formulario {
-    margin-top: 5em;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', 'Montserrat Black', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
 }
+
+.navbar {
+    background: linear-gradient(360deg, #7B00FF, #470094);
+    height: 10vh;
+    box-shadow: 10px 10px 80px -20px #0e0e0e;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+}
+
+#formulario {
+    margin-top: 15vh;
+}
+
 .container {
     width: 100%;
     padding: 0;
@@ -14,7 +33,7 @@
 .form-outer {
     width: 100%;
     overflow: hidden;
-    }
+}
 
 .form-outer form {
     display: flex;
@@ -30,7 +49,7 @@ form .page-form {
 
 .page-form .field {
     width: 100%;
-    margin: 1em auto;
+    margin: 2em auto;
 }
 
 .field label {
@@ -100,6 +119,7 @@ fieldset .btns-form .next {
 .nav-logo-form {
     margin: 0.5em auto;
 }
+
 
 
 /*//////////////////////////////////////*/
@@ -349,7 +369,6 @@ fieldset .btns-form .next {
     }   
 }
 
-
 /*//////////////////////////////////////*/
 /* CONFIRMAÇÃO */
 
@@ -363,13 +382,13 @@ fieldset img {
 /*/////////////////////////////////////*/
 /* VALIDAÇÃO DO FORMULÁRIO*/
 
-.field .helper-text {
+.page-form .field .helper-text {
     display: none;
     font-size: .8rem;
     color: darkred;
 }
 
-.field .required-popup::after {
+.page-form .field .required-popup {
     content: "*Campo Obrigatório";
     position: absolute;
     top: 0;
@@ -382,19 +401,19 @@ fieldset img {
     margin-top: 1rem;
 }
 
-.field input .error {
+.page-form .field input .error {
     border: solid 2px #992020;
     background-color: #ccbbbb;
     color: #662020;
     border-radius: 5px;
 }
 
-.field input .correct {
+.page-form .field input .correct {
     border: solid 2px #206620;
     color: #206620;
     border-radius: 5px;
 }
 
-.field .visible {
+.page-form .field .visible {
     display: block;
 }
