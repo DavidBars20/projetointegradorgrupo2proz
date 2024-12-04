@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.ico">
+    
+    <!--Normilize-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/global-form.css">
+
+    <title>Streamflix</title>
+
+  </head>
+
+  <body>
+
+    <!--INÍCIO DO HEADER-->
+
+    <header>
+
+        <!--NAVEGAÇÃO TOPO-->
+        <nav id="nav_topo" class="navbar navbar-expand-md fixed-top">
+
+          <!--LOGO-->
+          <a class="nav-logo-form" href="index.html"> <img src="img/logo.svg" width="100"></a>
+         
+        </nav> 
+        
+    </header>
+
+
+    <!--MAIN-->
+    <main>
+
+      <!--FORMULARIO-->
+      <div id="formulario" class="container">
+
+        <!--PROGRESS BAR-->        
+        <div id="progress-bar">
+
+          <div class="step">          
+            <p>Plano</p>
+           
+            <div class="bullet">
+              <span>1</span>
+            </div>
+          </div>
+          
+          <div class="step">
+            <p>Dados</p>
+           
+            <div class="bullet">
+              <span>2</span>
+            </div>
+          </div>
+          
+          <div class="step">
+            <p>Pagamento</p>
+           
+            <div class="bullet">
+              <span>3</span>
+            </div>
+          </div>
+        
+        </div>
+        
+
+        <!--CAMPOS-->
+        <div class="form-outer">
+
+          <form action="#">
+
+            <!--PLANOS-->
+            <div class="page-form slideForm">
+
+              <fieldset class="field">
+
+                <h2 class="titulo">Escolha seu plano:</h2>
+    
+                <div id="plano1" class="botao-planos">
+
+                  <div class="align-btnPlanos">
+
+                    <input class="radio" type="radio" name="plano1" id="plano1">
+                    <h3 class="bold">Plano Basic:</h3>
+                    <h4 class="text">Até 2 telas ao mesmo tempo por</h4>
+                    <h3 class="bold">R$ 20,90</h3>
+
+                  </div>
+    
+                </div>
+    
+                <div id="plano2" class="botao-planos">
+
+                  <div class="align-btnPlanos">
+
+                    <input class="radio" type="radio" name="plano2" id="plano2">
+                    <h3 class="bold">Plano Plus:</h3>
+                    <h4 class="text">Até 3 telas ao mesmo tempo por</h4>
+                    <h3 class="bold">R$ 30,90</h3>
+
+                  </div>
+
+                  
+                </div>
+    
+                <div id="plano3" class="botao-planos">
+
+                  <div class="align-btnPlanos">
+
+                    <input class="radio" type="radio" name="plano3" id="plano3">
+                    <h3 class="bold">Plano Premium:</h3>
+                    <h4 class="text">Até 4 telas ao mesmo tempo por</h4>
+                    <h3 class="bold">R$ 40,90</h3>
+
+                  </div>
+
+                </div>
+
+                <!---BOTÃO-->
+                <div class="nextBtn">
+
+                  <button class="next-1 next" type="submit">Próximo</button>
+
+                </div>
+    
+              </fieldset>            
+              
+            </div>
+  
+            <!--DADOS PESSOAIS-->
+            <div class="page-form">
+  
+              <fieldset class="field">
+  
+                <!---USERNAME-->
+                <label for="username">Nome Completo:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu nome completo">
+                <p id="username-helper" class="helper-text"></p>
+    
+                <!---CPF-->
+                <label for="cpf">CPF:</label>
+                <input type="number" id="cpf" name="cpf" placeholder="Digite seu número de CPF">
+                <p id="cpf-helper" class="helper-text"></p>
+    
+                <!---E-MAIL-->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                <p id="email-helper" class="helper-text"></p>
+    
+                <!---RUA-->
+                <label for="rua">Logadouro:</label>
+                <input type="text" id="rua" name="rua" placeholder="Digite seu endereço">
+                <p id="rua-helper" class="helper-text"></p>
+    
+                <div id="endereco">
+                    <!---NUMERO-->
+                    <div id="numero">
+                        <label for="numero">Número:</label>
+                        <input type="number" id="numero" name="numero" placeholder="Número da casa">
+                        <p id="numero-helper" class="helper-text"></p>
+                    </div>
+    
+                    <!---COMPLEMENTO-->
+                    <div id="completo">
+                        <label for="complemento-casa">Complemento:</label>
+                        <input type="text" id="complemento-casa" name="complemento-casa" placeholder="Complemento.">
+                        <p id="complemento-helper" class="helper-text"></p>
+                    </div>
+    
+                    <!---CEP-->
+                    <div id="cep">
+                        <label for="cep">CEP:</label>
+                        <input type="number" id="cep" name="cep" placeholder="CEP">
+                        <p id="cep-helper" class="helper-text"></p>
+                    </div>
+    
+                </div>
+    
+                <div id="campo-senha">
+                  <!---SENHA-->
+                  <div id="senha">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                    <p id="senha-helper" class="helper-text"></p>
+                  </div>
+    
+                  <!---CONFIRMAR SENHA-->
+                  <div id="confirmar-senha">
+                      <label for="confirma-senha">confirmar senha:</label>
+                      <input type="text" id="confirma-senha" name="confirma-senha" placeholder="Confirme sua senha">
+                      <p id="confirma-senha-helper" class="helper-text"></p>
+                  </div>
+    
+                </div>
+    
+                <!---BOTÕES-->
+                <div class="btns-form">
+                  <button class="prev-1 prev" type="submit">Anterior</button>
+  
+                  <button class="next-1 next" type="submit">Próximo</button>
+                </div>
+    
+              </fieldset>
+
+            </div>
+  
+            <!--DADOS BANCARIOS-->
+            <div class="page-form">
+  
+              <fieldset class="field">
+  
+                <label for="cartao">Número do Cartão:</label>
+                <input type="number" id="numero-cartao" name="numero-cartao" placeholder="Digite o número do cartão" required>
+    
+                <div id="seguranca-cartao">
+    
+                    <div id="cvc">
+                        <label for="cvc">CVC:</label>
+                        <input type="number" id="cvc" name="cvc" placeholder="Número CVC" required>
+                    </div>
+    
+                    <div id="validade">
+                        <label for="validade">Validade:</label>
+                        <input type="date" id="validade" name="validade" placeholder="Validade do cartão" required>
+                    </div>
+    
+                </div>
+    
+                <label for="nome-cartao">Nome no cartão:</label>
+                <input type="text" id="nome-cartao" name="nome-cartao" placeholder="Digite o nome no cartão" required>
+
+                <!---BOTÕES-->
+                <div class="btns-form">
+                  <button class="prev-2 prev" type="submit">Anterior</button>
+    
+                  <button class="submit next" type="submit">Próximo</button>
+                </div>
+    
+              </fieldset>
+  
+            </div>
+  
+            <!--CONFIRMAÇÃO-->
+            <div class="page-form">
+  
+              <fieldset class="field">
+  
+                <h2 class="titulo">Agora é só dá play!</h2>
+          
+                <img src="../projetointegradorgrupo2proz/img/gif-assistir.gif" alt="">
+  
+              </fieldset>
+            
+            </div>
+  
+          </form>
+
+        </div>
+
+
+      </div>
+
+    </main>
+
+    <script src="js/form.js" defer></script>
+
+  </body>
+</html>

@@ -1,6 +1,21 @@
+/* HEADER */
+.user {
+    display: flex;
+    align-items: center;
+    color: #FEF9FF;
+}
 
-main {
-    margin-top: 70px;
+.user div {
+    width: 40px;
+    height: 40px;
+    background-color: #7B00FF;
+    border-radius: 100px;
+    margin-left: 1em;
+    text-align: center;
+    padding-top: 2px;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-family: "Montserrat Black", sans-serif;
 }
 
 /*TRAILER*/
@@ -9,11 +24,6 @@ main {
     height: 40%;
     background: url(../img/banner-entrada.png) no-repeat top;
     background-size: cover;
-}
-
-.video-trailer {
-    width: 100%;
-    max-height: 100%;
 }
 
 #trailer img {
@@ -40,7 +50,7 @@ main {
 }
 
 .movie-description {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto regular", sans-serif;
     margin-bottom: 2em;
 }
 
@@ -58,7 +68,7 @@ main {
 }
 
 .movie-details h6 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto regular", sans-serif;
     letter-spacing: 0.05em;
 }
 
@@ -84,6 +94,7 @@ main {
         grid-column: "selo";
     }
 }
+
 
 /*AVALIACAO*/
 #avaliacoes {
@@ -128,6 +139,10 @@ main {
     font-size: large;
 }
 
+.user-stars h5 {
+    margin-bottom: 0;
+}
+
 .review-invitation {
     font-family: "Gotham Black", sans-serif;
     display: grid;
@@ -140,7 +155,7 @@ main {
 }
 
 .review-stars {
-    font-size: 320%;
+    font-size: 400%;
 }
 
 @media (max-width: 999px) { 
