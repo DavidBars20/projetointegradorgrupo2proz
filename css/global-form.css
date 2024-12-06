@@ -32,7 +32,9 @@
 
 .form-outer {
     width: 100%;
+    /*
     overflow: hidden;
+    */
 }
 
 .form-outer form {
@@ -284,7 +286,7 @@ fieldset .btns-form .next {
 .align-btnPlanos .radio {
     width: 30px;
     height: 30px;
-    border: 2px solid #470094;
+    border: 2px solid #008CFF;
     outline: 0;
     appearance: none;
     border-radius: 100%;

@@ -2,6 +2,8 @@
 ////BARRA DE PROGRESSO
 
 // CAPTURA ELEMENTOS
+
+/*
 const slideForm =  document.querySelector('.slideForm');
 const nextBtn1 = document.querySelector('.nextBtn');
 const prevBtn1 = document.querySelector('.prev-1');
@@ -102,15 +104,15 @@ togglePopup(confirmarSenhaInput, confirmarSenhaLabel);
 // CLASSES INPUT CORRETO E INCORRETO
 
 function inputCorreto (input, helper) {
-    input.classList.add("correct");
     input.classList.remove("error");
     helper.classList.remove("visible");
+    input.classList.add("correct");
 }
 
 function inputIncorreto (input, helper) {
     input.classList.add("error");
-    input.classList.remove("correct");
     helper.classList.add("visible");
+    input.classList.remove("correct");
 }
 
 
@@ -226,7 +228,7 @@ confirmaSenhaInput.addEventListener("blur", (e)=> {
 
 
 /////////////////////////////////////////////////////
-// Validação Formulário
+// SUBMETENDO FORMULÁRIO
 
 let inputsCorretos = {
     username: false,
@@ -239,7 +241,7 @@ let inputsCorretos = {
     cep: false,
     */
     senha: false,
-    confirmarSenha: false,
+    confirmarSenha: false
 }
 
 btn.addEventListener("click", (e) => {
