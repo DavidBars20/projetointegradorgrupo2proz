@@ -62,7 +62,7 @@ body {
   }
 }
 
-/* HEADER */ 
+/* HEADER */
 
 /* Cabeçalho da página */
 #cabecalho {
@@ -77,7 +77,7 @@ body {
 /* Imagens no cabeçalho */
 #cabecalho img {
   opacity: 0.5;
-  width: clamp(1vw, 7vw, 1vw);
+  width: clamp(1.5vw, 7vw, 1.5vw);
   cursor: pointer;
   display: flex;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -94,10 +94,10 @@ body {
   opacity: 0.5;
   height: 50%;
   color: #fff;
-  font-size: 1vw;
-}  
+  font-size: 1.5vw;
+}
 
-/* MAIN */ 
+/* MAIN */
 
 /* Centralização geral */
 .centro {
@@ -121,7 +121,7 @@ body {
   height: stretch;
   margin-left: auto;
   margin-top: 5%;
-  width: clamp(4vw, 10vw, 4vw);
+  width: clamp(5.5vw, 10vw, 5vw);
 }
 
 /* Imagens na classe 'brilho' */
@@ -131,8 +131,6 @@ body {
   transform: translate(-50%, -50%);
   height: 4vh;
   width: clamp(1vw, 7vw, 1.5vw);
-  
-  
 }
 
 /* Entrada vertical */
@@ -150,7 +148,6 @@ body {
   width: clamp(88vw, 100vw, 88vw);
   display: flex;
   align-items: stretch;
-  
 }
 
 /* Entrada tipo range */
@@ -190,15 +187,15 @@ body {
   transform: scale(1.2);
 }
 
-/* FOOTER */ 
+/* FOOTER */
 
 .controlFooter {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  padding: 2rem;
-} 
+  padding: 1rem 4rem;
+}
 
 /* Controles no rodapé */
 .curtir {
@@ -206,7 +203,7 @@ body {
   justify-content: space-around;
   align-items: stretch;
   opacity: 0.8;
-  gap: 1vw;  
+  gap: 1vw;
 }
 
 .curtir img {
@@ -264,4 +261,82 @@ body {
 .configurar img:hover {
   transform: scale(1.2);
   opacity: 1;
+}
+
+/* Estilo do controle deslizante de volume */
+.volume-slider {
+  display: none;
+  position: absolute;
+  width: 150px;
+  height: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Slider visível */
+.volume-slider.show {
+  display: block;
+  
+}
+
+/* Estilo do thumb do slider */
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ff6600;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #ff6600;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/* Estilo do menu suspenso */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  min-width: 10rem;
+  color: white;
+  z-index: 10;
+  top: -4rem;
+  left: 4rem;
+  transform: translateX(-50%);
+  font-size: x-small;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-bottom: 0.2rem; 
+}
+
+.dropdown-menu a:hover {
+  color: #e08243;
+}
+
+/* Mostrar o menu */
+.dropdown-menu.show {
+  display: block;
+  position: relative;
+}
+
+.dropdown-menu hr {
+  margin-top: -1.2rem;
+  border: 0;
+  border-top: solid 1rem #423d3d;
+   
 }
