@@ -1,3 +1,7 @@
+/*
+!main
+*/
+
 // Ajustar brilho
 const brilhoInput = document.querySelector('.input-brilho');
 const fundoImagem = document.querySelector('.fundo-imagem');
@@ -19,7 +23,11 @@ progressoInput.addEventListener('input', (e) => {
 
 /////////////////////////////////////////
 
-// Botão "Curtir"
+/*
+!footer
+*/
+
+// Botão "Curtir e não curtir"
 const curtirButton = document.querySelector('.btn-curtir');
 const naoCurtirButton = document.querySelector('.btn-nao-curtir');
 
@@ -31,16 +39,37 @@ naoCurtirButton.addEventListener('click', () => {
   alert('Você não curtiu o filme!');
 });
 
-
 ////////////////////////////////////////
 
+// Botão "Voltar"
+const btnVoltar = document.querySelector('.btn-voltar');
+console.log(btnVoltar);
+btnVoltar.addEventListener("click", () => {
+  alert("Voltou 10 segundos");
+  // Retrocede o vídeo em 10 segundos
+  video.currentTime = Math.max(video.currentTime - 10, 0);
+});
+
+/////////////////////////////////////////////////
+
 // Controle de Play/Pause
-const playPauseButton = document.querySelector('.btn-play-pause');
+const btnPlayPause = document.querySelector('.btn-play-pause');
 let isPlaying = false;
 
-playPauseButton.addEventListener('click', () => {
+btnPlayPause.addEventListener('click', () => {
   isPlaying = !isPlaying;
   alert(isPlaying ? 'Reproduzindo...' : 'Pausado');
+});
+
+/////////////////////////////////////////////////
+
+// Botão "Avançar"
+const btnAvancar = document.querySelector('.btn-avancar');
+btnAvancar.addEventListener("click", () => {
+  alert("Avançou 10 segundos");
+  // Avança o vídeo em 10 segundos
+  video.currentTime = Math.min(video.currentTime + 10, video.duration);
+
 });
 
 ////////////////////////////////////////////////////
@@ -70,9 +99,9 @@ document.addEventListener("DOMContentLoaded", () => {
     event.stopPropagation();
     const rect = volumeButton.getBoundingClientRect();
 
-    // Posiciona o slider ao lado do botão Volume
-    volumeSlider.style.top = `${rect.top + window.scrollY}px`;
-    volumeSlider.style.left = `${rect.right + 10 + window.scrollX}px`;
+    // Posiciona o slider acima do botão Volume
+    volumeSlider.style.top = `${rect.top + window.scrollY - volumeSlider.offsetHeight + -75}px`; // Ajuste a altura e o espaçamento
+    volumeSlider.style.left = `${rect.left + window.scrollX + rect.width / 2 - volumeSlider.offsetWidth / 2}px`; // Centraliza o slider
 
     // Alterna visibilidade do slider
     volumeSlider.classList.toggle("show");
@@ -85,12 +114,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Ajuste do volume (simulação)
   volumeSlider.addEventListener("input", () => {
-    const volume = volumeSlider.value;
-    console.log(`Volume ajustado para: ${volume}%`);
-    // Aqui você pode adicionar lógica para ajustar o volume real do player
+    const volume = volumeSlider.value / 100;
+    console.log(`Volume ajustado para: ${volume * 100}%`);
   });
 });
 //////////////////////////////////////////////////////
+
+// Botão tela cheia
+const btnTelaCheia = document.querySelector('.btn-Tela-cheia');
+btnTelaCheia.addEventListener('click', () => {
+  alert('Tela cheia ativada');
+});
+
+/////////////////////////////////////////////////////
 
 // Mostrar ou ocultar o menu de legenda e idioma
 document.addEventListener("DOMContentLoaded", () => {
@@ -139,5 +175,3 @@ function changeSubtitle(subtitle) {
   alert(`Legenda alterada para: ${subtitle}`);
 }
 /////////////////////////////////////////////
-
-
