@@ -39,8 +39,10 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="css/global.css" />
+
     <link rel="stylesheet" href="css/exibicao-filme.css" />
+
+    <script src="./js/exibicao-filme.js" defer></script>
 
     <title>Streamflix</title>
   </head>
@@ -50,13 +52,13 @@
 
     <!-- Header -->
     <header id="cabecalho">
-      <!-- Botão "Voltar" -->
-      <button class="btn-voltar" aria-label="Voltar para sinopse">
+      <!-- Botão "SAIR" -->
+      <button class="btn-sair" aria-label="Voltar para sinopse">
         <a href="sinopse.html">
           <img
             src="./img/sair.svg"
-            alt="Voltar para sinopse"
-            title="Voltar para sinopse"
+            alt="Sair para sinopse"
+            title="Sair para sinopse"
             loading="lazy"
           />
         </a>
@@ -106,6 +108,8 @@
           <input type="range" min="0" max="100" value="0" class="w-100" />
         </div>
       </div>
+
+      
     </main>
 
     <!-- Footer -->
@@ -163,6 +167,7 @@
           </button>
 
           <!-- Botão "Volume" -->
+
           <button class="btn-volume" aria-label="Volume">
             <img src="./img/volume.svg" alt="Volume" title="Volume" />
           </button>
