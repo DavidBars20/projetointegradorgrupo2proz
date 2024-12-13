@@ -12,219 +12,60 @@
     box-sizing: border-box;
 }
 
+body {
+    background: url(../img/bg_form.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
 .navbar {
-    background: linear-gradient(360deg, #7B00FF, #470094);
+    background: #1e1e1e;
     height: 10vh;
     box-shadow: 10px 10px 80px -20px #0e0e0e;
     display: flex;
-    justify-content: space-between;
     padding: 0.5rem 3rem;
+    justify-content: center;
 }
 
-#formulario {
-    margin-top: 15vh;
+main {
+    margin-top: 2em;
 }
 
 .container {
-    width: 100%;
+    width: 400px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
     padding: 0;
-}
-
-.form-outer {
-    width: 100%;
-    /*
     overflow: hidden;
-    */
+    margin-top: 2.5em;
 }
 
-.form-outer form {
-    display: flex;
-    justify-items: center;
-    width: 400%;
+.container form {
+    width: 320px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    transition: .5s ease-in-out;
 }
 
-form .page-form {
-    width: 25%;
-    margin-top: .5em;
-    transition: margin-left 0.3s ease-in-out;
-}
-
-.page-form .field {
-    width: 100%;
-    margin: 2em auto;
-}
-
-.field label {
-    font-size: 150%;
-    color: #470094;
-    font-family: "Montserrat Black";
-    text-transform: uppercase;
-    display: block;
-    position: relative;
-    margin: 1em 0 0.3em 0;
-}
-
-.field label:not(:first-of-type) {
-    margin-top: 1rem;
-}
-
-.field input {
-    width: 100%;
-    height: 50px;
-    padding: 0.5em;
-    border: 1px solid #470094;
-    border-radius: 5px;
-}
-
-.field input:active {
-    border: 1.5px solid #206620;
-}
-
-fieldset button {
-    background: linear-gradient(170deg, #7B00FF, #470094);
-    width: 100%;
-    height: 70px;
-    margin: 1.5em auto;
-    color: #FEF9FF;
-    padding: 10px 0;
-    border-radius: 5px;
-    font-family: "Montserrat Black";
-    text-transform: uppercase;
-    font-size: x-large;
-    letter-spacing: 0.1em;
-    box-shadow: 0.5px 0.5px 10px 0.5px #7B00FF;
-    border: none;
-    cursor: pointer;
-    transition: .3s ease;
-}
-
-fieldset button:hover {
-    background: #0060AF;
-    transition: all 0.3s ease;
-    box-shadow: 0.5px 0.5px 10px 0.5px #00335C;  
-}
-
-fieldset .btns-form {
-    display: flex;
-}
-
-fieldset .btns-form .prev {
-    margin-right: .5em;
+h3 {
+    color: #1e1e1e;
     font-size: large;
-}
-
-fieldset .btns-form .next {
-    margin-left: .5em;
-    font-size: large;
-}
-
-.nav-logo-form {
-    margin: 0.5em auto;
-}
-
-
-
-/*//////////////////////////////////////*/
-/* BARRA DE PROGRESSO */
-#formulario #progress-bar {
-    display: flex;
-    justify-content: space-around;
-}
-
-.step {
+    font-family: "gotham black";
+    text-transform: uppercase;
     text-align: center;
-    width: 100%;
 }
 
-.step p {
-    font-family: "Montserrat Black";
-    text-transform: uppercase;
-    margin-bottom: 8px;
-    font-size: x-large;
-    color: #470094;
+#form1 h4 {
+    margin-top: 1em;
 }
-
-.step .bullet {
-    background: linear-gradient(180deg, #7B00FF, #470094);
-    color: #FEF9FF;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    display: inline-block;
-    position: relative;
-}
-
-.step span {
-    font-family: "Montserrat Black";
-    text-transform: uppercase;
-    font-size: 200%;
-    line-height: 30px;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%);
-}
-
-.step .bullet::after, .step .bullet::before {
-    position: absolute;
-    content: '';
-    height: 8px;
-    width: 330px;
-    background: #470094;
-    bottom: 20px;
-    right: -330px;
-}
-
-.step:last-child .bullet::after, 
-.step:last-child .bullet::before {
-    display: none;
-}
-
-.step .bullet::after {
-    background: #70A3CC;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s linear forwards;
-}
-
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .step .bullet::after, .step .bullet::before {
-        width: 300px;
-        right: -299px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .step .bullet::after, .step .bullet::before {
-        width: 200px;
-        right: -199px;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .step .bullet::after, .step .bullet::before {
-        width: 110px;
-        right: -109px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .step .bullet::after, .step .bullet::before {
-        width: 122px;
-        right: -121px;
-    }
-}
-
-
-/*//////////////////////////////////////*/
-/* PLANOS */
 
 .titulo {
     color: #470094;
@@ -232,30 +73,163 @@ fieldset .btns-form .next {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1em;
+    font-size: large;
+}
+
+::placeholder {
+    color: #1e1e1e;
+    opacity: .4;
+    font-family: "Roboto";
+    font-size: medium;
+}
+
+#form2 {
+    left: 450px;
+}
+
+#form3 {
+    left: 450px;
+}
+
+/*//////////////////////////////////////*/
+/* INPUTS FORMULÁRIO */
+
+form label {
+    color: #470094;
+    font-family: "Montserrat Black";
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-bottom: 0;
+}
+
+form label:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    padding: 0.5em;
+    border: 1px solid #470094;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+form input:active {
+    border: 1.5px solid #206620;
+}
+
+
+/*//////////////////////////////////////*/
+/* BOTÕES FORMULÁRIO*/
+.btns-form{
+    gap: 0.5em;
+}
+
+.container .btns-form button {
+    background: linear-gradient(170deg, #7B00FF, #470094);
+    width: 100%;
+    height: 40px;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    color: #FEF9FF;
+    border-radius: 5px;
+    font-family: "Montserrat Black";
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    box-shadow: 0.5px 0.5px 10px 0.5px #7B00FF;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.container .btns-form button:hover {
+    background: #0060AF;
+    transition: all 0.3s ease;
+    box-shadow: 0.5px 0.5px 10px 0.5px #00335C;  
+}
+
+.container .btns-form {
+    display: flex;
+}
+
+/*//////////////////////////////////////*/
+/* PROGRESS BAR STEP */
+.step-row {
+    width: 100%;
+    height: 42px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #1e1e1e;
+    position: relative;
+}
+
+.step-col {
+    position: relative;
+    width: 100%;
+    font-size: medium;
+    text-align: center;
+    color: #0e0e0e;
+}
+
+.step-col img {
+    width: 25px;
+    height: 25px;
+}
+
+#progress {
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to left, #7B00FF, #470094);
+    transition: 1s ease-in-out;
+}
+
+#progress::after {
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;	
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #7B00FF;
+}
+
+
+/*//////////////////////////////////////*/
+/* SEÇÃO PLANOS */
+
+#form1 {
+    text-align: center;
+}
+
+#form1 a {
+    color: #470094;
+}
+
+#form1 a:hover {
+    font-size: large;
+    text-decoration: none;
+    color: #470094;
 }
 
 .botao-planos {
     background: #C1C1C1;
     border: 1px solid #868686;
     color: #0060AF;
-    height: 30%;
+    height: 80px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 1em 2em;
-    margin: 1.5em 0;
+    align-items: center;
+    margin: 0.5em auto;
     border-radius: 5px;
     box-shadow: 5px 5px 30px -20px #1e1e1e;
 }
 
-.align-btnPlanos {
-    width: 80%;
-    display: flex;
-    align-items: center;
-}
-
-#plano3 {
-    margin-bottom: 0;
-}
 
 .botao-planos:hover{
     background: linear-gradient(170deg, #7B00FF, #00335C);
@@ -265,29 +239,12 @@ fieldset .btns-form .next {
     transition: all 0.3s ease;
 }
 
-@media (max-width: 768.99px) {
-    .botao-planos {
-        display: grid;
-        grid-template-areas: 
-        "radio"
-        "bold"
-        "text";
-        padding: 2em;
-        justify-items: center;
-    }
-
-    .radio {
-        grid-area: radio;
-        margin-bottom: 1em;
-  }
-
-}
-
-.align-btnPlanos .radio {
-    width: 30px;
-    height: 30px;
+.radio {
+    width: 20px;
+    height: 20px;
     border: 2px solid #008CFF;
     outline: 0;
+    margin: auto .8em;
     appearance: none;
     border-radius: 100%;
     box-shadow: 0 0 2px #7B00FF;
@@ -295,33 +252,50 @@ fieldset .btns-form .next {
     cursor: pointer;
 }
 
-.align-btnPlanos .radio:hover {
+.radio:hover {
     border: 3px solid #FEF9FF;
     background-color: #008CFF;
     box-shadow: 0 0 4px #00335C;
 }
 
-.align-btnPlanos .radio:checked {
+.radio:checked {
     border: 4px solid #FEF9FF;
     background-color: #008CFF;
     box-shadow: 0 0 4px #00335C;
 }
 
-.align-btnPlanos .bold {
-    font-family: "gotham black";
-    text-transform: uppercase;
-    margin: auto 3vh;
+.tipo_plano {
+    width: 150px;
 }
 
-.align-btnPlanos .text {
-    margin: auto -1vh;
+.preco {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    margin-right: 0.5em;
+}
+
+.preco .bold {
+    font-size: 200%;
+}
+
+
+.bold {
+    font-family: "gotham black";
+    text-transform: uppercase;
+    font-size: medium;
+    margin-bottom: 0;
+}
+
+.text {
+    font-size: medium;
 }
 
 
 
 
 /*//////////////////////////////////////*/
-/* DADOS PESSOAIS */
+/* SEÇÃO DADOS PESSOAIS */
 
 #endereco {
     display: grid;
@@ -351,7 +325,7 @@ fieldset .btns-form .next {
 
 
 /*//////////////////////////////////////*/
-/* DADOS BANCARIOS */
+/* SEÇÃO PAGAMENTO */
 
 #seguranca-cartao {
     display: grid;
@@ -371,26 +345,17 @@ fieldset .btns-form .next {
     }   
 }
 
-/*//////////////////////////////////////*/
-/* CONFIRMAÇÃO */
-
-fieldset img {
-    border-radius: 10px;
-    margin: 1em auto;
-    display: flex;
-}
-
 
 /*/////////////////////////////////////*/
 /* VALIDAÇÃO DO FORMULÁRIO*/
 
-.page-form .field .helper-text {
+form .helper-text {
     display: none;
     font-size: .8rem;
     color: darkred;
 }
 
-.page-form .field .required-popup {
+form .required-popup {
     content: "*Campo Obrigatório";
     position: absolute;
     top: 0;
@@ -403,19 +368,19 @@ fieldset img {
     margin-top: 1rem;
 }
 
-.page-form .field input .error {
+form input .error {
     border: solid 2px #992020;
     background-color: #ccbbbb;
     color: #662020;
     border-radius: 5px;
 }
 
-.page-form .field input .correct {
+form input .correct {
     border: solid 2px #206620;
     color: #206620;
     border-radius: 5px;
 }
 
-.page-form .field .visible {
+form .visible {
     display: block;
 }
