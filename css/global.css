@@ -22,6 +22,14 @@ a:hover {
     text-decoration: none;
 }
 
+button a {
+    color: #FEF9FF;
+}
+
+button a:hover {
+    color: #FEF9FF;
+    font-weight: bold;
+}
 
 /*///////////////////////////////////////////*/
 /*BARRA DE NAVEGAÇÃO*/
