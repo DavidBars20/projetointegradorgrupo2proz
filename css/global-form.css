@@ -80,7 +80,7 @@ h3 {
     color: #1e1e1e;
     opacity: .4;
     font-family: "Roboto";
-    font-size: small;
+    font-size: 15px;
 }
 
 #form2 {
@@ -91,8 +91,24 @@ h3 {
     left: 450px;
 }
 
+
 /*//////////////////////////////////////*/
 /* INPUTS FORMULÁRIO */
+
+form input {
+    width: 100%;
+    height: 30px;
+    padding: .3em .5em .3em .5em;
+    border: 1px solid #470094;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 form label {
     color: #470094;
@@ -106,18 +122,6 @@ form label:not(:first-of-type) {
     margin-top: 1rem;
 }
 
-form input {
-    width: 100%;
-    height: 30px;
-    padding: .3em .5em .3em .5em;
-    border: 1px solid #470094;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-form input:active {
-    border: 1.5px solid #206620;
-}
 
 
 /*//////////////////////////////////////*/
@@ -312,7 +316,7 @@ form input:active {
 #endereco {
     display: grid;
     grid-template-areas: 
-    "numero complemento cep";
+    "numero-casa complemento-casa cod-postal";
     grid-gap: .5em;
     margin-top: .5em;
 }
@@ -321,9 +325,9 @@ form input:active {
     #endereco {
         display: grid;
         grid-template-areas: 
-        "numero"
-        "complemento"
-        "cep";
+        "numero-casa"
+        "complemento-casa"
+        "cod-postal";
         grid-gap: 0;
     }   
 }
@@ -331,12 +335,12 @@ form input:active {
 #campo-senha {
     display: grid;
     grid-template-areas: 
-    "senha confirmar-senha";
+    "password password-confirm";
     grid-gap: .5em;
     margin-top: .5em;
 }
 
-#cep {
+#cod-postal {
     width: 130px;
 }
 
@@ -347,7 +351,7 @@ form input:active {
 #seguranca-cartao {
     display: grid;
     grid-template-areas: 
-    "cvc validade";
+    "align-cvc align-validade";
     grid-gap: 1em;
     margin-top: .5em;
 }
@@ -356,8 +360,8 @@ form input:active {
     #seguranca-cartao {
         display: grid;
         grid-template-areas: 
-        "cvc"
-        "validade";
+        "align-cvc"
+        "align-validade";
         grid-gap: 0;
 
     }   
@@ -367,31 +371,38 @@ form input:active {
 /*/////////////////////////////////////*/
 /* VALIDAÇÃO DO FORMULÁRIO*/
 
-form .helper-text {
+.helper-text {
     display: none;
     font-size: .8rem;
     color: darkred;
+    margin-bottom: -10px;
 }
 
 .required-popup::after {
     content: "*Campo Obrigatório";
     top: 0;
     right: 0;
+    margin: -3px auto;
     color: darkred;
-    font-size: .6rem;
+    font-size: .5rem;
     width: auto;
     display: block;
 }
 
-input .error {
-    border: solid 2px #992020;
-    background-color: #ccbbbb;
+.input-erro {
+    border: solid 1.5px #992020;
+}
+
+.erro {
+    border: solid 1.5px #992020;
+    background-color: #e2c2c2;
     color: #662020;
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 
 .correct {
-    border: solid 2px #206620;
+    border: solid 1.5px #2b882b;
+    background-color: #a0e2a0;
     color: #206620;
     border-radius: 5px;
 }

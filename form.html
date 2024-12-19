@@ -81,7 +81,7 @@
           <!--PLANO 1-->  
           <div id="plano1" class="botao-planos">
 
-            <input class="radio" type="radio" name="plano1" id="plano1">
+            <input class="radio" type="checkbox" name="plano1" id="plano1" value="plano1">
 
             <span class="tipo_plano">
               <h5 class="bold">Plano Basic:</h5>
@@ -100,7 +100,7 @@
           <!--PLANO 2-->
           <div id="plano2" class="botao-planos">
 
-            <input class="radio" type="radio" name="plano2" id="plano2">
+            <input class="radio" type="checkbox" name="plano2" id="plano2" value="plano2">
 
             <span class="tipo_plano">
 
@@ -121,7 +121,7 @@
           <!--PLANO 3-->
           <div id="plano3" class="botao-planos">
 
-            <input class="radio" type="radio" name="plano3" id="plano3">
+            <input class="radio" type="checkbox" name="plano3" id="plano3" value="plano3">
 
             <span class="tipo_plano">
 
@@ -137,7 +137,8 @@
             </div>
 
           </div>
-          
+
+
           <!---BOTÃO-->
           <div class="btns-form">
 
@@ -182,21 +183,21 @@
           <div id="endereco">
 
             <!---NUMERO-->
-            <div id="numero">
+            <div id="numero-casa">
                 <label for="numero">Número:</label>
                 <input type="number" id="numero" name="numero" placeholder="Número da casa">
                 <p id="numero-helper" class="helper-text"></p>
             </div>
 
             <!---COMPLEMENTO-->
-            <div id="completo">
-                <label for="complemento-casa">Complemento:</label>
-                <input type="text" id="complemento-casa" name="complemento-casa" placeholder="Complemento.">
+            <div id="completo-casa">
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento" placeholder="Complemento">
                 <p id="complemento-helper" class="helper-text"></p>
             </div>
 
             <!---CEP-->
-            <div id="cep">
+            <div id="cod-postal">
                 <label for="cep">CEP:</label>
                 <input type="number" id="cep" name="cep" placeholder="CEP">
                 <p id="cep-helper" class="helper-text"></p>
@@ -208,14 +209,14 @@
           <div id="campo-senha">
 
             <!---SENHA-->
-            <div id="senha">
+            <div id="password">
               <label for="senha">Senha:</label>
               <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
               <p id="senha-helper" class="helper-text"></p>
             </div>
 
             <!---CONFIRMAR SENHA-->
-            <div id="confirmar-senha">
+            <div id="password-confirm">
                 <label for="confirma-senha">confirmar senha:</label>
                 <input type="text" id="confirma-senha" name="confirma-senha" placeholder="Confirme sua senha">
                 <p id="confirma-senha-helper" class="helper-text"></p>
@@ -241,21 +242,25 @@
           <h4 class="titulo">Pagamento:</h4>  
 
           <!--NUMERO CARTAO-->
-          <label for="cartao">Número do Cartão:</label>
+          <label for="numero-cartao">Número do Cartão:</label>
           <input type="number" id="numero-cartao" name="numero-cartao" placeholder="Digite o número do cartão">
+          <p id="numero-cartao-helper" class="helper-text"></p>
+
   
 
           <!--SEGURANÇA CARTAO-->
           <div id="seguranca-cartao">
 
-            <div id="cvc">
+            <div id="align-cvc">
                 <label for="cvc">CVC:</label>
-                <input type="number" id="cvc" name="cvc" placeholder="Número CVC" required>
+                <input type="number" id="cvc" name="cvc" placeholder="CVC">
+                <p id="cvc-helper" class="helper-text"></p>
             </div>
 
-            <div id="validade">
+            <div id="align-validade">
                 <label for="validade">Validade:</label>
-                <input type="date" id="validade" name="validade" placeholder="Validade do cartão" required>
+                <input type="date" id="validade" name="validade" placeholder="Validade do cartão">
+                <p id="validade-helper" class="helper-text"></p>
             </div>
 
         
@@ -264,7 +269,8 @@
 
           <!--NOME CARTAO-->
           <label for="nome-cartao">Nome no cartão:</label>
-          <input type="text" id="nome-cartao" name="nome-cartao" placeholder="Digite o nome no cartão" required>
+          <input type="text" id="nome-cartao" name="nome-cartao" placeholder="Digite o nome no cartão">
+          <p id="nome-cartao-helper" class="helper-text"></p>
 
 
           <!---BOTÕES-->
