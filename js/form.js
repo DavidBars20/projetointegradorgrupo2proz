@@ -19,7 +19,6 @@ const nextBtn2 = document.querySelector('.next-2');
 const prevBtn2 = document.querySelector('.prev-2');
 const submit = document.querySelector('.submit');
 
-
 //BOTÕES
 
 nextBtn1.addEventListener('click', function(e) {
@@ -34,7 +33,6 @@ nextBtn1.addEventListener('click', function(e) {
         alert('Selecione um plano');
     }
 })
-
 
 prevBtn1.addEventListener('click', function() {
     form1.style.left = "40px";
