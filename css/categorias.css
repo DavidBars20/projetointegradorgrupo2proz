@@ -18,6 +18,31 @@ header {
     color: white;
     padding: 30px;
 }
+
+/* Container do banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Garante que nada fique fora do container */
+}
+
+/* Imagens do banner */
+.banner-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Todas as imagens começam escondidas */
+    transition: opacity 1s ease-in-out; /* Transição suave para troca de imagem */
+}
+
+/* Imagem ativa */
+.banner-image.active {
+    opacity: 1; /* Apenas a imagem ativa será visível */
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -192,11 +217,5 @@ align-items: center; /* Centraliza os filmes */
 
 .filmes-slider img {
 width: 100px; /* Reduz ainda mais a largura das imagens */
-}
-}
-
-.filmes-slider img {
-width: 80px;
-/* Reduz ainda mais a largura das imagens */
 }
 }
